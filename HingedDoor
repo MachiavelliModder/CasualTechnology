@@ -1,1 +1,51 @@
-warn("Working!")
+function createsound(id,volume,pitch,parent,roMD)
+	local s = Instance.new("Sound")
+	s.SoundId = "rbxassetid://"..tostring(id)
+	s.Parent = parent
+	s.Volume = volume
+	s.PlaybackSpeed = pitch
+	s.RollOffMaxDistance = roMD
+	s:Play()
+	game:GetService("Debris"):AddItem(s,s.TimeLength)
+end
+
+canuse = true
+
+script.Parent.Settings["O/C"].Changed:Connect(function(boolean)
+	if boolean == true then
+		if canuse == true then canuse = false
+			warn("True")
+			createsound(8109373498,2,1,script.Parent.Base,50)
+			game:GetService('TweenService'):Create(script.Parent.PrimaryPart,TweenInfo.new(2,Enum.EasingStyle.Sine,Enum.EasingDirection.InOut),
+			{CFrame = script.Parent.PrimaryPart.CFrame * CFrame.Angles(-1.6,0,0)}):Play() 
+			wait(3)
+			canuse = true
+		end
+	elseif boolean == false then
+		game:GetService('TweenService'):Create(script.Parent.PrimaryPart,TweenInfo.new(2,Enum.EasingStyle.Sine,Enum.EasingDirection.InOut),
+		{CFrame = script.Parent.PrimaryPart.CFrame * CFrame.Angles(1.6,0,0)}):Play() 
+		local m = coroutine.create(function()
+			wait(2)
+			createsound(8109376048,2,1,script.Parent.Base,50)
+		end)
+		coroutine.resume(m)
+		wait(3)
+		canuse = true
+	end
+end)
+
+for _,a in pairs(script.Parent.DoorKnob:GetChildren()) do
+	if string.find(a.Name,"Handle") then
+		local pp = Instance.new("ProximityPrompt")
+		pp.Parent = a
+		pp.HoldDuration = 1
+		pp.ObjectText = "Door"
+		pp.Triggered:Connect(function()
+			if script.Parent.Settings["O/C"].Value == true then
+				script.Parent.Settings["O/C"].Value = false
+			else
+				script.Parent.Settings["O/C"].Value = true
+			end
+		end)
+	end
+end
