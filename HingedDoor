@@ -22,15 +22,17 @@ script.Parent.Settings["O/C"].Changed:Connect(function(boolean)
 			canuse = true
 		end
 	elseif boolean == false then
-		game:GetService('TweenService'):Create(script.Parent.PrimaryPart,TweenInfo.new(2,Enum.EasingStyle.Sine,Enum.EasingDirection.InOut),
-		{CFrame = script.Parent.PrimaryPart.CFrame * CFrame.Angles(1.6,0,0)}):Play() 
-		local m = coroutine.create(function()
-			wait(2)
-			createsound(8109376048,2,1,script.Parent.Base,50)
-		end)
-		coroutine.resume(m)
-		wait(3)
-		canuse = true
+		if canuse == true then canuse = false
+			game:GetService('TweenService'):Create(script.Parent.PrimaryPart,TweenInfo.new(2,Enum.EasingStyle.Sine,Enum.EasingDirection.InOut),
+			{CFrame = script.Parent.PrimaryPart.CFrame * CFrame.Angles(1.6,0,0)}):Play() 
+			local m = coroutine.create(function()
+				wait(2)
+				createsound(8109376048,2,1,script.Parent.Base,50)
+			end)
+			coroutine.resume(m)
+			wait(3)
+			canuse = true
+		end
 	end
 end)
 
