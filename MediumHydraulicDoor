@@ -16,16 +16,14 @@ script.Parent.Settings["O/C"].Changed:Connect(function(boolean)
 		if canuse == true then canuse = false
 			for _,a in pairs(script.Parent:GetDescendants()) do
 				if a.Name == "Piston1" or a.name == "Piston2" then
-					if a:FindFirstChildWhichIsA("WeldConstraint") then
-						a:FindFirstChildWhichIsA("WeldConstraint").Enabled = false
+						a.WeldConstraint.Enabled = false
 						a.Anchored = true
-					end
 					wait(Random.new():NextNumber(0,.6))
 					local m = coroutine.create(function()
 					game:GetService('TweenService'):Create(a,TweenInfo.new(3,Enum.EasingStyle.Sine,Enum.EasingDirection.InOut),
 						{CFrame = a.CFrame * CFrame.new(5,0,0)}):Play()
 						wait(3)
-						a:FindFirstChildWhichIsA("WeldConstraint").Enabled = true
+						a.WeldConstraint.Enabled = true
 						a.Anchored = false
 					end)
 					coroutine.resume(m)
@@ -58,16 +56,14 @@ script.Parent.Settings["O/C"].Changed:Connect(function(boolean)
 		wait(2)
 		for _,a in pairs(script.Parent:GetDescendants()) do
 			if a.Name == "Piston1" or a.name == "Piston2" then
-				if a:FindFirstChildWhichIsA("WeldConstraint") then
-					a:FindFirstChildWhichIsA("WeldConstraint").Enabled = false
+					a.WeldConstraint.Enabled = false
 					a.Anchored = true
-				end
 				wait(Random.new():NextNumber(0,.6))
 				local m = coroutine.create(function()
 					game:GetService('TweenService'):Create(a,TweenInfo.new(3,Enum.EasingStyle.Sine,Enum.EasingDirection.InOut),
 					{CFrame = a.CFrame * CFrame.new(-5,0,0)}):Play()
 					wait(3)
-					a:FindFirstChildWhichIsA("WeldConstraint").Enabled = true
+					a.WeldConstraint.Enabled = true
 					a.Anchored = false
 				end)
 				coroutine.resume(m)
