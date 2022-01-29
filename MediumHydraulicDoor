@@ -29,11 +29,11 @@ script.Parent.Settings["O/C"].Changed:Connect(function(boolean)
 							s.TimePosition = 10
 						end)
 						coroutine.resume(b)
-						wait(3)
-						a.WeldConstraint.Enabled = true
-						a.Anchored = false
 					end)
 					coroutine.resume(m)
+					wait(3)
+					a.WeldConstraint.Enabled = true
+					a.Anchored = false
 				end
 			end
 			wait(3)
@@ -94,11 +94,11 @@ script.Parent.Settings["O/C"].Changed:Connect(function(boolean)
 							s.TimePosition = 10
 						end)
 						coroutine.resume(b)
-						wait(3)
-						a.WeldConstraint.Enabled = true
-						a.Anchored = false
 					end)
 					coroutine.resume(m)
+					wait(3)
+					a.WeldConstraint.Enabled = true
+					a.Anchored = false
 				end
 			end
 			canuse = true
