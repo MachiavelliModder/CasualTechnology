@@ -48,7 +48,7 @@ function fireisotope(from,to,b,t)
 			bounce = b
 		end
 		if bounce <= 10 then
-			local ray = nil
+			local ray = Ray.new(from, (to - from).unit * 10000);
 
 			if t == "g" then
 				local ray = Ray.new(from, (to - from).unit * 100000);
