@@ -22,13 +22,8 @@ end
 function spreadradiation(part,hitpos)
 	local m = coroutine.create(function()
 		local c = script:Clone()
-		local p = Instance.new("Part")
-		p.Size = Vector3.new(.5,.5,.5)
-		p.Transparency = 1
-		p.CanCollide = false
-		p.Anchored = true
-		p.Parent = part
-		p.Position = hitpos
+		local p = Instance.new("Attachment",script.Parent)
+		p.WorldPosition = hitpos
 		c.Parent = p
 		c.IsotopeActivity.Max.Value = script.IsotopeActivity.Max.Value / 2
 		c.Activity.Value = 0
@@ -180,11 +175,29 @@ end
 
 while wait(clock) do
 	if script.Type.Value == "g" then
-		firegammaray(script.Parent.Position,Vector3.new(Random.new():NextNumber(-180,180),Random.new():NextNumber(-180,180),Random.new():NextNumber(-180,180)))
+		pos = nil
+		if script.Parent:IsA("Attachment") then
+			pos = script.Parent.WorldPosition
+		else
+			pos = script.Parent.Position
+		end
+		firegammaray(pos,Vector3.new(Random.new():NextNumber(-180,180),Random.new():NextNumber(-180,180),Random.new():NextNumber(-180,180)))
 	elseif script.Type.Value == "b" then
-		firebetaparticle(script.Parent.Position,Vector3.new(Random.new():NextNumber(-180,180),Random.new():NextNumber(-180,180),Random.new():NextNumber(-180,180)))
+		pos = nil
+		if script.Parent:IsA("Attachment") then
+			pos = script.Parent.WorldPosition
+		else
+			pos = script.Parent.Position
+		end
+		firebetaparticle(pos,Vector3.new(Random.new():NextNumber(-180,180),Random.new():NextNumber(-180,180),Random.new():NextNumber(-180,180)))
 	elseif script.Type.Value == "a" then
-		firealphaparticle(script.Parent.Position,Vector3.new(Random.new():NextNumber(-180,180),Random.new():NextNumber(-180,180),Random.new():NextNumber(-180,180)))
+		pos = nil
+		if script.Parent:IsA("Attachment") then
+			pos = script.Parent.WorldPosition
+		else
+			pos = script.Parent.Position
+		end
+		firealphaparticle(pos,Vector3.new(Random.new():NextNumber(-180,180),Random.new():NextNumber(-180,180),Random.new():NextNumber(-180,180)))
 	end
 
 	if script.Activity.Value == 0 then
