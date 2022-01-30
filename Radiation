@@ -73,7 +73,7 @@ function fireisotope(from,to,b,t)
 				end
 
 				if hit.Material == Enum.Material.Concrete then
-					fireisotope(pos, pos + ref, nil)
+					fireisotope(pos, pos + ref, nil,t)
 				else
 					if game:GetService("Players"):GetPlayerFromCharacter(hit.Parent) then
 					else
@@ -82,7 +82,7 @@ function fireisotope(from,to,b,t)
 							--	spreadradiation(hit,pos)
 						end
 					end
-					fireisotope(pos, pos + ref, nil)
+					fireisotope(pos, pos + ref, nil,t)
 				end
 			end	
 		end
