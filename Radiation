@@ -70,7 +70,7 @@ function firegammaray(from,to,b)
 					else
 						if hit:FindFirstChild("Radiation") then
 						else
-							spreadradiation(hit,pos)
+						--	spreadradiation(hit,pos)
 						end
 					end
 					firegammaray(pos, pos + ref, nil)
