@@ -19,7 +19,7 @@ local function drawray(ray, parent)
 	return part;
 end
 
-function spreadradiation(part)
+function spreadradiation(part,hitpos)
 	local m = coroutine.create(function()
 		local c = script:Clone()
 		local p = Instance.new("Part")
@@ -28,6 +28,7 @@ function spreadradiation(part)
 		p.CanCollide = false
 		p.Anchored = true
 		p.Parent = part
+		p.Position = hitpos
 		c.Parent = p
 		c.IsotopeActivity.Max.Value = script.IsotopeActivity.Max.Value / 2
 		c.Activity.Value = 0
@@ -74,7 +75,7 @@ function firegammaray(from,to,b)
 					else
 						if hit:FindFirstChild("Radiation") then
 						else
-							spreadradiation(hit)
+							spreadradiation(hit,pos)
 						end
 					end
 					firegammaray(pos, pos + ref, nil)
