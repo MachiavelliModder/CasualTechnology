@@ -19,7 +19,7 @@ script.Parent.Settings["O/C"].Changed:Connect(function(boolean)
 				if a.Name == "Piston1" or a.name == "Piston2" then
 					a.WeldConstraint.Enabled = false
 					a.Anchored = true
-					wait(Random.new():NextNumber(0,1))
+					wait(Random.new():NextNumber(0,.2))
 					local m = coroutine.create(function()
 						game:GetService('TweenService'):Create(a,TweenInfo.new(3,Enum.EasingStyle.Sine,Enum.EasingDirection.InOut),
 						{CFrame = a.CFrame * CFrame.new(5,0,0)}):Play()
@@ -85,7 +85,7 @@ script.Parent.Settings["O/C"].Changed:Connect(function(boolean)
 					a.WeldConstraint.Enabled = false
 					a.Anchored = true
 					local m = coroutine.create(function()
-						wait(Random.new():NextNumber(0,1))
+						wait(Random.new():NextNumber(0,.2))
 						game:GetService('TweenService'):Create(a,TweenInfo.new(3,Enum.EasingStyle.Sine,Enum.EasingDirection.InOut),
 						{CFrame = a.CFrame * CFrame.new(-5,0,0)}):Play()
 						local b = coroutine.create(function()
