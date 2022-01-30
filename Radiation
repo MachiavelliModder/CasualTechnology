@@ -37,7 +37,7 @@ function spreadradiation(part,hitpos)
 	coroutine.resume(m)
 end
 
-function firegammaray(from,to,b)
+function fireisotope(from,to,b,t)
 	local m122 = coroutine.create(function()
 		wait(Random.new():NextNumber(0,.2))
 		--	warn("fired")
@@ -48,7 +48,16 @@ function firegammaray(from,to,b)
 			bounce = b
 		end
 		if bounce <= 10 then
-			local ray = Ray.new(from, (to - from).unit * 10000);
+			local ray = nil
+
+			if t == "g" then
+				local ray = Ray.new(from, (to - from).unit * 100000);
+			elseif t == "b" then
+				local ray = Ray.new(from, (to - from).unit * 100);
+			elseif t == "a" then
+				local ray = Ray.new(from, (to - from).unit * 10);
+			end
+
 			local hit, pos, normal = game:GetService("Workspace"):FindPartOnRay(ray, script.Parent);
 
 			--	local ray2 = Ray.new(from, (pos - from));
@@ -60,118 +69,26 @@ function firegammaray(from,to,b)
 
 			if hit then
 				if game:GetService("Players"):GetPlayerFromCharacter(hit.Parent) then
-					game:GetService("ReplicatedStorage").RADHIT:FireClient(game:GetService("Players"):GetPlayerFromCharacter(hit.Parent),"g",isotopeactivity,hit)
+					game:GetService("ReplicatedStorage").RADHIT:FireClient(game:GetService("Players"):GetPlayerFromCharacter(hit.Parent),t,isotopeactivity,hit)
 				end
 
 				if hit.Material == Enum.Material.Concrete then
-					firegammaray(pos, pos + ref, nil)
+					fireisotope(pos, pos + ref, nil)
 				else
 					if game:GetService("Players"):GetPlayerFromCharacter(hit.Parent) then
 					else
 						if hit:FindFirstChild("Radiation") then
 						else
-						--	spreadradiation(hit,pos)
+							--	spreadradiation(hit,pos)
 						end
 					end
-					firegammaray(pos, pos + ref, nil)
+					fireisotope(pos, pos + ref, nil)
 				end
-				-- shoot a ray in the reflected position
 			end	
 		end
 	end)
 	coroutine.resume(m122)
 end
-
-function firebetaparticle(from,to,b)
-	local m122 = coroutine.create(function()
-		wait(Random.new():NextNumber(0,.2))
-		--	warn("fired")
-		local bounce
-		if b == nil then
-			bounce = 0
-		else
-			bounce = b
-		end
-		if bounce <= 10 then
-			local ray = Ray.new(from, (to - from).unit * 100);
-			local hit, pos, normal = game:GetService("Workspace"):FindPartOnRay(ray, script.Parent);
-
-			--	local ray2 = Ray.new(from, (pos - from));
-
-			local ref = reflect((pos - from), normal);
-			--	local part = drawray(ray2, script.Parent);
-
-			--	game:GetService("Debris"):AddItem(part, 2);
-
-			if hit then
-				if game:GetService("Players"):GetPlayerFromCharacter(hit.Parent) then
-					game:GetService("ReplicatedStorage").RADHIT:FireClient(game:GetService("Players"):GetPlayerFromCharacter(hit.Parent),"b",isotopeactivity,hit)
-				end
-
-				if hit.Material == Enum.Material.Concrete then
-					firebetaparticle(pos, pos + ref, nil)
-				else
-					if game:GetService("Players"):GetPlayerFromCharacter(hit.Parent) then
-					else
-						if hit:FindFirstChild("RadiationAU") or hit:FindFirstChild("Radiation") then
-						else
-						--	spreadradiation(hit)
-						end
-					end
-					firebetaparticle(pos, pos + ref, nil)
-				end
-				-- shoot a ray in the reflected position
-			end	
-		end
-	end)
-	coroutine.resume(m122)
-end
-
-function firealphaparticle(from,to,b)
-	local m122 = coroutine.create(function()
-		wait(Random.new():NextNumber(0,.2))
-		--	warn("fired")
-		local bounce
-		if b == nil then
-			bounce = 0
-		else
-			bounce = b
-		end
-		if bounce <= 10 then
-			local ray = Ray.new(from, (to - from).unit * 50);
-			local hit, pos, normal = game:GetService("Workspace"):FindPartOnRay(ray, script.Parent);
-
-			--	local ray2 = Ray.new(from, (pos - from));
-
-			local ref = reflect((pos - from), normal);
-			--	local part = drawray(ray2, script.Parent);
-
-			--	game:GetService("Debris"):AddItem(part, 2);
-
-			if hit then
-				if game:GetService("Players"):GetPlayerFromCharacter(hit.Parent) then
-					game:GetService("ReplicatedStorage").RADHIT:FireClient(game:GetService("Players"):GetPlayerFromCharacter(hit.Parent),"a",isotopeactivity,hit)
-				end
-
-				if hit.Material == Enum.Material.Concrete then
-					firealphaparticle(pos, pos + ref, nil)
-				else
-					if game:GetService("Players"):GetPlayerFromCharacter(hit.Parent) then
-					else
-						if hit:FindFirstChild("Radiation") then
-						else
-							--			spreadradiation(hit)
-						end
-					end
-					firealphaparticle(pos, pos + ref, nil)
-				end
-				-- shoot a ray in the reflected position
-			end	
-		end
-	end)
-	coroutine.resume(m122)
-end
-
 
 while wait(clock) do
 	if script.Type.Value == "g" then
@@ -181,7 +98,7 @@ while wait(clock) do
 		else
 			pos = script.Parent.Position
 		end
-		firegammaray(pos,Vector3.new(Random.new():NextNumber(-180,180),Random.new():NextNumber(-180,180),Random.new():NextNumber(-180,180)))
+		fireisotope(pos,Vector3.new(Random.new():NextNumber(-180,180),Random.new():NextNumber(-180,180),Random.new():NextNumber(-180,180)),nil,"g")
 	elseif script.Type.Value == "b" then
 		pos = nil
 		if script.Parent:IsA("Attachment") then
@@ -189,7 +106,7 @@ while wait(clock) do
 		else
 			pos = script.Parent.Position
 		end
-		firebetaparticle(pos,Vector3.new(Random.new():NextNumber(-180,180),Random.new():NextNumber(-180,180),Random.new():NextNumber(-180,180)))
+		fireisotope(pos,Vector3.new(Random.new():NextNumber(-180,180),Random.new():NextNumber(-180,180),Random.new():NextNumber(-180,180)),nil,"b")
 	elseif script.Type.Value == "a" then
 		pos = nil
 		if script.Parent:IsA("Attachment") then
@@ -197,7 +114,7 @@ while wait(clock) do
 		else
 			pos = script.Parent.Position
 		end
-		firealphaparticle(pos,Vector3.new(Random.new():NextNumber(-180,180),Random.new():NextNumber(-180,180),Random.new():NextNumber(-180,180)))
+		fireisotope(pos,Vector3.new(Random.new():NextNumber(-180,180),Random.new():NextNumber(-180,180),Random.new():NextNumber(-180,180)),nil,"a")
 	end
 
 	if script.Activity.Value == 0 then
