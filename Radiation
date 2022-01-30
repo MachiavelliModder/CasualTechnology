@@ -22,13 +22,19 @@ end
 function spreadradiation(part)
 	local m = coroutine.create(function()
 		local c = script:Clone()
-		c.Parent = part
+		local p = Instance.new("Part")
+		p.Size = Vector3.new(.5,.5,.5)
+		p.Transparency = 1
+		p.CanCollide = false
+		p.Anchored = true
+		p.Parent = part
+		c.Parent = p
 		c.IsotopeActivity.Max.Value = script.IsotopeActivity.Max.Value / 2
 		c.Activity.Value = 0
-		while wait(2) do
+		while wait(1) do
 			c.Activity.Value = c.Activity.Value + 0.001
 			if c.Activity.Value > 7 then
-				c:Destroy()
+				p:Destroy()
 			end
 		end
 	end)
@@ -68,7 +74,7 @@ function firegammaray(from,to,b)
 					else
 						if hit:FindFirstChild("Radiation") then
 						else
-				--			spreadradiation(hit)
+							spreadradiation(hit)
 						end
 					end
 					firegammaray(pos, pos + ref, nil)
@@ -107,16 +113,16 @@ function firebetaparticle(from,to,b)
 				end
 
 				if hit.Material == Enum.Material.Concrete then
-					firegammaray(pos, pos + ref, nil)
+					firebetaparticle(pos, pos + ref, nil)
 				else
 					if game:GetService("Players"):GetPlayerFromCharacter(hit.Parent) then
 					else
-						if hit:FindFirstChild("Radiation") then
+						if hit:FindFirstChild("RadiationAU") or hit:FindFirstChild("Radiation") then
 						else
-							--			spreadradiation(hit)
+						--	spreadradiation(hit)
 						end
 					end
-					firegammaray(pos, pos + ref, nil)
+					firebetaparticle(pos, pos + ref, nil)
 				end
 				-- shoot a ray in the reflected position
 			end	
@@ -152,7 +158,7 @@ function firealphaparticle(from,to,b)
 				end
 
 				if hit.Material == Enum.Material.Concrete then
-					firegammaray(pos, pos + ref, nil)
+					firealphaparticle(pos, pos + ref, nil)
 				else
 					if game:GetService("Players"):GetPlayerFromCharacter(hit.Parent) then
 					else
@@ -161,7 +167,7 @@ function firealphaparticle(from,to,b)
 							--			spreadradiation(hit)
 						end
 					end
-					firegammaray(pos, pos + ref, nil)
+					firealphaparticle(pos, pos + ref, nil)
 				end
 				-- shoot a ray in the reflected position
 			end	
