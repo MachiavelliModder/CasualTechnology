@@ -14,15 +14,30 @@ canuse = true
 script.Parent.Settings["O/C"].Changed:Connect(function(boolean)
 	if boolean == true then
 		if canuse == true then canuse = false
+			for _,a in pairs(script.Parent:GetDescendants()) do
+				if a:IsA("ProximityPrompt") then
+					a.Enabled = false
+				end
+			end
 			warn("True")
 			createsound(8109373498,2,1,script.Parent.Base,50)
 			game:GetService('TweenService'):Create(script.Parent.PrimaryPart,TweenInfo.new(2,Enum.EasingStyle.Sine,Enum.EasingDirection.InOut),
 			{CFrame = script.Parent.PrimaryPart.CFrame * CFrame.Angles(-1.6,0,0)}):Play() 
 			wait(3)
 			canuse = true
+			for _,a in pairs(script.Parent:GetDescendants()) do
+				if a:IsA("ProximityPrompt") then
+					a.Enabled = true
+				end
+			end
 		end
 	elseif boolean == false then
 		if canuse == true then canuse = false
+			for _,a in pairs(script.Parent:GetDescendants()) do
+				if a:IsA("ProximityPrompt") then
+					a.Enabled = false
+				end
+			end
 			game:GetService('TweenService'):Create(script.Parent.PrimaryPart,TweenInfo.new(2,Enum.EasingStyle.Sine,Enum.EasingDirection.InOut),
 			{CFrame = script.Parent.PrimaryPart.CFrame * CFrame.Angles(1.6,0,0)}):Play() 
 			local m = coroutine.create(function()
@@ -31,6 +46,11 @@ script.Parent.Settings["O/C"].Changed:Connect(function(boolean)
 			end)
 			coroutine.resume(m)
 			wait(3)
+			for _,a in pairs(script.Parent:GetDescendants()) do
+				if a:IsA("ProximityPrompt") then
+					a.Enabled = true
+				end
+			end
 			canuse = true
 		end
 	end
