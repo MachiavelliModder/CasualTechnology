@@ -31,9 +31,12 @@ script.Parent.Settings["O/C"].Changed:Connect(function(boolean)
 						coroutine.resume(b)
 					end)
 					coroutine.resume(m)
-					wait(3)
-					a.WeldConstraint.Enabled = true
-					a.Anchored = false
+					local m12822 = coroutine.create(function()
+						wait(3)
+						a.WeldConstraint.Enabled = true
+						a.Anchored = false
+					end)
+					coroutine.resume(m12822)
 				end
 			end
 			wait(3)
@@ -96,9 +99,12 @@ script.Parent.Settings["O/C"].Changed:Connect(function(boolean)
 						coroutine.resume(b)
 					end)
 					coroutine.resume(m)
-					wait(3)
-					a.WeldConstraint.Enabled = true
-					a.Anchored = false
+					local m12822 = coroutine.create(function()
+						wait(3)
+						a.WeldConstraint.Enabled = true
+						a.Anchored = false
+					end)
+					coroutine.resume(m12822)
 				end
 			end
 			canuse = true
