@@ -1,0 +1,184 @@
+
+
+local existingLimbs = {"Left Arm";"Right Arm";"Left Leg";"Right Leg"}
+local bin = Instance.new("Folder")
+
+function ragdoll()
+player = game.Players.LocalPlayer
+player.Character:FindFirstChild("Humanoid").PlatformStand = true
+			for _,c in pairs(player.Character:FindFirstChild("Torso"):GetChildren()) do
+				if c:IsA("Motor6D") then
+					if c.Name == "Neck" then
+					else
+					end
+					if table.find(existingLimbs,c.Part1.Name) then
+						local p = c.Part1
+						if p.Name == "Right Arm" then
+						    b = c:Clone()
+						    b.Part0 = nil
+						    b.Parent = bin
+						    c:Destroy()
+                            local m = coroutine.create(function()
+								p.Anchored = false
+								p.CanCollide = true
+								local attach = Instance.new("Attachment")
+								attach.Parent = p.Parent:FindFirstChild("Right Arm")
+								attach.Position = Vector3.new(-0.5, 0.6, 0)
+								local attach2 = Instance.new("Attachment")
+								attach2.Parent = p.Parent:FindFirstChild("Torso")
+								attach2.Position = Vector3.new(1, 0.6, 0)
+								local balljoint = Instance.new("BallSocketConstraint")
+								balljoint.Parent = p.Parent:FindFirstChild("Torso")
+								balljoint.Attachment0 = attach
+								balljoint.Attachment1 = attach2
+		
+								local part = Instance.new("Part")
+								part.Transparency = 1
+								part.Size = p.Size
+								part.CFrame = p.CFrame
+								part.Parent = p
+								part.Name = "#100"
+								local weld = Instance.new("WeldConstraint")
+								weld.Parent = p
+								weld.Part0 = p
+								weld.Part1 = part
+		
+								local nocollide = Instance.new("NoCollisionConstraint")
+								nocollide.Parent = part
+								nocollide.Part0 = part
+								nocollide.Part1 = attach2.Parent
+							end)
+							coroutine.resume(m)
+						elseif p.Name == "Left Arm" then
+						    b = c:Clone()
+						    b.Part0 = nil
+						    b.Parent = bin
+						    c:Destroy()
+							local m = coroutine.create(function()
+								p.Anchored = false
+								p.CanCollide = true
+								local attach = Instance.new("Attachment")
+								attach.Parent = p.Parent:FindFirstChild("Left Arm")
+								attach.Position = Vector3.new(0.5, 0.6, 0)
+								local attach2 = Instance.new("Attachment")
+								attach2.Parent = p.Parent:FindFirstChild("Torso")
+								attach2.Position = Vector3.new(-1, 0.6, 0)
+								local balljoint = Instance.new("BallSocketConstraint")
+								balljoint.Parent = p.Parent:FindFirstChild("Torso")
+								balljoint.Attachment0 = attach
+								balljoint.Attachment1 = attach2
+		
+								local part = Instance.new("Part")
+								part.Transparency = 1
+								part.Size = p.Size
+								part.CFrame = p.CFrame
+								part.Parent = p
+								part.Name = "#100"
+								local weld = Instance.new("WeldConstraint")
+								weld.Parent = p
+								weld.Part0 = p
+								weld.Part1 = part
+		
+								local nocollide = Instance.new("NoCollisionConstraint")
+								nocollide.Parent = part
+								nocollide.Part0 = part
+								nocollide.Part1 = attach2.Parent
+							end)
+							coroutine.resume(m)
+						elseif p.Name == "Right Leg" then	
+						    b = c:Clone()
+						    b.Part0 = nil
+						    b.Parent = bin
+						    c:Destroy()
+							local m = coroutine.create(function()
+								p.Anchored = false
+								p.CanCollide = true
+								local attach = Instance.new("Attachment")
+								attach.Parent = p.Parent:FindFirstChild("Right Leg")
+								attach.Position = Vector3.new(0, 1, 0)
+								local attach2 = Instance.new("Attachment")
+								attach2.Parent = p.Parent:FindFirstChild("Torso")
+								attach2.Position = Vector3.new(0.5, -1, 0)
+								local balljoint = Instance.new("BallSocketConstraint")
+								balljoint.Parent = p.Parent:FindFirstChild("Torso")
+								balljoint.Attachment0 = attach
+								balljoint.Attachment1 = attach2
+		
+								local part = Instance.new("Part")
+								part.Transparency = 1
+								part.Size = p.Size
+								part.CFrame = p.CFrame
+								part.Parent = p
+								part.Name = "#100"
+								local weld = Instance.new("WeldConstraint")
+								weld.Parent = p
+								weld.Part0 = p
+								weld.Part1 = part
+		
+								local nocollide = Instance.new("NoCollisionConstraint")
+								nocollide.Parent = part
+								nocollide.Part0 = part
+								nocollide.Part1 = attach2.Parent
+							end)
+							coroutine.resume(m)
+						elseif p.Name == "Left Leg" then
+						    b = c:Clone()
+						    b.Part0 = nil
+						    b.Parent = bin
+						    c:Destroy()
+							local m = coroutine.create(function()
+								p.Anchored = false
+								p.CanCollide = true
+								local attach = Instance.new("Attachment")
+								attach.Parent = p.Parent:FindFirstChild("Left Leg")
+								attach.Position = Vector3.new(0, 1, 0)
+								local attach2 = Instance.new("Attachment")
+								attach2.Parent = p.Parent:FindFirstChild("Torso")
+								attach2.Position = Vector3.new(-0.5, -1, 0)
+								local balljoint = Instance.new("BallSocketConstraint")
+								balljoint.Parent = p.Parent:FindFirstChild("Torso")
+								balljoint.Attachment0 = attach
+								balljoint.Attachment1 = attach2
+		
+								local part = Instance.new("Part")
+								part.Transparency = 1
+								part.Size = p.Size
+								part.CFrame = p.CFrame
+								part.Parent = p
+								part.Name = "#100"
+								local weld = Instance.new("WeldConstraint")
+								weld.Parent = part
+								weld.Part0 = p
+								weld.Part1 = part
+		
+								local nocollide = Instance.new("NoCollisionConstraint")
+								nocollide.Parent = part
+								nocollide.Part0 = part
+								nocollide.Part1 = attach2.Parent
+					end)
+					coroutine.resume(m)
+				end
+			end
+		end
+	end
+end
+	
+function unragdoll()
+    for _,m in pairs(bin:GetChildren()) do
+       if game:GetService("Players").LocalPlayer.Character:FindFirstChild(m.Part1.Name) then
+           p = game:GetService("Players").LocalPlayer.Character:FindFirstChild(m.Part1.Name)
+           m.Parent = game:GetService("Players").LocalPlayer.Character.Torso
+           m.Part0 = p
+           
+           	for _,c in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
+				if c.Name == "#100" or c:IsA("BallSocketConstraint") then
+					c:Destroy()
+				end
+			end
+        end
+    end
+end
+
+
+m = game.Players.LocalPlayer:GetMouse()
+ragdoll()
