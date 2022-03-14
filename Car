@@ -1,0 +1,4774 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local V21332 = {
+	V21332 = Instance.new("ScreenGui"),
+	Frame = Instance.new("Frame"),
+	UICorner = Instance.new("UICorner"),
+	Min = Instance.new("Frame"),
+	Min_2 = Instance.new("Frame"),
+	Min_3 = Instance.new("Frame"),
+	UICorner_2 = Instance.new("UICorner"),
+	Button2 = Instance.new("Frame"),
+	UIGridLayout = Instance.new("UIGridLayout"),
+	ImageButton = Instance.new("ImageButton"),
+	Button1 = Instance.new("Frame"),
+	UIGridLayout_2 = Instance.new("UIGridLayout"),
+	TextButton = Instance.new("TextButton"),
+	UICorner_3 = Instance.new("UICorner"),
+	ImageButton_2 = Instance.new("ImageButton"),
+	ButtonFrame = Instance.new("Frame"),
+	UICorner_4 = Instance.new("UICorner"),
+	SelectionFrame = Instance.new("Frame"),
+	UICorner_5 = Instance.new("UICorner"),
+	Usable = Instance.new("Frame"),
+	PRISMATIC = Instance.new("Frame"),
+	Title = Instance.new("TextLabel"),
+	Outer = Instance.new("Frame"),
+	UICorner_6 = Instance.new("UICorner"),
+	OuterTop = Instance.new("Frame"),
+	UICorner_7 = Instance.new("UICorner"),
+	Selects = Instance.new("Frame"),
+	UIGridLayout_3 = Instance.new("UIGridLayout"),
+	Thingy = Instance.new("TextButton"),
+	UICorner_8 = Instance.new("UICorner"),
+	TextLabel = Instance.new("TextLabel"),
+	Frame_2 = Instance.new("Frame"),
+	UICorner_9 = Instance.new("UICorner"),
+	Stats = Instance.new("TextLabel"),
+	Default = Instance.new("TextButton"),
+	Buttons = Instance.new("Frame"),
+	Unlocked = Instance.new("Frame"),
+	UIGridLayout_4 = Instance.new("UIGridLayout"),
+	Radius = Instance.new("TextBox"),
+	UICorner_10 = Instance.new("UICorner"),
+	TextLabel_2 = Instance.new("TextLabel"),
+	Frame_3 = Instance.new("Frame"),
+	UICorner_11 = Instance.new("UICorner"),
+	Enabled = Instance.new("TextButton"),
+	Frame_4 = Instance.new("Frame"),
+	UICorner_12 = Instance.new("UICorner"),
+	TextLabel_3 = Instance.new("TextLabel"),
+	UICorner_13 = Instance.new("UICorner"),
+	Visible = Instance.new("TextButton"),
+	Frame_5 = Instance.new("Frame"),
+	UICorner_14 = Instance.new("UICorner"),
+	TextLabel_4 = Instance.new("TextLabel"),
+	UICorner_15 = Instance.new("UICorner"),
+	Submit = Instance.new("TextButton"),
+	Frame_6 = Instance.new("Frame"),
+	UICorner_16 = Instance.new("UICorner"),
+	TextLabel_5 = Instance.new("TextLabel"),
+	UICorner_17 = Instance.new("UICorner"),
+	Locked = Instance.new("Frame"),
+	UIGridLayout_5 = Instance.new("UIGridLayout"),
+	UpperAngle = Instance.new("TextBox"),
+	UICorner_18 = Instance.new("UICorner"),
+	TextLabel_6 = Instance.new("TextLabel"),
+	Frame_7 = Instance.new("Frame"),
+	UICorner_19 = Instance.new("UICorner"),
+	LOCK = Instance.new("Frame"),
+	UICorner_20 = Instance.new("UICorner"),
+	TextLabel_7 = Instance.new("TextLabel"),
+	Restitution = Instance.new("TextBox"),
+	UICorner_21 = Instance.new("UICorner"),
+	TextLabel_8 = Instance.new("TextLabel"),
+	Frame_8 = Instance.new("Frame"),
+	UICorner_22 = Instance.new("UICorner"),
+	LOCK_2 = Instance.new("Frame"),
+	UICorner_23 = Instance.new("UICorner"),
+	TextLabel_9 = Instance.new("TextLabel"),
+	LowerAngle = Instance.new("TextBox"),
+	UICorner_24 = Instance.new("UICorner"),
+	TextLabel_10 = Instance.new("TextLabel"),
+	Frame_9 = Instance.new("Frame"),
+	UICorner_25 = Instance.new("UICorner"),
+	LOCK_3 = Instance.new("Frame"),
+	UICorner_26 = Instance.new("UICorner"),
+	TextLabel_11 = Instance.new("TextLabel"),
+	LimitsEnabled = Instance.new("TextButton"),
+	Frame_10 = Instance.new("Frame"),
+	UICorner_27 = Instance.new("UICorner"),
+	TextLabel_12 = Instance.new("TextLabel"),
+	UICorner_28 = Instance.new("UICorner"),
+	ROD = Instance.new("Frame"),
+	Title_2 = Instance.new("TextLabel"),
+	Default_2 = Instance.new("TextButton"),
+	Outer_2 = Instance.new("Frame"),
+	UICorner_29 = Instance.new("UICorner"),
+	OuterTop_2 = Instance.new("Frame"),
+	UICorner_30 = Instance.new("UICorner"),
+	Selects_2 = Instance.new("Frame"),
+	UIGridLayout_6 = Instance.new("UIGridLayout"),
+	Stats_2 = Instance.new("TextLabel"),
+	Thingy_2 = Instance.new("TextButton"),
+	UICorner_31 = Instance.new("UICorner"),
+	TextLabel_13 = Instance.new("TextLabel"),
+	Frame_11 = Instance.new("Frame"),
+	UICorner_32 = Instance.new("UICorner"),
+	Buttons_2 = Instance.new("Frame"),
+	Unlocked_2 = Instance.new("Frame"),
+	UIGridLayout_7 = Instance.new("UIGridLayout"),
+	Length = Instance.new("TextBox"),
+	UICorner_33 = Instance.new("UICorner"),
+	TextLabel_14 = Instance.new("TextLabel"),
+	Frame_12 = Instance.new("Frame"),
+	UICorner_34 = Instance.new("UICorner"),
+	Enabled_2 = Instance.new("TextButton"),
+	Frame_13 = Instance.new("Frame"),
+	UICorner_35 = Instance.new("UICorner"),
+	TextLabel_15 = Instance.new("TextLabel"),
+	UICorner_36 = Instance.new("UICorner"),
+	Locked_2 = Instance.new("Frame"),
+	UIGridLayout_8 = Instance.new("UIGridLayout"),
+	LimitAngle0 = Instance.new("TextBox"),
+	UICorner_37 = Instance.new("UICorner"),
+	TextLabel_16 = Instance.new("TextLabel"),
+	Frame_14 = Instance.new("Frame"),
+	UICorner_38 = Instance.new("UICorner"),
+	LOCK_4 = Instance.new("Frame"),
+	UICorner_39 = Instance.new("UICorner"),
+	TextLabel_17 = Instance.new("TextLabel"),
+	LimitAngle1 = Instance.new("TextBox"),
+	UICorner_40 = Instance.new("UICorner"),
+	TextLabel_18 = Instance.new("TextLabel"),
+	Frame_15 = Instance.new("Frame"),
+	UICorner_41 = Instance.new("UICorner"),
+	LOCK_5 = Instance.new("Frame"),
+	UICorner_42 = Instance.new("UICorner"),
+	TextLabel_19 = Instance.new("TextLabel"),
+	LimitsEnabled_2 = Instance.new("TextButton"),
+	Frame_16 = Instance.new("Frame"),
+	UICorner_43 = Instance.new("UICorner"),
+	TextLabel_20 = Instance.new("TextLabel"),
+	UICorner_44 = Instance.new("UICorner"),
+	Submit_2 = Instance.new("TextButton"),
+	Frame_17 = Instance.new("Frame"),
+	UICorner_45 = Instance.new("UICorner"),
+	TextLabel_21 = Instance.new("TextLabel"),
+	UICorner_46 = Instance.new("UICorner"),
+	CYLINDRICAL = Instance.new("Frame"),
+	Title_3 = Instance.new("TextLabel"),
+	Outer_3 = Instance.new("Frame"),
+	UICorner_47 = Instance.new("UICorner"),
+	OuterTop_3 = Instance.new("Frame"),
+	UICorner_48 = Instance.new("UICorner"),
+	Selects_3 = Instance.new("Frame"),
+	UIGridLayout_9 = Instance.new("UIGridLayout"),
+	Thingy_3 = Instance.new("TextButton"),
+	UICorner_49 = Instance.new("UICorner"),
+	TextLabel_22 = Instance.new("TextLabel"),
+	Frame_18 = Instance.new("Frame"),
+	UICorner_50 = Instance.new("UICorner"),
+	Stats_3 = Instance.new("TextLabel"),
+	Default_3 = Instance.new("TextButton"),
+	Buttons_3 = Instance.new("Frame"),
+	Unlocked_3 = Instance.new("Frame"),
+	UIGridLayout_10 = Instance.new("UIGridLayout"),
+	Radius_2 = Instance.new("TextBox"),
+	UICorner_51 = Instance.new("UICorner"),
+	TextLabel_23 = Instance.new("TextLabel"),
+	Frame_19 = Instance.new("Frame"),
+	UICorner_52 = Instance.new("UICorner"),
+	Enabled_3 = Instance.new("TextButton"),
+	Frame_20 = Instance.new("Frame"),
+	UICorner_53 = Instance.new("UICorner"),
+	TextLabel_24 = Instance.new("TextLabel"),
+	UICorner_54 = Instance.new("UICorner"),
+	Visible_2 = Instance.new("TextButton"),
+	Frame_21 = Instance.new("Frame"),
+	UICorner_55 = Instance.new("UICorner"),
+	TextLabel_25 = Instance.new("TextLabel"),
+	UICorner_56 = Instance.new("UICorner"),
+	Submit_3 = Instance.new("TextButton"),
+	Frame_22 = Instance.new("Frame"),
+	UICorner_57 = Instance.new("UICorner"),
+	TextLabel_26 = Instance.new("TextLabel"),
+	UICorner_58 = Instance.new("UICorner"),
+	Locked_3 = Instance.new("Frame"),
+	UIGridLayout_11 = Instance.new("UIGridLayout"),
+	UpperAngle_2 = Instance.new("TextBox"),
+	UICorner_59 = Instance.new("UICorner"),
+	TextLabel_27 = Instance.new("TextLabel"),
+	Frame_23 = Instance.new("Frame"),
+	UICorner_60 = Instance.new("UICorner"),
+	LOCK_6 = Instance.new("Frame"),
+	UICorner_61 = Instance.new("UICorner"),
+	TextLabel_28 = Instance.new("TextLabel"),
+	Restitution_2 = Instance.new("TextBox"),
+	UICorner_62 = Instance.new("UICorner"),
+	TextLabel_29 = Instance.new("TextLabel"),
+	Frame_24 = Instance.new("Frame"),
+	UICorner_63 = Instance.new("UICorner"),
+	LOCK_7 = Instance.new("Frame"),
+	UICorner_64 = Instance.new("UICorner"),
+	TextLabel_30 = Instance.new("TextLabel"),
+	LowerAngle_2 = Instance.new("TextBox"),
+	UICorner_65 = Instance.new("UICorner"),
+	TextLabel_31 = Instance.new("TextLabel"),
+	Frame_25 = Instance.new("Frame"),
+	UICorner_66 = Instance.new("UICorner"),
+	LOCK_8 = Instance.new("Frame"),
+	UICorner_67 = Instance.new("UICorner"),
+	TextLabel_32 = Instance.new("TextLabel"),
+	LimitsEnabled_3 = Instance.new("TextButton"),
+	Frame_26 = Instance.new("Frame"),
+	UICorner_68 = Instance.new("UICorner"),
+	TextLabel_33 = Instance.new("TextLabel"),
+	UICorner_69 = Instance.new("UICorner"),
+	PHYSICAL = Instance.new("Frame"),
+	Title_4 = Instance.new("TextLabel"),
+	Default_4 = Instance.new("TextButton"),
+	Outer_4 = Instance.new("Frame"),
+	UICorner_70 = Instance.new("UICorner"),
+	OuterTop_4 = Instance.new("Frame"),
+	UICorner_71 = Instance.new("UICorner"),
+	Selects_4 = Instance.new("Frame"),
+	UIGridLayout_12 = Instance.new("UIGridLayout"),
+	Stats_4 = Instance.new("TextLabel"),
+	Thingy_4 = Instance.new("TextButton"),
+	UICorner_72 = Instance.new("UICorner"),
+	TextLabel_34 = Instance.new("TextLabel"),
+	Frame_27 = Instance.new("Frame"),
+	UICorner_73 = Instance.new("UICorner"),
+	Buttons_4 = Instance.new("Frame"),
+	Unlocked_4 = Instance.new("Frame"),
+	UIGridLayout_13 = Instance.new("UIGridLayout"),
+	Friction = Instance.new("TextBox"),
+	UICorner_74 = Instance.new("UICorner"),
+	TextLabel_35 = Instance.new("TextLabel"),
+	Frame_28 = Instance.new("Frame"),
+	UICorner_75 = Instance.new("UICorner"),
+	LOCK_9 = Instance.new("Frame"),
+	UICorner_76 = Instance.new("UICorner"),
+	TextLabel_36 = Instance.new("TextLabel"),
+	CanCollide = Instance.new("TextButton"),
+	Frame_29 = Instance.new("Frame"),
+	UICorner_77 = Instance.new("UICorner"),
+	TextLabel_37 = Instance.new("TextLabel"),
+	UICorner_78 = Instance.new("UICorner"),
+	FrictionWeight = Instance.new("TextBox"),
+	UICorner_79 = Instance.new("UICorner"),
+	TextLabel_38 = Instance.new("TextLabel"),
+	Frame_30 = Instance.new("Frame"),
+	UICorner_80 = Instance.new("UICorner"),
+	LOCK_10 = Instance.new("Frame"),
+	UICorner_81 = Instance.new("UICorner"),
+	TextLabel_39 = Instance.new("TextLabel"),
+	Density = Instance.new("TextBox"),
+	UICorner_82 = Instance.new("UICorner"),
+	TextLabel_40 = Instance.new("TextLabel"),
+	Frame_31 = Instance.new("Frame"),
+	UICorner_83 = Instance.new("UICorner"),
+	LOCK_11 = Instance.new("Frame"),
+	UICorner_84 = Instance.new("UICorner"),
+	TextLabel_41 = Instance.new("TextLabel"),
+	Locked_4 = Instance.new("Frame"),
+	UIGridLayout_14 = Instance.new("UIGridLayout"),
+	ElasticityWeight = Instance.new("TextBox"),
+	UICorner_85 = Instance.new("UICorner"),
+	TextLabel_42 = Instance.new("TextLabel"),
+	Frame_32 = Instance.new("Frame"),
+	UICorner_86 = Instance.new("UICorner"),
+	LOCK_12 = Instance.new("Frame"),
+	UICorner_87 = Instance.new("UICorner"),
+	TextLabel_43 = Instance.new("TextLabel"),
+	Elasticity = Instance.new("TextBox"),
+	UICorner_88 = Instance.new("UICorner"),
+	TextLabel_44 = Instance.new("TextLabel"),
+	Frame_33 = Instance.new("Frame"),
+	UICorner_89 = Instance.new("UICorner"),
+	LOCK_13 = Instance.new("Frame"),
+	UICorner_90 = Instance.new("UICorner"),
+	TextLabel_45 = Instance.new("TextLabel"),
+	PropertiesEnabled = Instance.new("TextButton"),
+	Frame_34 = Instance.new("Frame"),
+	UICorner_91 = Instance.new("UICorner"),
+	TextLabel_46 = Instance.new("TextLabel"),
+	UICorner_92 = Instance.new("UICorner"),
+	Submit_4 = Instance.new("TextButton"),
+	Frame_35 = Instance.new("Frame"),
+	UICorner_93 = Instance.new("UICorner"),
+	TextLabel_47 = Instance.new("TextLabel"),
+	UICorner_94 = Instance.new("UICorner"),
+	ANGULAR = Instance.new("Frame"),
+	Title_5 = Instance.new("TextLabel"),
+	Outer_5 = Instance.new("Frame"),
+	UICorner_95 = Instance.new("UICorner"),
+	OuterTop_5 = Instance.new("Frame"),
+	UICorner_96 = Instance.new("UICorner"),
+	Selects_5 = Instance.new("Frame"),
+	UIGridLayout_15 = Instance.new("UIGridLayout"),
+	Thingy_5 = Instance.new("TextButton"),
+	UICorner_97 = Instance.new("UICorner"),
+	TextLabel_48 = Instance.new("TextLabel"),
+	Frame_36 = Instance.new("Frame"),
+	UICorner_98 = Instance.new("UICorner"),
+	Stats_5 = Instance.new("TextLabel"),
+	Default_5 = Instance.new("TextButton"),
+	Buttons_5 = Instance.new("Frame"),
+	Unlocked_5 = Instance.new("Frame"),
+	UIGridLayout_16 = Instance.new("UIGridLayout"),
+	Radius_3 = Instance.new("TextBox"),
+	UICorner_99 = Instance.new("UICorner"),
+	TextLabel_49 = Instance.new("TextLabel"),
+	Frame_37 = Instance.new("Frame"),
+	UICorner_100 = Instance.new("UICorner"),
+	Enabled_4 = Instance.new("TextButton"),
+	Frame_38 = Instance.new("Frame"),
+	UICorner_101 = Instance.new("UICorner"),
+	TextLabel_50 = Instance.new("TextLabel"),
+	UICorner_102 = Instance.new("UICorner"),
+	Visible_3 = Instance.new("TextButton"),
+	Frame_39 = Instance.new("Frame"),
+	UICorner_103 = Instance.new("UICorner"),
+	TextLabel_51 = Instance.new("TextLabel"),
+	UICorner_104 = Instance.new("UICorner"),
+	Submit_5 = Instance.new("TextButton"),
+	Frame_40 = Instance.new("Frame"),
+	UICorner_105 = Instance.new("UICorner"),
+	TextLabel_52 = Instance.new("TextLabel"),
+	UICorner_106 = Instance.new("UICorner"),
+	Locked_5 = Instance.new("Frame"),
+	UIGridLayout_17 = Instance.new("UIGridLayout"),
+	UpperAngle_3 = Instance.new("TextBox"),
+	UICorner_107 = Instance.new("UICorner"),
+	TextLabel_53 = Instance.new("TextLabel"),
+	Frame_41 = Instance.new("Frame"),
+	UICorner_108 = Instance.new("UICorner"),
+	LOCK_14 = Instance.new("Frame"),
+	UICorner_109 = Instance.new("UICorner"),
+	TextLabel_54 = Instance.new("TextLabel"),
+	Restitution_3 = Instance.new("TextBox"),
+	UICorner_110 = Instance.new("UICorner"),
+	TextLabel_55 = Instance.new("TextLabel"),
+	Frame_42 = Instance.new("Frame"),
+	UICorner_111 = Instance.new("UICorner"),
+	LOCK_15 = Instance.new("Frame"),
+	UICorner_112 = Instance.new("UICorner"),
+	TextLabel_56 = Instance.new("TextLabel"),
+	LowerAngle_3 = Instance.new("TextBox"),
+	UICorner_113 = Instance.new("UICorner"),
+	TextLabel_57 = Instance.new("TextLabel"),
+	Frame_43 = Instance.new("Frame"),
+	UICorner_114 = Instance.new("UICorner"),
+	LOCK_16 = Instance.new("Frame"),
+	UICorner_115 = Instance.new("UICorner"),
+	TextLabel_58 = Instance.new("TextLabel"),
+	LimitsEnabled_4 = Instance.new("TextButton"),
+	Frame_44 = Instance.new("Frame"),
+	UICorner_116 = Instance.new("UICorner"),
+	TextLabel_59 = Instance.new("TextLabel"),
+	UICorner_117 = Instance.new("UICorner"),
+	SUSPENSION = Instance.new("Frame"),
+	Title_6 = Instance.new("TextLabel"),
+	Buttons_6 = Instance.new("Frame"),
+	Unlocked_6 = Instance.new("Frame"),
+	UIGridLayout_18 = Instance.new("UIGridLayout"),
+	Stiffness = Instance.new("TextBox"),
+	UICorner_118 = Instance.new("UICorner"),
+	TextLabel_60 = Instance.new("TextLabel"),
+	Frame_45 = Instance.new("Frame"),
+	UICorner_119 = Instance.new("UICorner"),
+	Damping = Instance.new("TextBox"),
+	UICorner_120 = Instance.new("UICorner"),
+	TextLabel_61 = Instance.new("TextLabel"),
+	Frame_46 = Instance.new("Frame"),
+	UICorner_121 = Instance.new("UICorner"),
+	MaxForce = Instance.new("TextBox"),
+	UICorner_122 = Instance.new("UICorner"),
+	TextLabel_62 = Instance.new("TextLabel"),
+	Frame_47 = Instance.new("Frame"),
+	UICorner_123 = Instance.new("UICorner"),
+	FreeLength = Instance.new("TextBox"),
+	UICorner_124 = Instance.new("UICorner"),
+	TextLabel_63 = Instance.new("TextLabel"),
+	Frame_48 = Instance.new("Frame"),
+	UICorner_125 = Instance.new("UICorner"),
+	Locked_6 = Instance.new("Frame"),
+	UIGridLayout_19 = Instance.new("UIGridLayout"),
+	MinLength = Instance.new("TextBox"),
+	UICorner_126 = Instance.new("UICorner"),
+	TextLabel_64 = Instance.new("TextLabel"),
+	Frame_49 = Instance.new("Frame"),
+	UICorner_127 = Instance.new("UICorner"),
+	LOCK_17 = Instance.new("Frame"),
+	UICorner_128 = Instance.new("UICorner"),
+	TextLabel_65 = Instance.new("TextLabel"),
+	MaxLength = Instance.new("TextBox"),
+	UICorner_129 = Instance.new("UICorner"),
+	TextLabel_66 = Instance.new("TextLabel"),
+	Frame_50 = Instance.new("Frame"),
+	UICorner_130 = Instance.new("UICorner"),
+	LOCK_18 = Instance.new("Frame"),
+	UICorner_131 = Instance.new("UICorner"),
+	TextLabel_67 = Instance.new("TextLabel"),
+	LimitsEnabled_5 = Instance.new("TextButton"),
+	Frame_51 = Instance.new("Frame"),
+	UICorner_132 = Instance.new("UICorner"),
+	TextLabel_68 = Instance.new("TextLabel"),
+	UICorner_133 = Instance.new("UICorner"),
+	Submit_6 = Instance.new("TextButton"),
+	Frame_52 = Instance.new("Frame"),
+	UICorner_134 = Instance.new("UICorner"),
+	TextLabel_69 = Instance.new("TextLabel"),
+	UICorner_135 = Instance.new("UICorner"),
+	Outer_6 = Instance.new("Frame"),
+	UICorner_136 = Instance.new("UICorner"),
+	OuterTop_6 = Instance.new("Frame"),
+	UICorner_137 = Instance.new("UICorner"),
+	Selects_6 = Instance.new("Frame"),
+	UIGridLayout_20 = Instance.new("UIGridLayout"),
+	Thingy_6 = Instance.new("TextButton"),
+	UICorner_138 = Instance.new("UICorner"),
+	TextLabel_70 = Instance.new("TextLabel"),
+	Frame_53 = Instance.new("Frame"),
+	UICorner_139 = Instance.new("UICorner"),
+	Stats_6 = Instance.new("TextLabel"),
+	Default_6 = Instance.new("TextButton"),
+	MOTORS = Instance.new("Frame"),
+	Title_7 = Instance.new("TextLabel"),
+	Outer_7 = Instance.new("Frame"),
+	UICorner_140 = Instance.new("UICorner"),
+	OuterTop_7 = Instance.new("Frame"),
+	UICorner_141 = Instance.new("UICorner"),
+	Selects_7 = Instance.new("Frame"),
+	UIGridLayout_21 = Instance.new("UIGridLayout"),
+	Thingy_7 = Instance.new("TextButton"),
+	UICorner_142 = Instance.new("UICorner"),
+	TextLabel_71 = Instance.new("TextLabel"),
+	Frame_54 = Instance.new("Frame"),
+	UICorner_143 = Instance.new("UICorner"),
+	Stats_7 = Instance.new("TextLabel"),
+	Default_7 = Instance.new("TextButton"),
+	Buttons_7 = Instance.new("Frame"),
+	Unlocked_7 = Instance.new("Frame"),
+	UIGridLayout_22 = Instance.new("UIGridLayout"),
+	Radius_4 = Instance.new("TextBox"),
+	UICorner_144 = Instance.new("UICorner"),
+	TextLabel_72 = Instance.new("TextLabel"),
+	Frame_55 = Instance.new("Frame"),
+	UICorner_145 = Instance.new("UICorner"),
+	Enabled_5 = Instance.new("TextButton"),
+	Frame_56 = Instance.new("Frame"),
+	UICorner_146 = Instance.new("UICorner"),
+	TextLabel_73 = Instance.new("TextLabel"),
+	UICorner_147 = Instance.new("UICorner"),
+	Visible_4 = Instance.new("TextButton"),
+	Frame_57 = Instance.new("Frame"),
+	UICorner_148 = Instance.new("UICorner"),
+	TextLabel_74 = Instance.new("TextLabel"),
+	UICorner_149 = Instance.new("UICorner"),
+	Submit_7 = Instance.new("TextButton"),
+	Frame_58 = Instance.new("Frame"),
+	UICorner_150 = Instance.new("UICorner"),
+	TextLabel_75 = Instance.new("TextLabel"),
+	UICorner_151 = Instance.new("UICorner"),
+	Locked_7 = Instance.new("Frame"),
+	UIGridLayout_23 = Instance.new("UIGridLayout"),
+	UpperAngle_4 = Instance.new("TextBox"),
+	UICorner_152 = Instance.new("UICorner"),
+	TextLabel_76 = Instance.new("TextLabel"),
+	Frame_59 = Instance.new("Frame"),
+	UICorner_153 = Instance.new("UICorner"),
+	LOCK_19 = Instance.new("Frame"),
+	UICorner_154 = Instance.new("UICorner"),
+	TextLabel_77 = Instance.new("TextLabel"),
+	Restitution_4 = Instance.new("TextBox"),
+	UICorner_155 = Instance.new("UICorner"),
+	TextLabel_78 = Instance.new("TextLabel"),
+	Frame_60 = Instance.new("Frame"),
+	UICorner_156 = Instance.new("UICorner"),
+	LOCK_20 = Instance.new("Frame"),
+	UICorner_157 = Instance.new("UICorner"),
+	TextLabel_79 = Instance.new("TextLabel"),
+	LowerAngle_4 = Instance.new("TextBox"),
+	UICorner_158 = Instance.new("UICorner"),
+	TextLabel_80 = Instance.new("TextLabel"),
+	Frame_61 = Instance.new("Frame"),
+	UICorner_159 = Instance.new("UICorner"),
+	LOCK_21 = Instance.new("Frame"),
+	UICorner_160 = Instance.new("UICorner"),
+	TextLabel_81 = Instance.new("TextLabel"),
+	LimitsEnabled_6 = Instance.new("TextButton"),
+	Frame_62 = Instance.new("Frame"),
+	UICorner_161 = Instance.new("UICorner"),
+	TextLabel_82 = Instance.new("TextLabel"),
+	UICorner_162 = Instance.new("UICorner"),
+	Min2 = Instance.new("Frame"),
+	Min_4 = Instance.new("Frame"),
+	Min_5 = Instance.new("Frame"),
+	UICorner_163 = Instance.new("UICorner"),
+	Button1_2 = Instance.new("Frame"),
+	UIGridLayout_24 = Instance.new("UIGridLayout"),
+	TextButton_2 = Instance.new("TextButton"),
+	UICorner_164 = Instance.new("UICorner"),
+	Buttons_8 = Instance.new("ScrollingFrame"),
+	UIGridLayout_25 = Instance.new("UIGridLayout"),
+	ROD_2 = Instance.new("TextButton"),
+	UICorner_165 = Instance.new("UICorner"),
+	MOTORS_2 = Instance.new("TextButton"),
+	UICorner_166 = Instance.new("UICorner"),
+	SUSPENSION_2 = Instance.new("TextButton"),
+	UICorner_167 = Instance.new("UICorner"),
+	PRISMATIC_2 = Instance.new("TextButton"),
+	UICorner_168 = Instance.new("UICorner"),
+	CYLINDRICAL_2 = Instance.new("TextButton"),
+	UICorner_169 = Instance.new("UICorner"),
+	PHYSICAL_2 = Instance.new("TextButton"),
+	UICorner_170 = Instance.new("UICorner"),
+	ANGULAR_2 = Instance.new("TextButton"),
+	UICorner_171 = Instance.new("UICorner"),
+	Status = Instance.new("TextLabel"),
+	Debug = Instance.new("Frame"),
+	ScrollingFrame = Instance.new("ScrollingFrame"),
+	UIListLayout = Instance.new("UIListLayout"),
+	Blot = Instance.new("TextLabel"),
+}
+
+--Properties:
+
+V21332.V21332.Name = "V2#1332"
+V21332.V21332.Parent = game.CoreGui
+V21332.V21332.Enabled = false
+
+V21332.Frame.Parent = V21332.V21332
+V21332.Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.Frame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+V21332.Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.Frame.Size = UDim2.new(0, 500, 0, 200)
+V21332.Frame.ZIndex = 0
+
+V21332.UICorner.CornerRadius = UDim.new(0, 3)
+V21332.UICorner.Parent = V21332.Frame
+
+V21332.Min.Name = "Min"
+V21332.Min.Parent = V21332.Frame
+V21332.Min.AnchorPoint = Vector2.new(1, 0)
+V21332.Min.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+V21332.Min.BorderSizePixel = 0
+V21332.Min.Position = UDim2.new(1, 0, 0, -25)
+V21332.Min.Size = UDim2.new(0, 100, 0, 25)
+
+V21332.Min_2.Name = "Min"
+V21332.Min_2.Parent = V21332.Min
+V21332.Min_2.AnchorPoint = Vector2.new(1, 0)
+V21332.Min_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+V21332.Min_2.BorderSizePixel = 0
+V21332.Min_2.Position = UDim2.new(1, 0, 0, 25)
+V21332.Min_2.Size = UDim2.new(0, 100, 0, 25)
+V21332.Min_2.ZIndex = -100
+
+V21332.Min_3.Name = "Min"
+V21332.Min_3.Parent = V21332.Min
+V21332.Min_3.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+V21332.Min_3.BorderSizePixel = 0
+V21332.Min_3.Position = UDim2.new(0, -25, 0, 0)
+V21332.Min_3.Size = UDim2.new(0, 50, 0, 50)
+V21332.Min_3.ZIndex = -100
+
+V21332.UICorner_2.Parent = V21332.Min_3
+
+V21332.Button2.Name = "Button2"
+V21332.Button2.Parent = V21332.Min
+V21332.Button2.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.Button2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Button2.BackgroundTransparency = 1.000
+V21332.Button2.Position = UDim2.new(0.5, -10, 0.5, 0)
+V21332.Button2.Size = UDim2.new(0, 120, 0, 20)
+
+V21332.UIGridLayout.Parent = V21332.Button2
+V21332.UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout.CellSize = UDim2.new(0, 25, 0, 25)
+
+V21332.ImageButton.Parent = V21332.Button2
+V21332.ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.ImageButton.BackgroundTransparency = 1.000
+V21332.ImageButton.Size = UDim2.new(0, 100, 0, 100)
+V21332.ImageButton.ZIndex = 10
+V21332.ImageButton.Image = "http://www.roblox.com/asset/?id=6031280882"
+
+V21332.Button1.Name = "Button1"
+V21332.Button1.Parent = V21332.Min
+V21332.Button1.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.Button1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Button1.BackgroundTransparency = 1.000
+V21332.Button1.Position = UDim2.new(0.5, -10, 0.5, 0)
+V21332.Button1.Size = UDim2.new(0, 120, 0, 20)
+
+V21332.UIGridLayout_2.Parent = V21332.Button1
+V21332.UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout_2.CellSize = UDim2.new(0, 55, 0, 25)
+
+V21332.TextButton.Parent = V21332.Button1
+V21332.TextButton.BackgroundColor3 = Color3.fromRGB(143, 0, 0)
+V21332.TextButton.Size = UDim2.new(0, 200, 0, 50)
+V21332.TextButton.AutoButtonColor = false
+V21332.TextButton.Font = Enum.Font.Code
+V21332.TextButton.Text = "-"
+V21332.TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextButton.TextSize = 14.000
+
+V21332.UICorner_3.CornerRadius = UDim.new(0, 4)
+V21332.UICorner_3.Parent = V21332.TextButton
+
+V21332.ImageButton_2.Parent = V21332.Button1
+V21332.ImageButton_2.Active = false
+V21332.ImageButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.ImageButton_2.BackgroundTransparency = 1.000
+V21332.ImageButton_2.LayoutOrder = -1
+V21332.ImageButton_2.Selectable = false
+V21332.ImageButton_2.Size = UDim2.new(0, 100, 0, 100)
+V21332.ImageButton_2.AutoButtonColor = false
+V21332.ImageButton_2.Image = "http://www.roblox.com/asset/?id=6031280882"
+V21332.ImageButton_2.ImageTransparency = 1.000
+
+V21332.ButtonFrame.Name = "ButtonFrame"
+V21332.ButtonFrame.Parent = V21332.Frame
+V21332.ButtonFrame.AnchorPoint = Vector2.new(0.5, 0)
+V21332.ButtonFrame.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+V21332.ButtonFrame.Position = UDim2.new(0.5, 0, 0, 5)
+V21332.ButtonFrame.Size = UDim2.new(0, 490, 0, 35)
+V21332.ButtonFrame.ZIndex = 0
+
+V21332.UICorner_4.Parent = V21332.ButtonFrame
+
+V21332.SelectionFrame.Name = "SelectionFrame"
+V21332.SelectionFrame.Parent = V21332.Frame
+V21332.SelectionFrame.AnchorPoint = Vector2.new(0.5, 1)
+V21332.SelectionFrame.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+V21332.SelectionFrame.Position = UDim2.new(0.5, 0, 1, -5)
+V21332.SelectionFrame.Size = UDim2.new(0, 490, 0, 150)
+V21332.SelectionFrame.ZIndex = 0
+
+V21332.UICorner_5.Parent = V21332.SelectionFrame
+
+V21332.Usable.Name = "Usable"
+V21332.Usable.Parent = V21332.SelectionFrame
+V21332.Usable.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.Usable.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Usable.BackgroundTransparency = 1.000
+V21332.Usable.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.Usable.Size = UDim2.new(1, -10, 1, -10)
+
+V21332.PRISMATIC.Name = "PRISMATIC"
+V21332.PRISMATIC.Parent = V21332.Usable
+V21332.PRISMATIC.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.PRISMATIC.BackgroundTransparency = 1.000
+V21332.PRISMATIC.Size = UDim2.new(1, 0, 1, 0)
+V21332.PRISMATIC.Visible = false
+
+V21332.Title.Name = "Title"
+V21332.Title.Parent = V21332.PRISMATIC
+V21332.Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title.BackgroundTransparency = 1.000
+V21332.Title.BorderColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title.Size = UDim2.new(0, 200, 0, 25)
+V21332.Title.Font = Enum.Font.Code
+V21332.Title.Text = "PRISMATIC CONSTRAINTS"
+V21332.Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title.TextSize = 20.000
+V21332.Title.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title.TextStrokeTransparency = 0.800
+V21332.Title.TextXAlignment = Enum.TextXAlignment.Left
+
+V21332.Outer.Name = "Outer"
+V21332.Outer.Parent = V21332.PRISMATIC
+V21332.Outer.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+V21332.Outer.Position = UDim2.new(0, 0, 0, 170)
+V21332.Outer.Size = UDim2.new(1, 0, 1, 0)
+V21332.Outer.Visible = false
+V21332.Outer.ZIndex = 0
+
+V21332.UICorner_6.CornerRadius = UDim.new(0, 4)
+V21332.UICorner_6.Parent = V21332.Outer
+
+V21332.OuterTop.Name = "OuterTop"
+V21332.OuterTop.Parent = V21332.Outer
+V21332.OuterTop.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.OuterTop.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+V21332.OuterTop.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.OuterTop.Size = UDim2.new(1, 20, 1, 20)
+V21332.OuterTop.ZIndex = -1
+
+V21332.UICorner_7.CornerRadius = UDim.new(0, 4)
+V21332.UICorner_7.Parent = V21332.OuterTop
+
+V21332.Selects.Name = "Selects"
+V21332.Selects.Parent = V21332.Outer
+V21332.Selects.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.Selects.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Selects.BackgroundTransparency = 1.000
+V21332.Selects.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.Selects.Size = UDim2.new(1, -10, 1, -10)
+
+V21332.UIGridLayout_3.Parent = V21332.Selects
+V21332.UIGridLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout_3.CellPadding = UDim2.new(0, 5, 0, 20)
+V21332.UIGridLayout_3.CellSize = UDim2.new(0, 100, 0, 25)
+
+V21332.Thingy.Name = "Thingy"
+V21332.Thingy.Parent = V21332.Outer
+V21332.Thingy.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Thingy.Size = UDim2.new(0, 200, 0, 50)
+V21332.Thingy.Visible = false
+V21332.Thingy.AutoButtonColor = false
+V21332.Thingy.Font = Enum.Font.Code
+V21332.Thingy.Text = "Steering"
+V21332.Thingy.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Thingy.TextSize = 14.000
+
+V21332.UICorner_8.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_8.Parent = V21332.Thingy
+
+V21332.TextLabel.Parent = V21332.Thingy
+V21332.TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel.BackgroundTransparency = 1.000
+V21332.TextLabel.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel.Font = Enum.Font.SourceSans
+V21332.TextLabel.Text = "Suspension"
+V21332.TextLabel.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel.TextSize = 14.000
+
+V21332.Frame_2.Parent = V21332.Thingy
+V21332.Frame_2.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_2.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_2.ZIndex = 0
+
+V21332.UICorner_9.Parent = V21332.Frame_2
+
+V21332.Stats.Name = "Stats"
+V21332.Stats.Parent = V21332.Outer
+V21332.Stats.AnchorPoint = Vector2.new(1, 1)
+V21332.Stats.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Stats.BackgroundTransparency = 1.000
+V21332.Stats.Position = UDim2.new(1, 220, 1, 0)
+V21332.Stats.Size = UDim2.new(0, 200, 1, 50)
+V21332.Stats.Font = Enum.Font.Code
+V21332.Stats.Text = ""
+V21332.Stats.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Stats.TextSize = 14.000
+V21332.Stats.TextStrokeTransparency = 0.000
+V21332.Stats.TextWrapped = true
+V21332.Stats.TextXAlignment = Enum.TextXAlignment.Left
+V21332.Stats.TextYAlignment = Enum.TextYAlignment.Top
+
+V21332.Default.Name = "Default"
+V21332.Default.Parent = V21332.PRISMATIC
+V21332.Default.AnchorPoint = Vector2.new(1, 0)
+V21332.Default.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Default.BackgroundTransparency = 1.000
+V21332.Default.Position = UDim2.new(1, 0, 0, 0)
+V21332.Default.Size = UDim2.new(0, 100, 0, 25)
+V21332.Default.ZIndex = 5
+V21332.Default.Font = Enum.Font.Code
+V21332.Default.Text = "SET DEFAULT (ROUNDED)"
+V21332.Default.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.Default.TextSize = 14.000
+V21332.Default.TextStrokeColor3 = Color3.fromRGB(85, 0, 0)
+V21332.Default.TextStrokeTransparency = 0.000
+V21332.Default.TextXAlignment = Enum.TextXAlignment.Right
+
+V21332.Buttons.Name = "Buttons"
+V21332.Buttons.Parent = V21332.PRISMATIC
+V21332.Buttons.AnchorPoint = Vector2.new(1, 1)
+V21332.Buttons.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Buttons.BackgroundTransparency = 1.000
+V21332.Buttons.Position = UDim2.new(1, 0, 1, 0)
+V21332.Buttons.Size = UDim2.new(1, 0, 0, 110)
+V21332.Buttons.Visible = false
+
+V21332.Unlocked.Name = "Unlocked"
+V21332.Unlocked.Parent = V21332.Buttons
+V21332.Unlocked.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.Unlocked.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Unlocked.BackgroundTransparency = 1.000
+V21332.Unlocked.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.Unlocked.Size = UDim2.new(1, -10, 1, -10)
+
+V21332.UIGridLayout_4.Parent = V21332.Unlocked
+V21332.UIGridLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout_4.CellSize = UDim2.new(0, 100, 0, 25)
+
+V21332.Radius.Name = "Radius"
+V21332.Radius.Parent = V21332.Unlocked
+V21332.Radius.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Radius.Size = UDim2.new(0, 200, 0, 50)
+V21332.Radius.ClearTextOnFocus = false
+V21332.Radius.Font = Enum.Font.Code
+V21332.Radius.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+V21332.Radius.PlaceholderText = "0"
+V21332.Radius.Text = "0"
+V21332.Radius.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Radius.TextSize = 14.000
+
+V21332.UICorner_10.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_10.Parent = V21332.Radius
+
+V21332.TextLabel_2.Parent = V21332.Radius
+V21332.TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_2.BackgroundTransparency = 1.000
+V21332.TextLabel_2.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_2.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_2.Font = Enum.Font.SourceSans
+V21332.TextLabel_2.Text = "Radius"
+V21332.TextLabel_2.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_2.TextSize = 14.000
+
+V21332.Frame_3.Parent = V21332.Radius
+V21332.Frame_3.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_3.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_3.ZIndex = 0
+
+V21332.UICorner_11.Parent = V21332.Frame_3
+
+V21332.Enabled.Name = "Enabled"
+V21332.Enabled.Parent = V21332.Unlocked
+V21332.Enabled.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Enabled.Size = UDim2.new(0, 200, 0, 50)
+V21332.Enabled.AutoButtonColor = false
+V21332.Enabled.Font = Enum.Font.Code
+V21332.Enabled.Text = "TRUE"
+V21332.Enabled.TextColor3 = Color3.fromRGB(85, 255, 0)
+V21332.Enabled.TextSize = 14.000
+
+V21332.Frame_4.Parent = V21332.Enabled
+V21332.Frame_4.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_4.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_4.ZIndex = 0
+
+V21332.UICorner_12.Parent = V21332.Frame_4
+
+V21332.TextLabel_3.Parent = V21332.Enabled
+V21332.TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_3.BackgroundTransparency = 1.000
+V21332.TextLabel_3.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_3.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_3.Font = Enum.Font.SourceSans
+V21332.TextLabel_3.Text = "Enabled"
+V21332.TextLabel_3.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_3.TextSize = 14.000
+
+V21332.UICorner_13.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_13.Parent = V21332.Enabled
+
+V21332.Visible.Name = "Visible"
+V21332.Visible.Parent = V21332.Unlocked
+V21332.Visible.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Visible.Size = UDim2.new(0, 200, 0, 50)
+V21332.Visible.AutoButtonColor = false
+V21332.Visible.Font = Enum.Font.Code
+V21332.Visible.Text = "FALSE"
+V21332.Visible.TextColor3 = Color3.fromRGB(178, 178, 178)
+V21332.Visible.TextSize = 14.000
+
+V21332.Frame_5.Parent = V21332.Visible
+V21332.Frame_5.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_5.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_5.ZIndex = 0
+
+V21332.UICorner_14.Parent = V21332.Frame_5
+
+V21332.TextLabel_4.Parent = V21332.Visible
+V21332.TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_4.BackgroundTransparency = 1.000
+V21332.TextLabel_4.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_4.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_4.Font = Enum.Font.SourceSans
+V21332.TextLabel_4.Text = "Visible"
+V21332.TextLabel_4.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_4.TextSize = 14.000
+
+V21332.UICorner_15.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_15.Parent = V21332.Visible
+
+V21332.Submit.Name = "Submit"
+V21332.Submit.Parent = V21332.Unlocked
+V21332.Submit.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Submit.Size = UDim2.new(0, 200, 0, 50)
+V21332.Submit.AutoButtonColor = false
+V21332.Submit.Font = Enum.Font.Code
+V21332.Submit.Text = "SUBMIT"
+V21332.Submit.TextColor3 = Color3.fromRGB(85, 255, 0)
+V21332.Submit.TextSize = 14.000
+
+V21332.Frame_6.Parent = V21332.Submit
+V21332.Frame_6.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_6.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_6.ZIndex = 0
+
+V21332.UICorner_16.Parent = V21332.Frame_6
+
+V21332.TextLabel_5.Parent = V21332.Submit
+V21332.TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_5.BackgroundTransparency = 1.000
+V21332.TextLabel_5.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_5.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_5.Font = Enum.Font.SourceSans
+V21332.TextLabel_5.Text = "Selection"
+V21332.TextLabel_5.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_5.TextSize = 14.000
+
+V21332.UICorner_17.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_17.Parent = V21332.Submit
+
+V21332.Locked.Name = "Locked"
+V21332.Locked.Parent = V21332.Buttons
+V21332.Locked.AnchorPoint = Vector2.new(0.5, 0.800000012)
+V21332.Locked.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Locked.BackgroundTransparency = 1.000
+V21332.Locked.Position = UDim2.new(0.5, 0, 0.800000012, 0)
+V21332.Locked.Size = UDim2.new(1, -10, 1, -80)
+
+V21332.UIGridLayout_5.Parent = V21332.Locked
+V21332.UIGridLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout_5.CellSize = UDim2.new(0, 100, 0, 25)
+
+V21332.UpperAngle.Name = "UpperAngle"
+V21332.UpperAngle.Parent = V21332.Locked
+V21332.UpperAngle.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.UpperAngle.Size = UDim2.new(0, 200, 0, 50)
+V21332.UpperAngle.ClearTextOnFocus = false
+V21332.UpperAngle.Font = Enum.Font.Code
+V21332.UpperAngle.PlaceholderText = "0"
+V21332.UpperAngle.Text = "0"
+V21332.UpperAngle.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.UpperAngle.TextSize = 14.000
+
+V21332.UICorner_18.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_18.Parent = V21332.UpperAngle
+
+V21332.TextLabel_6.Parent = V21332.UpperAngle
+V21332.TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_6.BackgroundTransparency = 1.000
+V21332.TextLabel_6.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_6.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_6.Font = Enum.Font.SourceSans
+V21332.TextLabel_6.Text = "UpperAngle"
+V21332.TextLabel_6.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_6.TextSize = 14.000
+
+V21332.Frame_7.Parent = V21332.UpperAngle
+V21332.Frame_7.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_7.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_7.ZIndex = 0
+
+V21332.UICorner_19.Parent = V21332.Frame_7
+
+V21332.LOCK.Name = "LOCK"
+V21332.LOCK.Parent = V21332.UpperAngle
+V21332.LOCK.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.LOCK.BackgroundTransparency = 0.500
+V21332.LOCK.Size = UDim2.new(0, 100, 0, 37)
+V21332.LOCK.ZIndex = 4
+
+V21332.UICorner_20.Parent = V21332.LOCK
+
+V21332.TextLabel_7.Parent = V21332.LOCK
+V21332.TextLabel_7.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_7.BackgroundTransparency = 1.000
+V21332.TextLabel_7.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.TextLabel_7.Size = UDim2.new(1, 0, 0, 25)
+V21332.TextLabel_7.ZIndex = 6
+V21332.TextLabel_7.Font = Enum.Font.SourceSansBold
+V21332.TextLabel_7.Text = "SET LIMITS ENABLED TO FALSE"
+V21332.TextLabel_7.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.TextLabel_7.TextScaled = true
+V21332.TextLabel_7.TextSize = 14.000
+V21332.TextLabel_7.TextWrapped = true
+
+V21332.Restitution.Name = "Restitution"
+V21332.Restitution.Parent = V21332.Locked
+V21332.Restitution.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Restitution.Size = UDim2.new(0, 200, 0, 50)
+V21332.Restitution.ClearTextOnFocus = false
+V21332.Restitution.Font = Enum.Font.Code
+V21332.Restitution.PlaceholderText = "0"
+V21332.Restitution.Text = "0"
+V21332.Restitution.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Restitution.TextSize = 14.000
+
+V21332.UICorner_21.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_21.Parent = V21332.Restitution
+
+V21332.TextLabel_8.Parent = V21332.Restitution
+V21332.TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_8.BackgroundTransparency = 1.000
+V21332.TextLabel_8.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_8.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_8.Font = Enum.Font.SourceSans
+V21332.TextLabel_8.Text = "Restitution"
+V21332.TextLabel_8.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_8.TextSize = 14.000
+
+V21332.Frame_8.Parent = V21332.Restitution
+V21332.Frame_8.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_8.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_8.ZIndex = 0
+
+V21332.UICorner_22.Parent = V21332.Frame_8
+
+V21332.LOCK_2.Name = "LOCK"
+V21332.LOCK_2.Parent = V21332.Restitution
+V21332.LOCK_2.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.LOCK_2.BackgroundTransparency = 0.500
+V21332.LOCK_2.Size = UDim2.new(0, 100, 0, 37)
+V21332.LOCK_2.ZIndex = 4
+
+V21332.UICorner_23.Parent = V21332.LOCK_2
+
+V21332.TextLabel_9.Parent = V21332.LOCK_2
+V21332.TextLabel_9.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_9.BackgroundTransparency = 1.000
+V21332.TextLabel_9.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.TextLabel_9.Size = UDim2.new(1, 0, 0, 25)
+V21332.TextLabel_9.ZIndex = 6
+V21332.TextLabel_9.Font = Enum.Font.SourceSansBold
+V21332.TextLabel_9.Text = "SET LIMITS ENABLED TO FALSE"
+V21332.TextLabel_9.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.TextLabel_9.TextScaled = true
+V21332.TextLabel_9.TextSize = 14.000
+V21332.TextLabel_9.TextWrapped = true
+
+V21332.LowerAngle.Name = "LowerAngle"
+V21332.LowerAngle.Parent = V21332.Locked
+V21332.LowerAngle.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.LowerAngle.Size = UDim2.new(0, 200, 0, 50)
+V21332.LowerAngle.ClearTextOnFocus = false
+V21332.LowerAngle.Font = Enum.Font.Code
+V21332.LowerAngle.PlaceholderText = "0"
+V21332.LowerAngle.Text = "0"
+V21332.LowerAngle.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.LowerAngle.TextSize = 14.000
+
+V21332.UICorner_24.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_24.Parent = V21332.LowerAngle
+
+V21332.TextLabel_10.Parent = V21332.LowerAngle
+V21332.TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_10.BackgroundTransparency = 1.000
+V21332.TextLabel_10.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_10.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_10.Font = Enum.Font.SourceSans
+V21332.TextLabel_10.Text = "LowerAngle"
+V21332.TextLabel_10.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_10.TextSize = 14.000
+
+V21332.Frame_9.Parent = V21332.LowerAngle
+V21332.Frame_9.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_9.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_9.ZIndex = 0
+
+V21332.UICorner_25.Parent = V21332.Frame_9
+
+V21332.LOCK_3.Name = "LOCK"
+V21332.LOCK_3.Parent = V21332.LowerAngle
+V21332.LOCK_3.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.LOCK_3.BackgroundTransparency = 0.500
+V21332.LOCK_3.Size = UDim2.new(0, 100, 0, 37)
+V21332.LOCK_3.ZIndex = 4
+
+V21332.UICorner_26.Parent = V21332.LOCK_3
+
+V21332.TextLabel_11.Parent = V21332.LOCK_3
+V21332.TextLabel_11.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_11.BackgroundTransparency = 1.000
+V21332.TextLabel_11.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.TextLabel_11.Size = UDim2.new(1, 0, 0, 25)
+V21332.TextLabel_11.ZIndex = 6
+V21332.TextLabel_11.Font = Enum.Font.SourceSansBold
+V21332.TextLabel_11.Text = "SET LIMITS ENABLED TO FALSE"
+V21332.TextLabel_11.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.TextLabel_11.TextScaled = true
+V21332.TextLabel_11.TextSize = 14.000
+V21332.TextLabel_11.TextWrapped = true
+
+V21332.LimitsEnabled.Name = "LimitsEnabled"
+V21332.LimitsEnabled.Parent = V21332.Locked
+V21332.LimitsEnabled.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.LimitsEnabled.Size = UDim2.new(0, 200, 0, 50)
+V21332.LimitsEnabled.AutoButtonColor = false
+V21332.LimitsEnabled.Font = Enum.Font.Code
+V21332.LimitsEnabled.Text = "TRUE"
+V21332.LimitsEnabled.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.LimitsEnabled.TextSize = 14.000
+
+V21332.Frame_10.Parent = V21332.LimitsEnabled
+V21332.Frame_10.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_10.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_10.ZIndex = 0
+
+V21332.UICorner_27.Parent = V21332.Frame_10
+
+V21332.TextLabel_12.Parent = V21332.LimitsEnabled
+V21332.TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_12.BackgroundTransparency = 1.000
+V21332.TextLabel_12.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_12.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_12.Font = Enum.Font.SourceSans
+V21332.TextLabel_12.Text = "LimitsEnabled"
+V21332.TextLabel_12.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_12.TextSize = 14.000
+
+V21332.UICorner_28.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_28.Parent = V21332.LimitsEnabled
+
+V21332.ROD.Name = "ROD"
+V21332.ROD.Parent = V21332.Usable
+V21332.ROD.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.ROD.BackgroundTransparency = 1.000
+V21332.ROD.Size = UDim2.new(1, 0, 1, 0)
+V21332.ROD.Visible = false
+
+V21332.Title_2.Name = "Title"
+V21332.Title_2.Parent = V21332.ROD
+V21332.Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title_2.BackgroundTransparency = 1.000
+V21332.Title_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title_2.Size = UDim2.new(0, 200, 0, 25)
+V21332.Title_2.Font = Enum.Font.Code
+V21332.Title_2.Text = "ROD CONSTRAINTS"
+V21332.Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title_2.TextSize = 20.000
+V21332.Title_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title_2.TextStrokeTransparency = 0.800
+V21332.Title_2.TextWrapped = true
+V21332.Title_2.TextXAlignment = Enum.TextXAlignment.Left
+
+V21332.Default_2.Name = "Default"
+V21332.Default_2.Parent = V21332.ROD
+V21332.Default_2.AnchorPoint = Vector2.new(1, 0)
+V21332.Default_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Default_2.BackgroundTransparency = 1.000
+V21332.Default_2.Position = UDim2.new(1, 0, 0, 0)
+V21332.Default_2.Size = UDim2.new(0, 100, 0, 25)
+V21332.Default_2.ZIndex = 5
+V21332.Default_2.Font = Enum.Font.Code
+V21332.Default_2.Text = "SET DEFAULT (ROUNDED)"
+V21332.Default_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.Default_2.TextSize = 14.000
+V21332.Default_2.TextStrokeColor3 = Color3.fromRGB(85, 0, 0)
+V21332.Default_2.TextStrokeTransparency = 0.000
+V21332.Default_2.TextXAlignment = Enum.TextXAlignment.Right
+
+V21332.Outer_2.Name = "Outer"
+V21332.Outer_2.Parent = V21332.ROD
+V21332.Outer_2.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+V21332.Outer_2.Position = UDim2.new(0, 0, 0, 170)
+V21332.Outer_2.Size = UDim2.new(1, 0, 1, 0)
+V21332.Outer_2.ZIndex = 0
+
+V21332.UICorner_29.CornerRadius = UDim.new(0, 4)
+V21332.UICorner_29.Parent = V21332.Outer_2
+
+V21332.OuterTop_2.Name = "OuterTop"
+V21332.OuterTop_2.Parent = V21332.Outer_2
+V21332.OuterTop_2.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.OuterTop_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+V21332.OuterTop_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.OuterTop_2.Size = UDim2.new(1, 20, 1, 20)
+V21332.OuterTop_2.ZIndex = -1
+
+V21332.UICorner_30.CornerRadius = UDim.new(0, 4)
+V21332.UICorner_30.Parent = V21332.OuterTop_2
+
+V21332.Selects_2.Name = "Selects"
+V21332.Selects_2.Parent = V21332.Outer_2
+V21332.Selects_2.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.Selects_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Selects_2.BackgroundTransparency = 1.000
+V21332.Selects_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.Selects_2.Size = UDim2.new(1, -10, 1, -10)
+
+V21332.UIGridLayout_6.Parent = V21332.Selects_2
+V21332.UIGridLayout_6.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout_6.CellPadding = UDim2.new(0, 5, 0, 20)
+V21332.UIGridLayout_6.CellSize = UDim2.new(0, 100, 0, 25)
+
+V21332.Stats_2.Name = "Stats"
+V21332.Stats_2.Parent = V21332.Outer_2
+V21332.Stats_2.AnchorPoint = Vector2.new(1, 1)
+V21332.Stats_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Stats_2.BackgroundTransparency = 1.000
+V21332.Stats_2.Position = UDim2.new(1, 220, 1, 0)
+V21332.Stats_2.Size = UDim2.new(0, 200, 1, 50)
+V21332.Stats_2.Font = Enum.Font.Code
+V21332.Stats_2.Text = ""
+V21332.Stats_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Stats_2.TextSize = 14.000
+V21332.Stats_2.TextStrokeTransparency = 0.000
+V21332.Stats_2.TextWrapped = true
+V21332.Stats_2.TextXAlignment = Enum.TextXAlignment.Left
+V21332.Stats_2.TextYAlignment = Enum.TextYAlignment.Top
+
+V21332.Thingy_2.Name = "Thingy"
+V21332.Thingy_2.Parent = V21332.Outer_2
+V21332.Thingy_2.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Thingy_2.Size = UDim2.new(0, 200, 0, 50)
+V21332.Thingy_2.Visible = false
+V21332.Thingy_2.AutoButtonColor = false
+V21332.Thingy_2.Font = Enum.Font.Code
+V21332.Thingy_2.Text = "Steering"
+V21332.Thingy_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Thingy_2.TextScaled = true
+V21332.Thingy_2.TextSize = 14.000
+V21332.Thingy_2.TextWrapped = true
+
+V21332.UICorner_31.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_31.Parent = V21332.Thingy_2
+
+V21332.TextLabel_13.Parent = V21332.Thingy_2
+V21332.TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_13.BackgroundTransparency = 1.000
+V21332.TextLabel_13.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_13.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_13.Font = Enum.Font.SourceSans
+V21332.TextLabel_13.Text = "Suspension"
+V21332.TextLabel_13.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_13.TextSize = 14.000
+
+V21332.Frame_11.Parent = V21332.Thingy_2
+V21332.Frame_11.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_11.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_11.ZIndex = 0
+
+V21332.UICorner_32.Parent = V21332.Frame_11
+
+V21332.Buttons_2.Name = "Buttons"
+V21332.Buttons_2.Parent = V21332.ROD
+V21332.Buttons_2.AnchorPoint = Vector2.new(1, 1)
+V21332.Buttons_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Buttons_2.BackgroundTransparency = 1.000
+V21332.Buttons_2.Position = UDim2.new(1, 0, 1, 0)
+V21332.Buttons_2.Size = UDim2.new(1, 0, 0, 110)
+
+V21332.Unlocked_2.Name = "Unlocked"
+V21332.Unlocked_2.Parent = V21332.Buttons_2
+V21332.Unlocked_2.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.Unlocked_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Unlocked_2.BackgroundTransparency = 1.000
+V21332.Unlocked_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.Unlocked_2.Size = UDim2.new(1, -10, 1, -10)
+
+V21332.UIGridLayout_7.Parent = V21332.Unlocked_2
+V21332.UIGridLayout_7.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout_7.CellSize = UDim2.new(0, 100, 0, 25)
+
+V21332.Length.Name = "Length"
+V21332.Length.Parent = V21332.Unlocked_2
+V21332.Length.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Length.Size = UDim2.new(0, 200, 0, 50)
+V21332.Length.ClearTextOnFocus = false
+V21332.Length.Font = Enum.Font.Code
+V21332.Length.PlaceholderText = "0"
+V21332.Length.Text = "0"
+V21332.Length.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Length.TextSize = 14.000
+
+V21332.UICorner_33.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_33.Parent = V21332.Length
+
+V21332.TextLabel_14.Parent = V21332.Length
+V21332.TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_14.BackgroundTransparency = 1.000
+V21332.TextLabel_14.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_14.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_14.Font = Enum.Font.SourceSans
+V21332.TextLabel_14.Text = "Length"
+V21332.TextLabel_14.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_14.TextSize = 14.000
+
+V21332.Frame_12.Parent = V21332.Length
+V21332.Frame_12.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_12.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_12.ZIndex = 0
+
+V21332.UICorner_34.Parent = V21332.Frame_12
+
+V21332.Enabled_2.Name = "Enabled"
+V21332.Enabled_2.Parent = V21332.Unlocked_2
+V21332.Enabled_2.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Enabled_2.LayoutOrder = 1
+V21332.Enabled_2.Size = UDim2.new(0, 200, 0, 50)
+V21332.Enabled_2.AutoButtonColor = false
+V21332.Enabled_2.Font = Enum.Font.Code
+V21332.Enabled_2.Text = "TRUE"
+V21332.Enabled_2.TextColor3 = Color3.fromRGB(178, 178, 178)
+V21332.Enabled_2.TextSize = 14.000
+
+V21332.Frame_13.Parent = V21332.Enabled_2
+V21332.Frame_13.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_13.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_13.ZIndex = 0
+
+V21332.UICorner_35.Parent = V21332.Frame_13
+
+V21332.TextLabel_15.Parent = V21332.Enabled_2
+V21332.TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_15.BackgroundTransparency = 1.000
+V21332.TextLabel_15.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_15.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_15.Font = Enum.Font.SourceSans
+V21332.TextLabel_15.Text = "Enabled"
+V21332.TextLabel_15.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_15.TextSize = 14.000
+
+V21332.UICorner_36.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_36.Parent = V21332.Enabled_2
+
+V21332.Locked_2.Name = "Locked"
+V21332.Locked_2.Parent = V21332.Buttons_2
+V21332.Locked_2.AnchorPoint = Vector2.new(0.5, 0.800000012)
+V21332.Locked_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Locked_2.BackgroundTransparency = 1.000
+V21332.Locked_2.Position = UDim2.new(0.5, 0, 0.800000012, 0)
+V21332.Locked_2.Size = UDim2.new(1, -10, 1, -80)
+
+V21332.UIGridLayout_8.Parent = V21332.Locked_2
+V21332.UIGridLayout_8.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout_8.CellSize = UDim2.new(0, 100, 0, 25)
+
+V21332.LimitAngle0.Name = "LimitAngle0"
+V21332.LimitAngle0.Parent = V21332.Locked_2
+V21332.LimitAngle0.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.LimitAngle0.Size = UDim2.new(0, 200, 0, 50)
+V21332.LimitAngle0.ClearTextOnFocus = false
+V21332.LimitAngle0.Font = Enum.Font.Code
+V21332.LimitAngle0.PlaceholderText = "0"
+V21332.LimitAngle0.Text = "0"
+V21332.LimitAngle0.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.LimitAngle0.TextSize = 14.000
+
+V21332.UICorner_37.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_37.Parent = V21332.LimitAngle0
+
+V21332.TextLabel_16.Parent = V21332.LimitAngle0
+V21332.TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_16.BackgroundTransparency = 1.000
+V21332.TextLabel_16.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_16.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_16.Font = Enum.Font.SourceSans
+V21332.TextLabel_16.Text = "LimitAngle0"
+V21332.TextLabel_16.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_16.TextSize = 14.000
+
+V21332.Frame_14.Parent = V21332.LimitAngle0
+V21332.Frame_14.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_14.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_14.ZIndex = 0
+
+V21332.UICorner_38.Parent = V21332.Frame_14
+
+V21332.LOCK_4.Name = "LOCK"
+V21332.LOCK_4.Parent = V21332.LimitAngle0
+V21332.LOCK_4.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.LOCK_4.BackgroundTransparency = 0.500
+V21332.LOCK_4.Size = UDim2.new(0, 100, 0, 37)
+V21332.LOCK_4.ZIndex = 4
+
+V21332.UICorner_39.Parent = V21332.LOCK_4
+
+V21332.TextLabel_17.Parent = V21332.LOCK_4
+V21332.TextLabel_17.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_17.BackgroundTransparency = 1.000
+V21332.TextLabel_17.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.TextLabel_17.Size = UDim2.new(1, 0, 0, 25)
+V21332.TextLabel_17.ZIndex = 6
+V21332.TextLabel_17.Font = Enum.Font.SourceSansBold
+V21332.TextLabel_17.Text = "SET LIMITS ENABLED TO FLASE"
+V21332.TextLabel_17.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.TextLabel_17.TextScaled = true
+V21332.TextLabel_17.TextSize = 14.000
+V21332.TextLabel_17.TextWrapped = true
+
+V21332.LimitAngle1.Name = "LimitAngle1"
+V21332.LimitAngle1.Parent = V21332.Locked_2
+V21332.LimitAngle1.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.LimitAngle1.Size = UDim2.new(0, 200, 0, 50)
+V21332.LimitAngle1.ClearTextOnFocus = false
+V21332.LimitAngle1.Font = Enum.Font.Code
+V21332.LimitAngle1.PlaceholderText = "0"
+V21332.LimitAngle1.Text = "0"
+V21332.LimitAngle1.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.LimitAngle1.TextSize = 14.000
+
+V21332.UICorner_40.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_40.Parent = V21332.LimitAngle1
+
+V21332.TextLabel_18.Parent = V21332.LimitAngle1
+V21332.TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_18.BackgroundTransparency = 1.000
+V21332.TextLabel_18.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_18.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_18.Font = Enum.Font.SourceSans
+V21332.TextLabel_18.Text = "LimitAngle1"
+V21332.TextLabel_18.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_18.TextSize = 14.000
+
+V21332.Frame_15.Parent = V21332.LimitAngle1
+V21332.Frame_15.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_15.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_15.ZIndex = 0
+
+V21332.UICorner_41.Parent = V21332.Frame_15
+
+V21332.LOCK_5.Name = "LOCK"
+V21332.LOCK_5.Parent = V21332.LimitAngle1
+V21332.LOCK_5.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.LOCK_5.BackgroundTransparency = 0.500
+V21332.LOCK_5.Size = UDim2.new(0, 100, 0, 37)
+V21332.LOCK_5.ZIndex = 4
+
+V21332.UICorner_42.Parent = V21332.LOCK_5
+
+V21332.TextLabel_19.Parent = V21332.LOCK_5
+V21332.TextLabel_19.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_19.BackgroundTransparency = 1.000
+V21332.TextLabel_19.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.TextLabel_19.Size = UDim2.new(1, 0, 0, 25)
+V21332.TextLabel_19.ZIndex = 6
+V21332.TextLabel_19.Font = Enum.Font.SourceSansBold
+V21332.TextLabel_19.Text = "SET LIMITS ENABLED TO FLASE"
+V21332.TextLabel_19.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.TextLabel_19.TextScaled = true
+V21332.TextLabel_19.TextSize = 14.000
+V21332.TextLabel_19.TextWrapped = true
+
+V21332.LimitsEnabled_2.Name = "LimitsEnabled"
+V21332.LimitsEnabled_2.Parent = V21332.Locked_2
+V21332.LimitsEnabled_2.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.LimitsEnabled_2.Size = UDim2.new(0, 200, 0, 50)
+V21332.LimitsEnabled_2.AutoButtonColor = false
+V21332.LimitsEnabled_2.Font = Enum.Font.Code
+V21332.LimitsEnabled_2.Text = "TRUE"
+V21332.LimitsEnabled_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.LimitsEnabled_2.TextSize = 14.000
+
+V21332.Frame_16.Parent = V21332.LimitsEnabled_2
+V21332.Frame_16.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_16.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_16.ZIndex = 0
+
+V21332.UICorner_43.Parent = V21332.Frame_16
+
+V21332.TextLabel_20.Parent = V21332.LimitsEnabled_2
+V21332.TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_20.BackgroundTransparency = 1.000
+V21332.TextLabel_20.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_20.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_20.Font = Enum.Font.SourceSans
+V21332.TextLabel_20.Text = "LimitsEnabled"
+V21332.TextLabel_20.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_20.TextSize = 14.000
+
+V21332.UICorner_44.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_44.Parent = V21332.LimitsEnabled_2
+
+V21332.Submit_2.Name = "Submit"
+V21332.Submit_2.Parent = V21332.Locked_2
+V21332.Submit_2.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Submit_2.Size = UDim2.new(0, 200, 0, 50)
+V21332.Submit_2.AutoButtonColor = false
+V21332.Submit_2.Font = Enum.Font.Code
+V21332.Submit_2.Text = "SUBMIT"
+V21332.Submit_2.TextColor3 = Color3.fromRGB(85, 255, 0)
+V21332.Submit_2.TextSize = 14.000
+
+V21332.Frame_17.Parent = V21332.Submit_2
+V21332.Frame_17.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_17.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_17.ZIndex = 0
+
+V21332.UICorner_45.Parent = V21332.Frame_17
+
+V21332.TextLabel_21.Parent = V21332.Submit_2
+V21332.TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_21.BackgroundTransparency = 1.000
+V21332.TextLabel_21.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_21.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_21.Font = Enum.Font.SourceSans
+V21332.TextLabel_21.Text = "Selection"
+V21332.TextLabel_21.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_21.TextSize = 14.000
+
+V21332.UICorner_46.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_46.Parent = V21332.Submit_2
+
+V21332.CYLINDRICAL.Name = "CYLINDRICAL"
+V21332.CYLINDRICAL.Parent = V21332.Usable
+V21332.CYLINDRICAL.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.CYLINDRICAL.BackgroundTransparency = 1.000
+V21332.CYLINDRICAL.Size = UDim2.new(1, 0, 1, 0)
+V21332.CYLINDRICAL.Visible = false
+
+V21332.Title_3.Name = "Title"
+V21332.Title_3.Parent = V21332.CYLINDRICAL
+V21332.Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title_3.BackgroundTransparency = 1.000
+V21332.Title_3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title_3.Size = UDim2.new(0, 200, 0, 25)
+V21332.Title_3.Font = Enum.Font.Code
+V21332.Title_3.Text = "CYLINDRICAL CONSTRAINTS"
+V21332.Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title_3.TextSize = 20.000
+V21332.Title_3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title_3.TextStrokeTransparency = 0.800
+V21332.Title_3.TextXAlignment = Enum.TextXAlignment.Left
+
+V21332.Outer_3.Name = "Outer"
+V21332.Outer_3.Parent = V21332.CYLINDRICAL
+V21332.Outer_3.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+V21332.Outer_3.Position = UDim2.new(0, 0, 0, 170)
+V21332.Outer_3.Size = UDim2.new(1, 0, 1, 0)
+V21332.Outer_3.Visible = false
+V21332.Outer_3.ZIndex = 0
+
+V21332.UICorner_47.CornerRadius = UDim.new(0, 4)
+V21332.UICorner_47.Parent = V21332.Outer_3
+
+V21332.OuterTop_3.Name = "OuterTop"
+V21332.OuterTop_3.Parent = V21332.Outer_3
+V21332.OuterTop_3.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.OuterTop_3.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+V21332.OuterTop_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.OuterTop_3.Size = UDim2.new(1, 20, 1, 20)
+V21332.OuterTop_3.ZIndex = -1
+
+V21332.UICorner_48.CornerRadius = UDim.new(0, 4)
+V21332.UICorner_48.Parent = V21332.OuterTop_3
+
+V21332.Selects_3.Name = "Selects"
+V21332.Selects_3.Parent = V21332.Outer_3
+V21332.Selects_3.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.Selects_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Selects_3.BackgroundTransparency = 1.000
+V21332.Selects_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.Selects_3.Size = UDim2.new(1, -10, 1, -10)
+
+V21332.UIGridLayout_9.Parent = V21332.Selects_3
+V21332.UIGridLayout_9.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout_9.CellPadding = UDim2.new(0, 5, 0, 20)
+V21332.UIGridLayout_9.CellSize = UDim2.new(0, 100, 0, 25)
+
+V21332.Thingy_3.Name = "Thingy"
+V21332.Thingy_3.Parent = V21332.Outer_3
+V21332.Thingy_3.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Thingy_3.Size = UDim2.new(0, 200, 0, 50)
+V21332.Thingy_3.Visible = false
+V21332.Thingy_3.AutoButtonColor = false
+V21332.Thingy_3.Font = Enum.Font.Code
+V21332.Thingy_3.Text = "Steering"
+V21332.Thingy_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Thingy_3.TextSize = 14.000
+
+V21332.UICorner_49.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_49.Parent = V21332.Thingy_3
+
+V21332.TextLabel_22.Parent = V21332.Thingy_3
+V21332.TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_22.BackgroundTransparency = 1.000
+V21332.TextLabel_22.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_22.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_22.Font = Enum.Font.SourceSans
+V21332.TextLabel_22.Text = "Suspension"
+V21332.TextLabel_22.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_22.TextSize = 14.000
+
+V21332.Frame_18.Parent = V21332.Thingy_3
+V21332.Frame_18.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_18.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_18.ZIndex = 0
+
+V21332.UICorner_50.Parent = V21332.Frame_18
+
+V21332.Stats_3.Name = "Stats"
+V21332.Stats_3.Parent = V21332.Outer_3
+V21332.Stats_3.AnchorPoint = Vector2.new(1, 1)
+V21332.Stats_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Stats_3.BackgroundTransparency = 1.000
+V21332.Stats_3.Position = UDim2.new(1, 220, 1, 0)
+V21332.Stats_3.Size = UDim2.new(0, 200, 1, 50)
+V21332.Stats_3.Font = Enum.Font.Code
+V21332.Stats_3.Text = ""
+V21332.Stats_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Stats_3.TextSize = 14.000
+V21332.Stats_3.TextStrokeTransparency = 0.000
+V21332.Stats_3.TextWrapped = true
+V21332.Stats_3.TextXAlignment = Enum.TextXAlignment.Left
+V21332.Stats_3.TextYAlignment = Enum.TextYAlignment.Top
+
+V21332.Default_3.Name = "Default"
+V21332.Default_3.Parent = V21332.CYLINDRICAL
+V21332.Default_3.AnchorPoint = Vector2.new(1, 0)
+V21332.Default_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Default_3.BackgroundTransparency = 1.000
+V21332.Default_3.Position = UDim2.new(1, 0, 0, 0)
+V21332.Default_3.Size = UDim2.new(0, 100, 0, 25)
+V21332.Default_3.ZIndex = 5
+V21332.Default_3.Font = Enum.Font.Code
+V21332.Default_3.Text = "SET DEFAULT (ROUNDED)"
+V21332.Default_3.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.Default_3.TextSize = 14.000
+V21332.Default_3.TextStrokeColor3 = Color3.fromRGB(85, 0, 0)
+V21332.Default_3.TextStrokeTransparency = 0.000
+V21332.Default_3.TextXAlignment = Enum.TextXAlignment.Right
+
+V21332.Buttons_3.Name = "Buttons"
+V21332.Buttons_3.Parent = V21332.CYLINDRICAL
+V21332.Buttons_3.AnchorPoint = Vector2.new(1, 1)
+V21332.Buttons_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Buttons_3.BackgroundTransparency = 1.000
+V21332.Buttons_3.Position = UDim2.new(1, 0, 1, 0)
+V21332.Buttons_3.Size = UDim2.new(1, 0, 0, 110)
+V21332.Buttons_3.Visible = false
+
+V21332.Unlocked_3.Name = "Unlocked"
+V21332.Unlocked_3.Parent = V21332.Buttons_3
+V21332.Unlocked_3.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.Unlocked_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Unlocked_3.BackgroundTransparency = 1.000
+V21332.Unlocked_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.Unlocked_3.Size = UDim2.new(1, -10, 1, -10)
+
+V21332.UIGridLayout_10.Parent = V21332.Unlocked_3
+V21332.UIGridLayout_10.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout_10.CellSize = UDim2.new(0, 100, 0, 25)
+
+V21332.Radius_2.Name = "Radius"
+V21332.Radius_2.Parent = V21332.Unlocked_3
+V21332.Radius_2.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Radius_2.Size = UDim2.new(0, 200, 0, 50)
+V21332.Radius_2.ClearTextOnFocus = false
+V21332.Radius_2.Font = Enum.Font.Code
+V21332.Radius_2.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+V21332.Radius_2.PlaceholderText = "0"
+V21332.Radius_2.Text = "0"
+V21332.Radius_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Radius_2.TextSize = 14.000
+
+V21332.UICorner_51.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_51.Parent = V21332.Radius_2
+
+V21332.TextLabel_23.Parent = V21332.Radius_2
+V21332.TextLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_23.BackgroundTransparency = 1.000
+V21332.TextLabel_23.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_23.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_23.Font = Enum.Font.SourceSans
+V21332.TextLabel_23.Text = "Radius"
+V21332.TextLabel_23.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_23.TextSize = 14.000
+
+V21332.Frame_19.Parent = V21332.Radius_2
+V21332.Frame_19.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_19.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_19.ZIndex = 0
+
+V21332.UICorner_52.Parent = V21332.Frame_19
+
+V21332.Enabled_3.Name = "Enabled"
+V21332.Enabled_3.Parent = V21332.Unlocked_3
+V21332.Enabled_3.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Enabled_3.Size = UDim2.new(0, 200, 0, 50)
+V21332.Enabled_3.AutoButtonColor = false
+V21332.Enabled_3.Font = Enum.Font.Code
+V21332.Enabled_3.Text = "TRUE"
+V21332.Enabled_3.TextColor3 = Color3.fromRGB(85, 255, 0)
+V21332.Enabled_3.TextSize = 14.000
+
+V21332.Frame_20.Parent = V21332.Enabled_3
+V21332.Frame_20.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_20.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_20.ZIndex = 0
+
+V21332.UICorner_53.Parent = V21332.Frame_20
+
+V21332.TextLabel_24.Parent = V21332.Enabled_3
+V21332.TextLabel_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_24.BackgroundTransparency = 1.000
+V21332.TextLabel_24.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_24.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_24.Font = Enum.Font.SourceSans
+V21332.TextLabel_24.Text = "Enabled"
+V21332.TextLabel_24.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_24.TextSize = 14.000
+
+V21332.UICorner_54.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_54.Parent = V21332.Enabled_3
+
+V21332.Visible_2.Name = "Visible"
+V21332.Visible_2.Parent = V21332.Unlocked_3
+V21332.Visible_2.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Visible_2.Size = UDim2.new(0, 200, 0, 50)
+V21332.Visible_2.AutoButtonColor = false
+V21332.Visible_2.Font = Enum.Font.Code
+V21332.Visible_2.Text = "FALSE"
+V21332.Visible_2.TextColor3 = Color3.fromRGB(178, 178, 178)
+V21332.Visible_2.TextSize = 14.000
+
+V21332.Frame_21.Parent = V21332.Visible_2
+V21332.Frame_21.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_21.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_21.ZIndex = 0
+
+V21332.UICorner_55.Parent = V21332.Frame_21
+
+V21332.TextLabel_25.Parent = V21332.Visible_2
+V21332.TextLabel_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_25.BackgroundTransparency = 1.000
+V21332.TextLabel_25.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_25.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_25.Font = Enum.Font.SourceSans
+V21332.TextLabel_25.Text = "Visible"
+V21332.TextLabel_25.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_25.TextSize = 14.000
+
+V21332.UICorner_56.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_56.Parent = V21332.Visible_2
+
+V21332.Submit_3.Name = "Submit"
+V21332.Submit_3.Parent = V21332.Unlocked_3
+V21332.Submit_3.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Submit_3.Size = UDim2.new(0, 200, 0, 50)
+V21332.Submit_3.AutoButtonColor = false
+V21332.Submit_3.Font = Enum.Font.Code
+V21332.Submit_3.Text = "SUBMIT"
+V21332.Submit_3.TextColor3 = Color3.fromRGB(85, 255, 0)
+V21332.Submit_3.TextSize = 14.000
+
+V21332.Frame_22.Parent = V21332.Submit_3
+V21332.Frame_22.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_22.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_22.ZIndex = 0
+
+V21332.UICorner_57.Parent = V21332.Frame_22
+
+V21332.TextLabel_26.Parent = V21332.Submit_3
+V21332.TextLabel_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_26.BackgroundTransparency = 1.000
+V21332.TextLabel_26.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_26.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_26.Font = Enum.Font.SourceSans
+V21332.TextLabel_26.Text = "Selection"
+V21332.TextLabel_26.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_26.TextSize = 14.000
+
+V21332.UICorner_58.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_58.Parent = V21332.Submit_3
+
+V21332.Locked_3.Name = "Locked"
+V21332.Locked_3.Parent = V21332.Buttons_3
+V21332.Locked_3.AnchorPoint = Vector2.new(0.5, 0.800000012)
+V21332.Locked_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Locked_3.BackgroundTransparency = 1.000
+V21332.Locked_3.Position = UDim2.new(0.5, 0, 0.800000012, 0)
+V21332.Locked_3.Size = UDim2.new(1, -10, 1, -80)
+
+V21332.UIGridLayout_11.Parent = V21332.Locked_3
+V21332.UIGridLayout_11.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout_11.CellSize = UDim2.new(0, 100, 0, 25)
+
+V21332.UpperAngle_2.Name = "UpperAngle"
+V21332.UpperAngle_2.Parent = V21332.Locked_3
+V21332.UpperAngle_2.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.UpperAngle_2.Size = UDim2.new(0, 200, 0, 50)
+V21332.UpperAngle_2.ClearTextOnFocus = false
+V21332.UpperAngle_2.Font = Enum.Font.Code
+V21332.UpperAngle_2.PlaceholderText = "0"
+V21332.UpperAngle_2.Text = "0"
+V21332.UpperAngle_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.UpperAngle_2.TextSize = 14.000
+
+V21332.UICorner_59.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_59.Parent = V21332.UpperAngle_2
+
+V21332.TextLabel_27.Parent = V21332.UpperAngle_2
+V21332.TextLabel_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_27.BackgroundTransparency = 1.000
+V21332.TextLabel_27.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_27.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_27.Font = Enum.Font.SourceSans
+V21332.TextLabel_27.Text = "UpperAngle"
+V21332.TextLabel_27.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_27.TextSize = 14.000
+
+V21332.Frame_23.Parent = V21332.UpperAngle_2
+V21332.Frame_23.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_23.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_23.ZIndex = 0
+
+V21332.UICorner_60.Parent = V21332.Frame_23
+
+V21332.LOCK_6.Name = "LOCK"
+V21332.LOCK_6.Parent = V21332.UpperAngle_2
+V21332.LOCK_6.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.LOCK_6.BackgroundTransparency = 0.500
+V21332.LOCK_6.Size = UDim2.new(0, 100, 0, 37)
+V21332.LOCK_6.ZIndex = 4
+
+V21332.UICorner_61.Parent = V21332.LOCK_6
+
+V21332.TextLabel_28.Parent = V21332.LOCK_6
+V21332.TextLabel_28.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.TextLabel_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_28.BackgroundTransparency = 1.000
+V21332.TextLabel_28.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.TextLabel_28.Size = UDim2.new(1, 0, 0, 25)
+V21332.TextLabel_28.ZIndex = 6
+V21332.TextLabel_28.Font = Enum.Font.SourceSansBold
+V21332.TextLabel_28.Text = "SET LIMITS ENABLED TO FALSE"
+V21332.TextLabel_28.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.TextLabel_28.TextScaled = true
+V21332.TextLabel_28.TextSize = 14.000
+V21332.TextLabel_28.TextWrapped = true
+
+V21332.Restitution_2.Name = "Restitution"
+V21332.Restitution_2.Parent = V21332.Locked_3
+V21332.Restitution_2.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Restitution_2.Size = UDim2.new(0, 200, 0, 50)
+V21332.Restitution_2.ClearTextOnFocus = false
+V21332.Restitution_2.Font = Enum.Font.Code
+V21332.Restitution_2.PlaceholderText = "0"
+V21332.Restitution_2.Text = "0"
+V21332.Restitution_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Restitution_2.TextSize = 14.000
+
+V21332.UICorner_62.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_62.Parent = V21332.Restitution_2
+
+V21332.TextLabel_29.Parent = V21332.Restitution_2
+V21332.TextLabel_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_29.BackgroundTransparency = 1.000
+V21332.TextLabel_29.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_29.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_29.Font = Enum.Font.SourceSans
+V21332.TextLabel_29.Text = "Restitution"
+V21332.TextLabel_29.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_29.TextSize = 14.000
+
+V21332.Frame_24.Parent = V21332.Restitution_2
+V21332.Frame_24.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_24.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_24.ZIndex = 0
+
+V21332.UICorner_63.Parent = V21332.Frame_24
+
+V21332.LOCK_7.Name = "LOCK"
+V21332.LOCK_7.Parent = V21332.Restitution_2
+V21332.LOCK_7.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.LOCK_7.BackgroundTransparency = 0.500
+V21332.LOCK_7.Size = UDim2.new(0, 100, 0, 37)
+V21332.LOCK_7.ZIndex = 4
+
+V21332.UICorner_64.Parent = V21332.LOCK_7
+
+V21332.TextLabel_30.Parent = V21332.LOCK_7
+V21332.TextLabel_30.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.TextLabel_30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_30.BackgroundTransparency = 1.000
+V21332.TextLabel_30.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.TextLabel_30.Size = UDim2.new(1, 0, 0, 25)
+V21332.TextLabel_30.ZIndex = 6
+V21332.TextLabel_30.Font = Enum.Font.SourceSansBold
+V21332.TextLabel_30.Text = "SET LIMITS ENABLED TO FALSE"
+V21332.TextLabel_30.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.TextLabel_30.TextScaled = true
+V21332.TextLabel_30.TextSize = 14.000
+V21332.TextLabel_30.TextWrapped = true
+
+V21332.LowerAngle_2.Name = "LowerAngle"
+V21332.LowerAngle_2.Parent = V21332.Locked_3
+V21332.LowerAngle_2.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.LowerAngle_2.Size = UDim2.new(0, 200, 0, 50)
+V21332.LowerAngle_2.ClearTextOnFocus = false
+V21332.LowerAngle_2.Font = Enum.Font.Code
+V21332.LowerAngle_2.PlaceholderText = "0"
+V21332.LowerAngle_2.Text = "0"
+V21332.LowerAngle_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.LowerAngle_2.TextSize = 14.000
+
+V21332.UICorner_65.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_65.Parent = V21332.LowerAngle_2
+
+V21332.TextLabel_31.Parent = V21332.LowerAngle_2
+V21332.TextLabel_31.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_31.BackgroundTransparency = 1.000
+V21332.TextLabel_31.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_31.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_31.Font = Enum.Font.SourceSans
+V21332.TextLabel_31.Text = "LowerAngle"
+V21332.TextLabel_31.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_31.TextSize = 14.000
+
+V21332.Frame_25.Parent = V21332.LowerAngle_2
+V21332.Frame_25.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_25.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_25.ZIndex = 0
+
+V21332.UICorner_66.Parent = V21332.Frame_25
+
+V21332.LOCK_8.Name = "LOCK"
+V21332.LOCK_8.Parent = V21332.LowerAngle_2
+V21332.LOCK_8.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.LOCK_8.BackgroundTransparency = 0.500
+V21332.LOCK_8.Size = UDim2.new(0, 100, 0, 37)
+V21332.LOCK_8.ZIndex = 4
+
+V21332.UICorner_67.Parent = V21332.LOCK_8
+
+V21332.TextLabel_32.Parent = V21332.LOCK_8
+V21332.TextLabel_32.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.TextLabel_32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_32.BackgroundTransparency = 1.000
+V21332.TextLabel_32.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.TextLabel_32.Size = UDim2.new(1, 0, 0, 25)
+V21332.TextLabel_32.ZIndex = 6
+V21332.TextLabel_32.Font = Enum.Font.SourceSansBold
+V21332.TextLabel_32.Text = "SET LIMITS ENABLED TO FALSE"
+V21332.TextLabel_32.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.TextLabel_32.TextScaled = true
+V21332.TextLabel_32.TextSize = 14.000
+V21332.TextLabel_32.TextWrapped = true
+
+V21332.LimitsEnabled_3.Name = "LimitsEnabled"
+V21332.LimitsEnabled_3.Parent = V21332.Locked_3
+V21332.LimitsEnabled_3.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.LimitsEnabled_3.Size = UDim2.new(0, 200, 0, 50)
+V21332.LimitsEnabled_3.AutoButtonColor = false
+V21332.LimitsEnabled_3.Font = Enum.Font.Code
+V21332.LimitsEnabled_3.Text = "TRUE"
+V21332.LimitsEnabled_3.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.LimitsEnabled_3.TextSize = 14.000
+
+V21332.Frame_26.Parent = V21332.LimitsEnabled_3
+V21332.Frame_26.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_26.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_26.ZIndex = 0
+
+V21332.UICorner_68.Parent = V21332.Frame_26
+
+V21332.TextLabel_33.Parent = V21332.LimitsEnabled_3
+V21332.TextLabel_33.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_33.BackgroundTransparency = 1.000
+V21332.TextLabel_33.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_33.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_33.Font = Enum.Font.SourceSans
+V21332.TextLabel_33.Text = "LimitsEnabled"
+V21332.TextLabel_33.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_33.TextSize = 14.000
+
+V21332.UICorner_69.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_69.Parent = V21332.LimitsEnabled_3
+
+V21332.PHYSICAL.Name = "PHYSICAL"
+V21332.PHYSICAL.Parent = V21332.Usable
+V21332.PHYSICAL.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.PHYSICAL.BackgroundTransparency = 1.000
+V21332.PHYSICAL.Size = UDim2.new(1, 0, 1, 0)
+V21332.PHYSICAL.Visible = false
+
+V21332.Title_4.Name = "Title"
+V21332.Title_4.Parent = V21332.PHYSICAL
+V21332.Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title_4.BackgroundTransparency = 1.000
+V21332.Title_4.BorderColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title_4.Size = UDim2.new(0, 200, 0, 25)
+V21332.Title_4.Font = Enum.Font.Code
+V21332.Title_4.Text = "PHYSICAL PROPERTIES"
+V21332.Title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title_4.TextSize = 20.000
+V21332.Title_4.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title_4.TextStrokeTransparency = 0.800
+V21332.Title_4.TextXAlignment = Enum.TextXAlignment.Left
+
+V21332.Default_4.Name = "Default"
+V21332.Default_4.Parent = V21332.PHYSICAL
+V21332.Default_4.AnchorPoint = Vector2.new(1, 0)
+V21332.Default_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Default_4.BackgroundTransparency = 1.000
+V21332.Default_4.Position = UDim2.new(1, 0, 0, 0)
+V21332.Default_4.Size = UDim2.new(0, 100, 0, 25)
+V21332.Default_4.ZIndex = 5
+V21332.Default_4.Font = Enum.Font.Code
+V21332.Default_4.Text = "SET DEFAULT (ROUNDED)"
+V21332.Default_4.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.Default_4.TextSize = 14.000
+V21332.Default_4.TextStrokeColor3 = Color3.fromRGB(85, 0, 0)
+V21332.Default_4.TextStrokeTransparency = 0.000
+V21332.Default_4.TextXAlignment = Enum.TextXAlignment.Right
+
+V21332.Outer_4.Name = "Outer"
+V21332.Outer_4.Parent = V21332.PHYSICAL
+V21332.Outer_4.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+V21332.Outer_4.Position = UDim2.new(0, 0, 0, 170)
+V21332.Outer_4.Size = UDim2.new(1, 0, 1, 0)
+V21332.Outer_4.ZIndex = 0
+
+V21332.UICorner_70.CornerRadius = UDim.new(0, 4)
+V21332.UICorner_70.Parent = V21332.Outer_4
+
+V21332.OuterTop_4.Name = "OuterTop"
+V21332.OuterTop_4.Parent = V21332.Outer_4
+V21332.OuterTop_4.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.OuterTop_4.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+V21332.OuterTop_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.OuterTop_4.Size = UDim2.new(1, 20, 1, 20)
+V21332.OuterTop_4.ZIndex = -1
+
+V21332.UICorner_71.CornerRadius = UDim.new(0, 4)
+V21332.UICorner_71.Parent = V21332.OuterTop_4
+
+V21332.Selects_4.Name = "Selects"
+V21332.Selects_4.Parent = V21332.Outer_4
+V21332.Selects_4.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.Selects_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Selects_4.BackgroundTransparency = 1.000
+V21332.Selects_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.Selects_4.Size = UDim2.new(1, -10, 1, -10)
+
+V21332.UIGridLayout_12.Parent = V21332.Selects_4
+V21332.UIGridLayout_12.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout_12.CellPadding = UDim2.new(0, 5, 0, 20)
+V21332.UIGridLayout_12.CellSize = UDim2.new(0, 100, 0, 25)
+
+V21332.Stats_4.Name = "Stats"
+V21332.Stats_4.Parent = V21332.Outer_4
+V21332.Stats_4.AnchorPoint = Vector2.new(1, 1)
+V21332.Stats_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Stats_4.BackgroundTransparency = 1.000
+V21332.Stats_4.Position = UDim2.new(1, 220, 1, 0)
+V21332.Stats_4.Size = UDim2.new(0, 200, 1, 50)
+V21332.Stats_4.Font = Enum.Font.Code
+V21332.Stats_4.Text = ""
+V21332.Stats_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Stats_4.TextSize = 14.000
+V21332.Stats_4.TextStrokeTransparency = 0.000
+V21332.Stats_4.TextWrapped = true
+V21332.Stats_4.TextXAlignment = Enum.TextXAlignment.Left
+V21332.Stats_4.TextYAlignment = Enum.TextYAlignment.Top
+
+V21332.Thingy_4.Name = "Thingy"
+V21332.Thingy_4.Parent = V21332.Outer_4
+V21332.Thingy_4.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Thingy_4.Size = UDim2.new(0, 200, 0, 50)
+V21332.Thingy_4.Visible = false
+V21332.Thingy_4.AutoButtonColor = false
+V21332.Thingy_4.Font = Enum.Font.Code
+V21332.Thingy_4.Text = "Steering"
+V21332.Thingy_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Thingy_4.TextScaled = true
+V21332.Thingy_4.TextSize = 14.000
+V21332.Thingy_4.TextWrapped = true
+
+V21332.UICorner_72.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_72.Parent = V21332.Thingy_4
+
+V21332.TextLabel_34.Parent = V21332.Thingy_4
+V21332.TextLabel_34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_34.BackgroundTransparency = 1.000
+V21332.TextLabel_34.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_34.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_34.Font = Enum.Font.SourceSans
+V21332.TextLabel_34.Text = "Suspension"
+V21332.TextLabel_34.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_34.TextSize = 14.000
+
+V21332.Frame_27.Parent = V21332.Thingy_4
+V21332.Frame_27.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_27.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_27.ZIndex = 0
+
+V21332.UICorner_73.Parent = V21332.Frame_27
+
+V21332.Buttons_4.Name = "Buttons"
+V21332.Buttons_4.Parent = V21332.PHYSICAL
+V21332.Buttons_4.AnchorPoint = Vector2.new(1, 1)
+V21332.Buttons_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Buttons_4.BackgroundTransparency = 1.000
+V21332.Buttons_4.Position = UDim2.new(1, 0, 1, 0)
+V21332.Buttons_4.Size = UDim2.new(1, 0, 0, 110)
+
+V21332.Unlocked_4.Name = "Unlocked"
+V21332.Unlocked_4.Parent = V21332.Buttons_4
+V21332.Unlocked_4.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.Unlocked_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Unlocked_4.BackgroundTransparency = 1.000
+V21332.Unlocked_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.Unlocked_4.Size = UDim2.new(1, -10, 1, -10)
+
+V21332.UIGridLayout_13.Parent = V21332.Unlocked_4
+V21332.UIGridLayout_13.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout_13.CellSize = UDim2.new(0, 100, 0, 25)
+
+V21332.Friction.Name = "Friction"
+V21332.Friction.Parent = V21332.Unlocked_4
+V21332.Friction.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Friction.Size = UDim2.new(0, 200, 0, 50)
+V21332.Friction.ClearTextOnFocus = false
+V21332.Friction.Font = Enum.Font.Code
+V21332.Friction.PlaceholderText = "0"
+V21332.Friction.Text = "0"
+V21332.Friction.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Friction.TextSize = 14.000
+
+V21332.UICorner_74.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_74.Parent = V21332.Friction
+
+V21332.TextLabel_35.Parent = V21332.Friction
+V21332.TextLabel_35.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_35.BackgroundTransparency = 1.000
+V21332.TextLabel_35.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_35.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_35.Font = Enum.Font.SourceSans
+V21332.TextLabel_35.Text = "Friction"
+V21332.TextLabel_35.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_35.TextSize = 14.000
+
+V21332.Frame_28.Parent = V21332.Friction
+V21332.Frame_28.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_28.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_28.ZIndex = 0
+
+V21332.UICorner_75.Parent = V21332.Frame_28
+
+V21332.LOCK_9.Name = "LOCK"
+V21332.LOCK_9.Parent = V21332.Friction
+V21332.LOCK_9.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.LOCK_9.BackgroundTransparency = 0.500
+V21332.LOCK_9.Size = UDim2.new(0, 100, 0, 37)
+V21332.LOCK_9.ZIndex = 4
+
+V21332.UICorner_76.Parent = V21332.LOCK_9
+
+V21332.TextLabel_36.Parent = V21332.LOCK_9
+V21332.TextLabel_36.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.TextLabel_36.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_36.BackgroundTransparency = 1.000
+V21332.TextLabel_36.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.TextLabel_36.Size = UDim2.new(1, 0, 0, 25)
+V21332.TextLabel_36.ZIndex = 6
+V21332.TextLabel_36.Font = Enum.Font.SourceSansBold
+V21332.TextLabel_36.Text = "SET PROPERTIES ENABLED TO TRUE"
+V21332.TextLabel_36.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.TextLabel_36.TextScaled = true
+V21332.TextLabel_36.TextSize = 14.000
+V21332.TextLabel_36.TextWrapped = true
+
+V21332.CanCollide.Name = "CanCollide"
+V21332.CanCollide.Parent = V21332.Unlocked_4
+V21332.CanCollide.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.CanCollide.LayoutOrder = 1
+V21332.CanCollide.Size = UDim2.new(0, 200, 0, 50)
+V21332.CanCollide.AutoButtonColor = false
+V21332.CanCollide.Font = Enum.Font.Code
+V21332.CanCollide.Text = "TRUE"
+V21332.CanCollide.TextColor3 = Color3.fromRGB(178, 178, 178)
+V21332.CanCollide.TextSize = 14.000
+
+V21332.Frame_29.Parent = V21332.CanCollide
+V21332.Frame_29.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_29.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_29.ZIndex = 0
+
+V21332.UICorner_77.Parent = V21332.Frame_29
+
+V21332.TextLabel_37.Parent = V21332.CanCollide
+V21332.TextLabel_37.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_37.BackgroundTransparency = 1.000
+V21332.TextLabel_37.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_37.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_37.Font = Enum.Font.SourceSans
+V21332.TextLabel_37.Text = "CanCollide"
+V21332.TextLabel_37.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_37.TextSize = 14.000
+
+V21332.UICorner_78.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_78.Parent = V21332.CanCollide
+
+V21332.FrictionWeight.Name = "FrictionWeight"
+V21332.FrictionWeight.Parent = V21332.Unlocked_4
+V21332.FrictionWeight.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.FrictionWeight.LayoutOrder = -1
+V21332.FrictionWeight.Size = UDim2.new(0, 200, 0, 50)
+V21332.FrictionWeight.ClearTextOnFocus = false
+V21332.FrictionWeight.Font = Enum.Font.Code
+V21332.FrictionWeight.PlaceholderText = "0"
+V21332.FrictionWeight.Text = "0"
+V21332.FrictionWeight.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.FrictionWeight.TextSize = 14.000
+
+V21332.UICorner_79.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_79.Parent = V21332.FrictionWeight
+
+V21332.TextLabel_38.Parent = V21332.FrictionWeight
+V21332.TextLabel_38.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_38.BackgroundTransparency = 1.000
+V21332.TextLabel_38.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_38.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_38.Font = Enum.Font.SourceSans
+V21332.TextLabel_38.Text = "FrictionWeight"
+V21332.TextLabel_38.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_38.TextSize = 14.000
+
+V21332.Frame_30.Parent = V21332.FrictionWeight
+V21332.Frame_30.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_30.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_30.ZIndex = 0
+
+V21332.UICorner_80.Parent = V21332.Frame_30
+
+V21332.LOCK_10.Name = "LOCK"
+V21332.LOCK_10.Parent = V21332.FrictionWeight
+V21332.LOCK_10.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.LOCK_10.BackgroundTransparency = 0.500
+V21332.LOCK_10.Size = UDim2.new(0, 100, 0, 37)
+V21332.LOCK_10.ZIndex = 4
+
+V21332.UICorner_81.Parent = V21332.LOCK_10
+
+V21332.TextLabel_39.Parent = V21332.LOCK_10
+V21332.TextLabel_39.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.TextLabel_39.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_39.BackgroundTransparency = 1.000
+V21332.TextLabel_39.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.TextLabel_39.Size = UDim2.new(1, 0, 0, 25)
+V21332.TextLabel_39.ZIndex = 6
+V21332.TextLabel_39.Font = Enum.Font.SourceSansBold
+V21332.TextLabel_39.Text = "SET PROPERTIES ENABLED TO TRUE"
+V21332.TextLabel_39.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.TextLabel_39.TextScaled = true
+V21332.TextLabel_39.TextSize = 14.000
+V21332.TextLabel_39.TextWrapped = true
+
+V21332.Density.Name = "Density"
+V21332.Density.Parent = V21332.Unlocked_4
+V21332.Density.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Density.Size = UDim2.new(0, 200, 0, 50)
+V21332.Density.ClearTextOnFocus = false
+V21332.Density.Font = Enum.Font.Code
+V21332.Density.PlaceholderText = "0"
+V21332.Density.Text = "0"
+V21332.Density.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Density.TextSize = 14.000
+
+V21332.UICorner_82.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_82.Parent = V21332.Density
+
+V21332.TextLabel_40.Parent = V21332.Density
+V21332.TextLabel_40.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_40.BackgroundTransparency = 1.000
+V21332.TextLabel_40.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_40.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_40.Font = Enum.Font.SourceSans
+V21332.TextLabel_40.Text = "Density"
+V21332.TextLabel_40.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_40.TextSize = 14.000
+
+V21332.Frame_31.Parent = V21332.Density
+V21332.Frame_31.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_31.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_31.ZIndex = 0
+
+V21332.UICorner_83.Parent = V21332.Frame_31
+
+V21332.LOCK_11.Name = "LOCK"
+V21332.LOCK_11.Parent = V21332.Density
+V21332.LOCK_11.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.LOCK_11.BackgroundTransparency = 0.500
+V21332.LOCK_11.Size = UDim2.new(0, 100, 0, 37)
+V21332.LOCK_11.ZIndex = 4
+
+V21332.UICorner_84.Parent = V21332.LOCK_11
+
+V21332.TextLabel_41.Parent = V21332.LOCK_11
+V21332.TextLabel_41.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.TextLabel_41.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_41.BackgroundTransparency = 1.000
+V21332.TextLabel_41.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.TextLabel_41.Size = UDim2.new(1, 0, 0, 25)
+V21332.TextLabel_41.ZIndex = 6
+V21332.TextLabel_41.Font = Enum.Font.SourceSansBold
+V21332.TextLabel_41.Text = "SET PROPERTIES ENABLED TO TRUE"
+V21332.TextLabel_41.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.TextLabel_41.TextScaled = true
+V21332.TextLabel_41.TextSize = 14.000
+V21332.TextLabel_41.TextWrapped = true
+
+V21332.Locked_4.Name = "Locked"
+V21332.Locked_4.Parent = V21332.Buttons_4
+V21332.Locked_4.AnchorPoint = Vector2.new(0.5, 0.800000012)
+V21332.Locked_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Locked_4.BackgroundTransparency = 1.000
+V21332.Locked_4.Position = UDim2.new(0.5, 0, 0.800000012, 0)
+V21332.Locked_4.Size = UDim2.new(1, -10, 1, -80)
+
+V21332.UIGridLayout_14.Parent = V21332.Locked_4
+V21332.UIGridLayout_14.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout_14.CellSize = UDim2.new(0, 100, 0, 25)
+
+V21332.ElasticityWeight.Name = "ElasticityWeight"
+V21332.ElasticityWeight.Parent = V21332.Locked_4
+V21332.ElasticityWeight.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.ElasticityWeight.Size = UDim2.new(0, 200, 0, 50)
+V21332.ElasticityWeight.ClearTextOnFocus = false
+V21332.ElasticityWeight.Font = Enum.Font.Code
+V21332.ElasticityWeight.PlaceholderText = "0"
+V21332.ElasticityWeight.Text = "0"
+V21332.ElasticityWeight.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.ElasticityWeight.TextSize = 14.000
+
+V21332.UICorner_85.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_85.Parent = V21332.ElasticityWeight
+
+V21332.TextLabel_42.Parent = V21332.ElasticityWeight
+V21332.TextLabel_42.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_42.BackgroundTransparency = 1.000
+V21332.TextLabel_42.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_42.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_42.Font = Enum.Font.SourceSans
+V21332.TextLabel_42.Text = "ElasticityWeight"
+V21332.TextLabel_42.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_42.TextSize = 14.000
+
+V21332.Frame_32.Parent = V21332.ElasticityWeight
+V21332.Frame_32.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_32.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_32.ZIndex = 0
+
+V21332.UICorner_86.Parent = V21332.Frame_32
+
+V21332.LOCK_12.Name = "LOCK"
+V21332.LOCK_12.Parent = V21332.ElasticityWeight
+V21332.LOCK_12.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.LOCK_12.BackgroundTransparency = 0.500
+V21332.LOCK_12.Size = UDim2.new(0, 100, 0, 37)
+V21332.LOCK_12.ZIndex = 4
+
+V21332.UICorner_87.Parent = V21332.LOCK_12
+
+V21332.TextLabel_43.Parent = V21332.LOCK_12
+V21332.TextLabel_43.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.TextLabel_43.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_43.BackgroundTransparency = 1.000
+V21332.TextLabel_43.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.TextLabel_43.Size = UDim2.new(1, 0, 0, 25)
+V21332.TextLabel_43.ZIndex = 6
+V21332.TextLabel_43.Font = Enum.Font.SourceSansBold
+V21332.TextLabel_43.Text = "SET PROPERTIES ENABLED TO TRUE"
+V21332.TextLabel_43.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.TextLabel_43.TextScaled = true
+V21332.TextLabel_43.TextSize = 14.000
+V21332.TextLabel_43.TextWrapped = true
+
+V21332.Elasticity.Name = "Elasticity"
+V21332.Elasticity.Parent = V21332.Locked_4
+V21332.Elasticity.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Elasticity.Size = UDim2.new(0, 200, 0, 50)
+V21332.Elasticity.ClearTextOnFocus = false
+V21332.Elasticity.Font = Enum.Font.Code
+V21332.Elasticity.PlaceholderText = "0"
+V21332.Elasticity.Text = "0"
+V21332.Elasticity.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Elasticity.TextSize = 14.000
+
+V21332.UICorner_88.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_88.Parent = V21332.Elasticity
+
+V21332.TextLabel_44.Parent = V21332.Elasticity
+V21332.TextLabel_44.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_44.BackgroundTransparency = 1.000
+V21332.TextLabel_44.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_44.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_44.Font = Enum.Font.SourceSans
+V21332.TextLabel_44.Text = "Elasticity"
+V21332.TextLabel_44.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_44.TextSize = 14.000
+
+V21332.Frame_33.Parent = V21332.Elasticity
+V21332.Frame_33.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_33.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_33.ZIndex = 0
+
+V21332.UICorner_89.Parent = V21332.Frame_33
+
+V21332.LOCK_13.Name = "LOCK"
+V21332.LOCK_13.Parent = V21332.Elasticity
+V21332.LOCK_13.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.LOCK_13.BackgroundTransparency = 0.500
+V21332.LOCK_13.Size = UDim2.new(0, 100, 0, 37)
+V21332.LOCK_13.ZIndex = 4
+
+V21332.UICorner_90.Parent = V21332.LOCK_13
+
+V21332.TextLabel_45.Parent = V21332.LOCK_13
+V21332.TextLabel_45.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.TextLabel_45.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_45.BackgroundTransparency = 1.000
+V21332.TextLabel_45.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.TextLabel_45.Size = UDim2.new(1, 0, 0, 25)
+V21332.TextLabel_45.ZIndex = 6
+V21332.TextLabel_45.Font = Enum.Font.SourceSansBold
+V21332.TextLabel_45.Text = "SET PROPERTIES ENABLED TO TRUE"
+V21332.TextLabel_45.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.TextLabel_45.TextScaled = true
+V21332.TextLabel_45.TextSize = 14.000
+V21332.TextLabel_45.TextWrapped = true
+
+V21332.PropertiesEnabled.Name = "PropertiesEnabled"
+V21332.PropertiesEnabled.Parent = V21332.Locked_4
+V21332.PropertiesEnabled.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.PropertiesEnabled.Size = UDim2.new(0, 200, 0, 50)
+V21332.PropertiesEnabled.AutoButtonColor = false
+V21332.PropertiesEnabled.Font = Enum.Font.Code
+V21332.PropertiesEnabled.Text = "FALSE"
+V21332.PropertiesEnabled.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.PropertiesEnabled.TextSize = 14.000
+
+V21332.Frame_34.Parent = V21332.PropertiesEnabled
+V21332.Frame_34.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_34.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_34.ZIndex = 0
+
+V21332.UICorner_91.Parent = V21332.Frame_34
+
+V21332.TextLabel_46.Parent = V21332.PropertiesEnabled
+V21332.TextLabel_46.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_46.BackgroundTransparency = 1.000
+V21332.TextLabel_46.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_46.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_46.Font = Enum.Font.SourceSans
+V21332.TextLabel_46.Text = "PropertiesEnabled"
+V21332.TextLabel_46.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_46.TextSize = 14.000
+
+V21332.UICorner_92.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_92.Parent = V21332.PropertiesEnabled
+
+V21332.Submit_4.Name = "Submit"
+V21332.Submit_4.Parent = V21332.Locked_4
+V21332.Submit_4.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Submit_4.Size = UDim2.new(0, 200, 0, 50)
+V21332.Submit_4.AutoButtonColor = false
+V21332.Submit_4.Font = Enum.Font.Code
+V21332.Submit_4.Text = "SUBMIT"
+V21332.Submit_4.TextColor3 = Color3.fromRGB(85, 255, 0)
+V21332.Submit_4.TextSize = 14.000
+
+V21332.Frame_35.Parent = V21332.Submit_4
+V21332.Frame_35.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_35.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_35.ZIndex = 0
+
+V21332.UICorner_93.Parent = V21332.Frame_35
+
+V21332.TextLabel_47.Parent = V21332.Submit_4
+V21332.TextLabel_47.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_47.BackgroundTransparency = 1.000
+V21332.TextLabel_47.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_47.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_47.Font = Enum.Font.SourceSans
+V21332.TextLabel_47.Text = "Selection"
+V21332.TextLabel_47.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_47.TextSize = 14.000
+
+V21332.UICorner_94.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_94.Parent = V21332.Submit_4
+
+V21332.ANGULAR.Name = "ANGULAR"
+V21332.ANGULAR.Parent = V21332.Usable
+V21332.ANGULAR.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.ANGULAR.BackgroundTransparency = 1.000
+V21332.ANGULAR.Size = UDim2.new(1, 0, 1, 0)
+V21332.ANGULAR.Visible = false
+
+V21332.Title_5.Name = "Title"
+V21332.Title_5.Parent = V21332.ANGULAR
+V21332.Title_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title_5.BackgroundTransparency = 1.000
+V21332.Title_5.BorderColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title_5.Size = UDim2.new(0, 200, 0, 25)
+V21332.Title_5.Font = Enum.Font.Code
+V21332.Title_5.Text = "ANGULAR VELOCITY FORCES"
+V21332.Title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title_5.TextSize = 20.000
+V21332.Title_5.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title_5.TextStrokeTransparency = 0.800
+V21332.Title_5.TextXAlignment = Enum.TextXAlignment.Left
+
+V21332.Outer_5.Name = "Outer"
+V21332.Outer_5.Parent = V21332.ANGULAR
+V21332.Outer_5.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+V21332.Outer_5.Position = UDim2.new(0, 0, 0, 170)
+V21332.Outer_5.Size = UDim2.new(1, 0, 1, 0)
+V21332.Outer_5.Visible = false
+V21332.Outer_5.ZIndex = 0
+
+V21332.UICorner_95.CornerRadius = UDim.new(0, 4)
+V21332.UICorner_95.Parent = V21332.Outer_5
+
+V21332.OuterTop_5.Name = "OuterTop"
+V21332.OuterTop_5.Parent = V21332.Outer_5
+V21332.OuterTop_5.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.OuterTop_5.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+V21332.OuterTop_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.OuterTop_5.Size = UDim2.new(1, 20, 1, 20)
+V21332.OuterTop_5.ZIndex = -1
+
+V21332.UICorner_96.CornerRadius = UDim.new(0, 4)
+V21332.UICorner_96.Parent = V21332.OuterTop_5
+
+V21332.Selects_5.Name = "Selects"
+V21332.Selects_5.Parent = V21332.Outer_5
+V21332.Selects_5.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.Selects_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Selects_5.BackgroundTransparency = 1.000
+V21332.Selects_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.Selects_5.Size = UDim2.new(1, -10, 1, -10)
+
+V21332.UIGridLayout_15.Parent = V21332.Selects_5
+V21332.UIGridLayout_15.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout_15.CellPadding = UDim2.new(0, 5, 0, 20)
+V21332.UIGridLayout_15.CellSize = UDim2.new(0, 100, 0, 25)
+
+V21332.Thingy_5.Name = "Thingy"
+V21332.Thingy_5.Parent = V21332.Outer_5
+V21332.Thingy_5.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Thingy_5.Size = UDim2.new(0, 200, 0, 50)
+V21332.Thingy_5.Visible = false
+V21332.Thingy_5.AutoButtonColor = false
+V21332.Thingy_5.Font = Enum.Font.Code
+V21332.Thingy_5.Text = "Steering"
+V21332.Thingy_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Thingy_5.TextSize = 14.000
+
+V21332.UICorner_97.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_97.Parent = V21332.Thingy_5
+
+V21332.TextLabel_48.Parent = V21332.Thingy_5
+V21332.TextLabel_48.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_48.BackgroundTransparency = 1.000
+V21332.TextLabel_48.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_48.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_48.Font = Enum.Font.SourceSans
+V21332.TextLabel_48.Text = "Suspension"
+V21332.TextLabel_48.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_48.TextSize = 14.000
+
+V21332.Frame_36.Parent = V21332.Thingy_5
+V21332.Frame_36.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_36.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_36.ZIndex = 0
+
+V21332.UICorner_98.Parent = V21332.Frame_36
+
+V21332.Stats_5.Name = "Stats"
+V21332.Stats_5.Parent = V21332.Outer_5
+V21332.Stats_5.AnchorPoint = Vector2.new(1, 1)
+V21332.Stats_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Stats_5.BackgroundTransparency = 1.000
+V21332.Stats_5.Position = UDim2.new(1, 220, 1, 0)
+V21332.Stats_5.Size = UDim2.new(0, 200, 1, 50)
+V21332.Stats_5.Font = Enum.Font.Code
+V21332.Stats_5.Text = ""
+V21332.Stats_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Stats_5.TextSize = 14.000
+V21332.Stats_5.TextStrokeTransparency = 0.000
+V21332.Stats_5.TextWrapped = true
+V21332.Stats_5.TextXAlignment = Enum.TextXAlignment.Left
+V21332.Stats_5.TextYAlignment = Enum.TextYAlignment.Top
+
+V21332.Default_5.Name = "Default"
+V21332.Default_5.Parent = V21332.ANGULAR
+V21332.Default_5.AnchorPoint = Vector2.new(1, 0)
+V21332.Default_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Default_5.BackgroundTransparency = 1.000
+V21332.Default_5.Position = UDim2.new(1, 0, 0, 0)
+V21332.Default_5.Size = UDim2.new(0, 100, 0, 25)
+V21332.Default_5.ZIndex = 5
+V21332.Default_5.Font = Enum.Font.Code
+V21332.Default_5.Text = "SET DEFAULT (ROUNDED)"
+V21332.Default_5.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.Default_5.TextSize = 14.000
+V21332.Default_5.TextStrokeColor3 = Color3.fromRGB(85, 0, 0)
+V21332.Default_5.TextStrokeTransparency = 0.000
+V21332.Default_5.TextXAlignment = Enum.TextXAlignment.Right
+
+V21332.Buttons_5.Name = "Buttons"
+V21332.Buttons_5.Parent = V21332.ANGULAR
+V21332.Buttons_5.AnchorPoint = Vector2.new(1, 1)
+V21332.Buttons_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Buttons_5.BackgroundTransparency = 1.000
+V21332.Buttons_5.Position = UDim2.new(1, 0, 1, 0)
+V21332.Buttons_5.Size = UDim2.new(1, 0, 0, 110)
+V21332.Buttons_5.Visible = false
+
+V21332.Unlocked_5.Name = "Unlocked"
+V21332.Unlocked_5.Parent = V21332.Buttons_5
+V21332.Unlocked_5.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.Unlocked_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Unlocked_5.BackgroundTransparency = 1.000
+V21332.Unlocked_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.Unlocked_5.Size = UDim2.new(1, -10, 1, -10)
+
+V21332.UIGridLayout_16.Parent = V21332.Unlocked_5
+V21332.UIGridLayout_16.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout_16.CellSize = UDim2.new(0, 100, 0, 25)
+
+V21332.Radius_3.Name = "Radius"
+V21332.Radius_3.Parent = V21332.Unlocked_5
+V21332.Radius_3.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Radius_3.Size = UDim2.new(0, 200, 0, 50)
+V21332.Radius_3.ClearTextOnFocus = false
+V21332.Radius_3.Font = Enum.Font.Code
+V21332.Radius_3.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+V21332.Radius_3.PlaceholderText = "0"
+V21332.Radius_3.Text = "0"
+V21332.Radius_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Radius_3.TextSize = 14.000
+
+V21332.UICorner_99.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_99.Parent = V21332.Radius_3
+
+V21332.TextLabel_49.Parent = V21332.Radius_3
+V21332.TextLabel_49.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_49.BackgroundTransparency = 1.000
+V21332.TextLabel_49.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_49.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_49.Font = Enum.Font.SourceSans
+V21332.TextLabel_49.Text = "Radius"
+V21332.TextLabel_49.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_49.TextSize = 14.000
+
+V21332.Frame_37.Parent = V21332.Radius_3
+V21332.Frame_37.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_37.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_37.ZIndex = 0
+
+V21332.UICorner_100.Parent = V21332.Frame_37
+
+V21332.Enabled_4.Name = "Enabled"
+V21332.Enabled_4.Parent = V21332.Unlocked_5
+V21332.Enabled_4.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Enabled_4.Size = UDim2.new(0, 200, 0, 50)
+V21332.Enabled_4.AutoButtonColor = false
+V21332.Enabled_4.Font = Enum.Font.Code
+V21332.Enabled_4.Text = "TRUE"
+V21332.Enabled_4.TextColor3 = Color3.fromRGB(85, 255, 0)
+V21332.Enabled_4.TextSize = 14.000
+
+V21332.Frame_38.Parent = V21332.Enabled_4
+V21332.Frame_38.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_38.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_38.ZIndex = 0
+
+V21332.UICorner_101.Parent = V21332.Frame_38
+
+V21332.TextLabel_50.Parent = V21332.Enabled_4
+V21332.TextLabel_50.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_50.BackgroundTransparency = 1.000
+V21332.TextLabel_50.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_50.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_50.Font = Enum.Font.SourceSans
+V21332.TextLabel_50.Text = "Enabled"
+V21332.TextLabel_50.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_50.TextSize = 14.000
+
+V21332.UICorner_102.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_102.Parent = V21332.Enabled_4
+
+V21332.Visible_3.Name = "Visible"
+V21332.Visible_3.Parent = V21332.Unlocked_5
+V21332.Visible_3.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Visible_3.Size = UDim2.new(0, 200, 0, 50)
+V21332.Visible_3.AutoButtonColor = false
+V21332.Visible_3.Font = Enum.Font.Code
+V21332.Visible_3.Text = "FALSE"
+V21332.Visible_3.TextColor3 = Color3.fromRGB(178, 178, 178)
+V21332.Visible_3.TextSize = 14.000
+
+V21332.Frame_39.Parent = V21332.Visible_3
+V21332.Frame_39.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_39.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_39.ZIndex = 0
+
+V21332.UICorner_103.Parent = V21332.Frame_39
+
+V21332.TextLabel_51.Parent = V21332.Visible_3
+V21332.TextLabel_51.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_51.BackgroundTransparency = 1.000
+V21332.TextLabel_51.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_51.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_51.Font = Enum.Font.SourceSans
+V21332.TextLabel_51.Text = "Visible"
+V21332.TextLabel_51.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_51.TextSize = 14.000
+
+V21332.UICorner_104.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_104.Parent = V21332.Visible_3
+
+V21332.Submit_5.Name = "Submit"
+V21332.Submit_5.Parent = V21332.Unlocked_5
+V21332.Submit_5.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Submit_5.Size = UDim2.new(0, 200, 0, 50)
+V21332.Submit_5.AutoButtonColor = false
+V21332.Submit_5.Font = Enum.Font.Code
+V21332.Submit_5.Text = "SUBMIT"
+V21332.Submit_5.TextColor3 = Color3.fromRGB(85, 255, 0)
+V21332.Submit_5.TextSize = 14.000
+
+V21332.Frame_40.Parent = V21332.Submit_5
+V21332.Frame_40.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_40.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_40.ZIndex = 0
+
+V21332.UICorner_105.Parent = V21332.Frame_40
+
+V21332.TextLabel_52.Parent = V21332.Submit_5
+V21332.TextLabel_52.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_52.BackgroundTransparency = 1.000
+V21332.TextLabel_52.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_52.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_52.Font = Enum.Font.SourceSans
+V21332.TextLabel_52.Text = "Selection"
+V21332.TextLabel_52.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_52.TextSize = 14.000
+
+V21332.UICorner_106.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_106.Parent = V21332.Submit_5
+
+V21332.Locked_5.Name = "Locked"
+V21332.Locked_5.Parent = V21332.Buttons_5
+V21332.Locked_5.AnchorPoint = Vector2.new(0.5, 0.800000012)
+V21332.Locked_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Locked_5.BackgroundTransparency = 1.000
+V21332.Locked_5.Position = UDim2.new(0.5, 0, 0.800000012, 0)
+V21332.Locked_5.Size = UDim2.new(1, -10, 1, -80)
+
+V21332.UIGridLayout_17.Parent = V21332.Locked_5
+V21332.UIGridLayout_17.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout_17.CellSize = UDim2.new(0, 100, 0, 25)
+
+V21332.UpperAngle_3.Name = "UpperAngle"
+V21332.UpperAngle_3.Parent = V21332.Locked_5
+V21332.UpperAngle_3.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.UpperAngle_3.Size = UDim2.new(0, 200, 0, 50)
+V21332.UpperAngle_3.ClearTextOnFocus = false
+V21332.UpperAngle_3.Font = Enum.Font.Code
+V21332.UpperAngle_3.PlaceholderText = "0"
+V21332.UpperAngle_3.Text = "0"
+V21332.UpperAngle_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.UpperAngle_3.TextSize = 14.000
+
+V21332.UICorner_107.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_107.Parent = V21332.UpperAngle_3
+
+V21332.TextLabel_53.Parent = V21332.UpperAngle_3
+V21332.TextLabel_53.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_53.BackgroundTransparency = 1.000
+V21332.TextLabel_53.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_53.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_53.Font = Enum.Font.SourceSans
+V21332.TextLabel_53.Text = "UpperAngle"
+V21332.TextLabel_53.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_53.TextSize = 14.000
+
+V21332.Frame_41.Parent = V21332.UpperAngle_3
+V21332.Frame_41.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_41.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_41.ZIndex = 0
+
+V21332.UICorner_108.Parent = V21332.Frame_41
+
+V21332.LOCK_14.Name = "LOCK"
+V21332.LOCK_14.Parent = V21332.UpperAngle_3
+V21332.LOCK_14.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.LOCK_14.BackgroundTransparency = 0.500
+V21332.LOCK_14.Size = UDim2.new(0, 100, 0, 37)
+V21332.LOCK_14.ZIndex = 4
+
+V21332.UICorner_109.Parent = V21332.LOCK_14
+
+V21332.TextLabel_54.Parent = V21332.LOCK_14
+V21332.TextLabel_54.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.TextLabel_54.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_54.BackgroundTransparency = 1.000
+V21332.TextLabel_54.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.TextLabel_54.Size = UDim2.new(1, 0, 0, 25)
+V21332.TextLabel_54.ZIndex = 6
+V21332.TextLabel_54.Font = Enum.Font.SourceSansBold
+V21332.TextLabel_54.Text = "SET LIMITS ENABLED TO FALSE"
+V21332.TextLabel_54.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.TextLabel_54.TextScaled = true
+V21332.TextLabel_54.TextSize = 14.000
+V21332.TextLabel_54.TextWrapped = true
+
+V21332.Restitution_3.Name = "Restitution"
+V21332.Restitution_3.Parent = V21332.Locked_5
+V21332.Restitution_3.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Restitution_3.Size = UDim2.new(0, 200, 0, 50)
+V21332.Restitution_3.ClearTextOnFocus = false
+V21332.Restitution_3.Font = Enum.Font.Code
+V21332.Restitution_3.PlaceholderText = "0"
+V21332.Restitution_3.Text = "0"
+V21332.Restitution_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Restitution_3.TextSize = 14.000
+
+V21332.UICorner_110.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_110.Parent = V21332.Restitution_3
+
+V21332.TextLabel_55.Parent = V21332.Restitution_3
+V21332.TextLabel_55.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_55.BackgroundTransparency = 1.000
+V21332.TextLabel_55.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_55.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_55.Font = Enum.Font.SourceSans
+V21332.TextLabel_55.Text = "Restitution"
+V21332.TextLabel_55.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_55.TextSize = 14.000
+
+V21332.Frame_42.Parent = V21332.Restitution_3
+V21332.Frame_42.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_42.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_42.ZIndex = 0
+
+V21332.UICorner_111.Parent = V21332.Frame_42
+
+V21332.LOCK_15.Name = "LOCK"
+V21332.LOCK_15.Parent = V21332.Restitution_3
+V21332.LOCK_15.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.LOCK_15.BackgroundTransparency = 0.500
+V21332.LOCK_15.Size = UDim2.new(0, 100, 0, 37)
+V21332.LOCK_15.ZIndex = 4
+
+V21332.UICorner_112.Parent = V21332.LOCK_15
+
+V21332.TextLabel_56.Parent = V21332.LOCK_15
+V21332.TextLabel_56.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.TextLabel_56.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_56.BackgroundTransparency = 1.000
+V21332.TextLabel_56.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.TextLabel_56.Size = UDim2.new(1, 0, 0, 25)
+V21332.TextLabel_56.ZIndex = 6
+V21332.TextLabel_56.Font = Enum.Font.SourceSansBold
+V21332.TextLabel_56.Text = "SET LIMITS ENABLED TO FALSE"
+V21332.TextLabel_56.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.TextLabel_56.TextScaled = true
+V21332.TextLabel_56.TextSize = 14.000
+V21332.TextLabel_56.TextWrapped = true
+
+V21332.LowerAngle_3.Name = "LowerAngle"
+V21332.LowerAngle_3.Parent = V21332.Locked_5
+V21332.LowerAngle_3.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.LowerAngle_3.Size = UDim2.new(0, 200, 0, 50)
+V21332.LowerAngle_3.ClearTextOnFocus = false
+V21332.LowerAngle_3.Font = Enum.Font.Code
+V21332.LowerAngle_3.PlaceholderText = "0"
+V21332.LowerAngle_3.Text = "0"
+V21332.LowerAngle_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.LowerAngle_3.TextSize = 14.000
+
+V21332.UICorner_113.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_113.Parent = V21332.LowerAngle_3
+
+V21332.TextLabel_57.Parent = V21332.LowerAngle_3
+V21332.TextLabel_57.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_57.BackgroundTransparency = 1.000
+V21332.TextLabel_57.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_57.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_57.Font = Enum.Font.SourceSans
+V21332.TextLabel_57.Text = "LowerAngle"
+V21332.TextLabel_57.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_57.TextSize = 14.000
+
+V21332.Frame_43.Parent = V21332.LowerAngle_3
+V21332.Frame_43.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_43.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_43.ZIndex = 0
+
+V21332.UICorner_114.Parent = V21332.Frame_43
+
+V21332.LOCK_16.Name = "LOCK"
+V21332.LOCK_16.Parent = V21332.LowerAngle_3
+V21332.LOCK_16.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.LOCK_16.BackgroundTransparency = 0.500
+V21332.LOCK_16.Size = UDim2.new(0, 100, 0, 37)
+V21332.LOCK_16.ZIndex = 4
+
+V21332.UICorner_115.Parent = V21332.LOCK_16
+
+V21332.TextLabel_58.Parent = V21332.LOCK_16
+V21332.TextLabel_58.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.TextLabel_58.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_58.BackgroundTransparency = 1.000
+V21332.TextLabel_58.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.TextLabel_58.Size = UDim2.new(1, 0, 0, 25)
+V21332.TextLabel_58.ZIndex = 6
+V21332.TextLabel_58.Font = Enum.Font.SourceSansBold
+V21332.TextLabel_58.Text = "SET LIMITS ENABLED TO FALSE"
+V21332.TextLabel_58.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.TextLabel_58.TextScaled = true
+V21332.TextLabel_58.TextSize = 14.000
+V21332.TextLabel_58.TextWrapped = true
+
+V21332.LimitsEnabled_4.Name = "LimitsEnabled"
+V21332.LimitsEnabled_4.Parent = V21332.Locked_5
+V21332.LimitsEnabled_4.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.LimitsEnabled_4.Size = UDim2.new(0, 200, 0, 50)
+V21332.LimitsEnabled_4.AutoButtonColor = false
+V21332.LimitsEnabled_4.Font = Enum.Font.Code
+V21332.LimitsEnabled_4.Text = "TRUE"
+V21332.LimitsEnabled_4.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.LimitsEnabled_4.TextSize = 14.000
+
+V21332.Frame_44.Parent = V21332.LimitsEnabled_4
+V21332.Frame_44.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_44.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_44.ZIndex = 0
+
+V21332.UICorner_116.Parent = V21332.Frame_44
+
+V21332.TextLabel_59.Parent = V21332.LimitsEnabled_4
+V21332.TextLabel_59.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_59.BackgroundTransparency = 1.000
+V21332.TextLabel_59.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_59.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_59.Font = Enum.Font.SourceSans
+V21332.TextLabel_59.Text = "LimitsEnabled"
+V21332.TextLabel_59.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_59.TextSize = 14.000
+
+V21332.UICorner_117.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_117.Parent = V21332.LimitsEnabled_4
+
+V21332.SUSPENSION.Name = "SUSPENSION"
+V21332.SUSPENSION.Parent = V21332.Usable
+V21332.SUSPENSION.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.SUSPENSION.BackgroundTransparency = 1.000
+V21332.SUSPENSION.Size = UDim2.new(1, 0, 1, 0)
+V21332.SUSPENSION.Visible = false
+
+V21332.Title_6.Name = "Title"
+V21332.Title_6.Parent = V21332.SUSPENSION
+V21332.Title_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title_6.BackgroundTransparency = 1.000
+V21332.Title_6.BorderColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title_6.Size = UDim2.new(0, 200, 0, 25)
+V21332.Title_6.Font = Enum.Font.Code
+V21332.Title_6.Text = "SUSPENSION / SPRING"
+V21332.Title_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title_6.TextSize = 20.000
+V21332.Title_6.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title_6.TextStrokeTransparency = 0.800
+V21332.Title_6.TextWrapped = true
+V21332.Title_6.TextXAlignment = Enum.TextXAlignment.Left
+
+V21332.Buttons_6.Name = "Buttons"
+V21332.Buttons_6.Parent = V21332.SUSPENSION
+V21332.Buttons_6.AnchorPoint = Vector2.new(1, 1)
+V21332.Buttons_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Buttons_6.BackgroundTransparency = 1.000
+V21332.Buttons_6.Position = UDim2.new(1, 0, 1, 0)
+V21332.Buttons_6.Size = UDim2.new(1, 0, 0, 110)
+
+V21332.Unlocked_6.Name = "Unlocked"
+V21332.Unlocked_6.Parent = V21332.Buttons_6
+V21332.Unlocked_6.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.Unlocked_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Unlocked_6.BackgroundTransparency = 1.000
+V21332.Unlocked_6.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.Unlocked_6.Size = UDim2.new(1, -10, 1, -10)
+
+V21332.UIGridLayout_18.Parent = V21332.Unlocked_6
+V21332.UIGridLayout_18.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout_18.CellSize = UDim2.new(0, 100, 0, 25)
+
+V21332.Stiffness.Name = "Stiffness"
+V21332.Stiffness.Parent = V21332.Unlocked_6
+V21332.Stiffness.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Stiffness.Size = UDim2.new(0, 200, 0, 50)
+V21332.Stiffness.ClearTextOnFocus = false
+V21332.Stiffness.Font = Enum.Font.Code
+V21332.Stiffness.PlaceholderText = "0"
+V21332.Stiffness.Text = "0"
+V21332.Stiffness.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Stiffness.TextSize = 14.000
+
+V21332.UICorner_118.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_118.Parent = V21332.Stiffness
+
+V21332.TextLabel_60.Parent = V21332.Stiffness
+V21332.TextLabel_60.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_60.BackgroundTransparency = 1.000
+V21332.TextLabel_60.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_60.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_60.Font = Enum.Font.SourceSans
+V21332.TextLabel_60.Text = "Stiffness"
+V21332.TextLabel_60.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_60.TextSize = 14.000
+
+V21332.Frame_45.Parent = V21332.Stiffness
+V21332.Frame_45.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_45.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_45.ZIndex = 0
+
+V21332.UICorner_119.Parent = V21332.Frame_45
+
+V21332.Damping.Name = "Damping"
+V21332.Damping.Parent = V21332.Unlocked_6
+V21332.Damping.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Damping.Size = UDim2.new(0, 200, 0, 50)
+V21332.Damping.ClearTextOnFocus = false
+V21332.Damping.Font = Enum.Font.Code
+V21332.Damping.PlaceholderText = "0"
+V21332.Damping.Text = "0"
+V21332.Damping.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Damping.TextSize = 14.000
+
+V21332.UICorner_120.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_120.Parent = V21332.Damping
+
+V21332.TextLabel_61.Parent = V21332.Damping
+V21332.TextLabel_61.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_61.BackgroundTransparency = 1.000
+V21332.TextLabel_61.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_61.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_61.Font = Enum.Font.SourceSans
+V21332.TextLabel_61.Text = "Damping"
+V21332.TextLabel_61.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_61.TextSize = 14.000
+
+V21332.Frame_46.Parent = V21332.Damping
+V21332.Frame_46.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_46.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_46.ZIndex = 0
+
+V21332.UICorner_121.Parent = V21332.Frame_46
+
+V21332.MaxForce.Name = "MaxForce"
+V21332.MaxForce.Parent = V21332.Unlocked_6
+V21332.MaxForce.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.MaxForce.Size = UDim2.new(0, 200, 0, 50)
+V21332.MaxForce.ClearTextOnFocus = false
+V21332.MaxForce.Font = Enum.Font.Code
+V21332.MaxForce.PlaceholderText = "0"
+V21332.MaxForce.Text = "0"
+V21332.MaxForce.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.MaxForce.TextSize = 14.000
+
+V21332.UICorner_122.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_122.Parent = V21332.MaxForce
+
+V21332.TextLabel_62.Parent = V21332.MaxForce
+V21332.TextLabel_62.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_62.BackgroundTransparency = 1.000
+V21332.TextLabel_62.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_62.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_62.Font = Enum.Font.SourceSans
+V21332.TextLabel_62.Text = "MaxForce"
+V21332.TextLabel_62.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_62.TextSize = 14.000
+
+V21332.Frame_47.Parent = V21332.MaxForce
+V21332.Frame_47.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_47.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_47.ZIndex = 0
+
+V21332.UICorner_123.Parent = V21332.Frame_47
+
+V21332.FreeLength.Name = "FreeLength"
+V21332.FreeLength.Parent = V21332.Unlocked_6
+V21332.FreeLength.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.FreeLength.Size = UDim2.new(0, 200, 0, 50)
+V21332.FreeLength.ClearTextOnFocus = false
+V21332.FreeLength.Font = Enum.Font.Code
+V21332.FreeLength.PlaceholderText = "0"
+V21332.FreeLength.Text = "0"
+V21332.FreeLength.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.FreeLength.TextSize = 14.000
+
+V21332.UICorner_124.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_124.Parent = V21332.FreeLength
+
+V21332.TextLabel_63.Parent = V21332.FreeLength
+V21332.TextLabel_63.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_63.BackgroundTransparency = 1.000
+V21332.TextLabel_63.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_63.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_63.Font = Enum.Font.SourceSans
+V21332.TextLabel_63.Text = "FreeLength"
+V21332.TextLabel_63.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_63.TextSize = 14.000
+
+V21332.Frame_48.Parent = V21332.FreeLength
+V21332.Frame_48.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_48.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_48.ZIndex = 0
+
+V21332.UICorner_125.Parent = V21332.Frame_48
+
+V21332.Locked_6.Name = "Locked"
+V21332.Locked_6.Parent = V21332.Buttons_6
+V21332.Locked_6.AnchorPoint = Vector2.new(0.5, 0.800000012)
+V21332.Locked_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Locked_6.BackgroundTransparency = 1.000
+V21332.Locked_6.Position = UDim2.new(0.5, 0, 0.800000012, 0)
+V21332.Locked_6.Size = UDim2.new(1, -10, 1, -80)
+
+V21332.UIGridLayout_19.Parent = V21332.Locked_6
+V21332.UIGridLayout_19.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout_19.CellSize = UDim2.new(0, 100, 0, 25)
+
+V21332.MinLength.Name = "MinLength"
+V21332.MinLength.Parent = V21332.Locked_6
+V21332.MinLength.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.MinLength.Size = UDim2.new(0, 200, 0, 50)
+V21332.MinLength.ClearTextOnFocus = false
+V21332.MinLength.Font = Enum.Font.Code
+V21332.MinLength.PlaceholderText = "0"
+V21332.MinLength.Text = "0"
+V21332.MinLength.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.MinLength.TextSize = 14.000
+
+V21332.UICorner_126.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_126.Parent = V21332.MinLength
+
+V21332.TextLabel_64.Parent = V21332.MinLength
+V21332.TextLabel_64.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_64.BackgroundTransparency = 1.000
+V21332.TextLabel_64.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_64.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_64.Font = Enum.Font.SourceSans
+V21332.TextLabel_64.Text = "MinLength"
+V21332.TextLabel_64.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_64.TextSize = 14.000
+
+V21332.Frame_49.Parent = V21332.MinLength
+V21332.Frame_49.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_49.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_49.ZIndex = 0
+
+V21332.UICorner_127.Parent = V21332.Frame_49
+
+V21332.LOCK_17.Name = "LOCK"
+V21332.LOCK_17.Parent = V21332.MinLength
+V21332.LOCK_17.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.LOCK_17.BackgroundTransparency = 0.500
+V21332.LOCK_17.Size = UDim2.new(0, 100, 0, 37)
+V21332.LOCK_17.ZIndex = 4
+
+V21332.UICorner_128.Parent = V21332.LOCK_17
+
+V21332.TextLabel_65.Parent = V21332.LOCK_17
+V21332.TextLabel_65.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.TextLabel_65.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_65.BackgroundTransparency = 1.000
+V21332.TextLabel_65.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.TextLabel_65.Size = UDim2.new(1, 0, 0, 25)
+V21332.TextLabel_65.ZIndex = 6
+V21332.TextLabel_65.Font = Enum.Font.SourceSansBold
+V21332.TextLabel_65.Text = "SET LIMITS ENABLED TO FALSE"
+V21332.TextLabel_65.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.TextLabel_65.TextScaled = true
+V21332.TextLabel_65.TextSize = 14.000
+V21332.TextLabel_65.TextWrapped = true
+
+V21332.MaxLength.Name = "MaxLength"
+V21332.MaxLength.Parent = V21332.Locked_6
+V21332.MaxLength.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.MaxLength.Size = UDim2.new(0, 200, 0, 50)
+V21332.MaxLength.ClearTextOnFocus = false
+V21332.MaxLength.Font = Enum.Font.Code
+V21332.MaxLength.PlaceholderText = "0"
+V21332.MaxLength.Text = "0"
+V21332.MaxLength.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.MaxLength.TextSize = 14.000
+
+V21332.UICorner_129.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_129.Parent = V21332.MaxLength
+
+V21332.TextLabel_66.Parent = V21332.MaxLength
+V21332.TextLabel_66.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_66.BackgroundTransparency = 1.000
+V21332.TextLabel_66.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_66.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_66.Font = Enum.Font.SourceSans
+V21332.TextLabel_66.Text = "MaxLength"
+V21332.TextLabel_66.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_66.TextSize = 14.000
+
+V21332.Frame_50.Parent = V21332.MaxLength
+V21332.Frame_50.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_50.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_50.ZIndex = 0
+
+V21332.UICorner_130.Parent = V21332.Frame_50
+
+V21332.LOCK_18.Name = "LOCK"
+V21332.LOCK_18.Parent = V21332.MaxLength
+V21332.LOCK_18.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.LOCK_18.BackgroundTransparency = 0.500
+V21332.LOCK_18.Size = UDim2.new(0, 100, 0, 37)
+V21332.LOCK_18.ZIndex = 4
+
+V21332.UICorner_131.Parent = V21332.LOCK_18
+
+V21332.TextLabel_67.Parent = V21332.LOCK_18
+V21332.TextLabel_67.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.TextLabel_67.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_67.BackgroundTransparency = 1.000
+V21332.TextLabel_67.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.TextLabel_67.Size = UDim2.new(1, 0, 0, 25)
+V21332.TextLabel_67.ZIndex = 6
+V21332.TextLabel_67.Font = Enum.Font.SourceSansBold
+V21332.TextLabel_67.Text = "SET LIMITS ENABLED TO FALSE"
+V21332.TextLabel_67.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.TextLabel_67.TextScaled = true
+V21332.TextLabel_67.TextSize = 14.000
+V21332.TextLabel_67.TextWrapped = true
+
+V21332.LimitsEnabled_5.Name = "LimitsEnabled"
+V21332.LimitsEnabled_5.Parent = V21332.Locked_6
+V21332.LimitsEnabled_5.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.LimitsEnabled_5.Size = UDim2.new(0, 200, 0, 50)
+V21332.LimitsEnabled_5.AutoButtonColor = false
+V21332.LimitsEnabled_5.Font = Enum.Font.Code
+V21332.LimitsEnabled_5.Text = "TRUE"
+V21332.LimitsEnabled_5.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.LimitsEnabled_5.TextSize = 14.000
+
+V21332.Frame_51.Parent = V21332.LimitsEnabled_5
+V21332.Frame_51.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_51.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_51.ZIndex = 0
+
+V21332.UICorner_132.Parent = V21332.Frame_51
+
+V21332.TextLabel_68.Parent = V21332.LimitsEnabled_5
+V21332.TextLabel_68.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_68.BackgroundTransparency = 1.000
+V21332.TextLabel_68.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_68.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_68.Font = Enum.Font.SourceSans
+V21332.TextLabel_68.Text = "LimitsEnabled"
+V21332.TextLabel_68.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_68.TextSize = 14.000
+
+V21332.UICorner_133.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_133.Parent = V21332.LimitsEnabled_5
+
+V21332.Submit_6.Name = "Submit"
+V21332.Submit_6.Parent = V21332.Locked_6
+V21332.Submit_6.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Submit_6.Size = UDim2.new(0, 200, 0, 50)
+V21332.Submit_6.AutoButtonColor = false
+V21332.Submit_6.Font = Enum.Font.Code
+V21332.Submit_6.Text = "SUBMIT"
+V21332.Submit_6.TextColor3 = Color3.fromRGB(85, 255, 0)
+V21332.Submit_6.TextSize = 14.000
+
+V21332.Frame_52.Parent = V21332.Submit_6
+V21332.Frame_52.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_52.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_52.ZIndex = 0
+
+V21332.UICorner_134.Parent = V21332.Frame_52
+
+V21332.TextLabel_69.Parent = V21332.Submit_6
+V21332.TextLabel_69.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_69.BackgroundTransparency = 1.000
+V21332.TextLabel_69.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_69.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_69.Font = Enum.Font.SourceSans
+V21332.TextLabel_69.Text = "Selection"
+V21332.TextLabel_69.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_69.TextSize = 14.000
+
+V21332.UICorner_135.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_135.Parent = V21332.Submit_6
+
+V21332.Outer_6.Name = "Outer"
+V21332.Outer_6.Parent = V21332.SUSPENSION
+V21332.Outer_6.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+V21332.Outer_6.Position = UDim2.new(0, 0, 0, 170)
+V21332.Outer_6.Size = UDim2.new(1, 0, 1, 0)
+V21332.Outer_6.ZIndex = 0
+
+V21332.UICorner_136.CornerRadius = UDim.new(0, 4)
+V21332.UICorner_136.Parent = V21332.Outer_6
+
+V21332.OuterTop_6.Name = "OuterTop"
+V21332.OuterTop_6.Parent = V21332.Outer_6
+V21332.OuterTop_6.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.OuterTop_6.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+V21332.OuterTop_6.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.OuterTop_6.Size = UDim2.new(1, 20, 1, 20)
+V21332.OuterTop_6.ZIndex = -1
+
+V21332.UICorner_137.CornerRadius = UDim.new(0, 4)
+V21332.UICorner_137.Parent = V21332.OuterTop_6
+
+V21332.Selects_6.Name = "Selects"
+V21332.Selects_6.Parent = V21332.Outer_6
+V21332.Selects_6.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.Selects_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Selects_6.BackgroundTransparency = 1.000
+V21332.Selects_6.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.Selects_6.Size = UDim2.new(1, -10, 1, -10)
+
+V21332.UIGridLayout_20.Parent = V21332.Selects_6
+V21332.UIGridLayout_20.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout_20.CellPadding = UDim2.new(0, 5, 0, 20)
+V21332.UIGridLayout_20.CellSize = UDim2.new(0, 100, 0, 25)
+
+V21332.Thingy_6.Name = "Thingy"
+V21332.Thingy_6.Parent = V21332.Outer_6
+V21332.Thingy_6.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Thingy_6.Size = UDim2.new(0, 200, 0, 50)
+V21332.Thingy_6.Visible = false
+V21332.Thingy_6.AutoButtonColor = false
+V21332.Thingy_6.Font = Enum.Font.Code
+V21332.Thingy_6.Text = "Steering"
+V21332.Thingy_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Thingy_6.TextScaled = true
+V21332.Thingy_6.TextSize = 14.000
+V21332.Thingy_6.TextWrapped = true
+
+V21332.UICorner_138.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_138.Parent = V21332.Thingy_6
+
+V21332.TextLabel_70.Parent = V21332.Thingy_6
+V21332.TextLabel_70.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_70.BackgroundTransparency = 1.000
+V21332.TextLabel_70.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_70.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_70.Font = Enum.Font.SourceSans
+V21332.TextLabel_70.Text = "Suspension"
+V21332.TextLabel_70.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_70.TextSize = 14.000
+
+V21332.Frame_53.Parent = V21332.Thingy_6
+V21332.Frame_53.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_53.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_53.ZIndex = 0
+
+V21332.UICorner_139.Parent = V21332.Frame_53
+
+V21332.Stats_6.Name = "Stats"
+V21332.Stats_6.Parent = V21332.Outer_6
+V21332.Stats_6.AnchorPoint = Vector2.new(1, 1)
+V21332.Stats_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Stats_6.BackgroundTransparency = 1.000
+V21332.Stats_6.Position = UDim2.new(1, 220, 1, 0)
+V21332.Stats_6.Size = UDim2.new(0, 200, 1, 50)
+V21332.Stats_6.Font = Enum.Font.Code
+V21332.Stats_6.Text = ""
+V21332.Stats_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Stats_6.TextSize = 14.000
+V21332.Stats_6.TextStrokeTransparency = 0.000
+V21332.Stats_6.TextWrapped = true
+V21332.Stats_6.TextXAlignment = Enum.TextXAlignment.Left
+V21332.Stats_6.TextYAlignment = Enum.TextYAlignment.Top
+
+V21332.Default_6.Name = "Default"
+V21332.Default_6.Parent = V21332.SUSPENSION
+V21332.Default_6.AnchorPoint = Vector2.new(1, 0)
+V21332.Default_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Default_6.BackgroundTransparency = 1.000
+V21332.Default_6.Position = UDim2.new(1, 0, 0, 0)
+V21332.Default_6.Size = UDim2.new(0, 100, 0, 25)
+V21332.Default_6.ZIndex = 5
+V21332.Default_6.Font = Enum.Font.Code
+V21332.Default_6.Text = "SET DEFAULT (ROUNDED)"
+V21332.Default_6.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.Default_6.TextSize = 14.000
+V21332.Default_6.TextStrokeColor3 = Color3.fromRGB(85, 0, 0)
+V21332.Default_6.TextStrokeTransparency = 0.000
+V21332.Default_6.TextXAlignment = Enum.TextXAlignment.Right
+
+V21332.MOTORS.Name = "MOTORS"
+V21332.MOTORS.Parent = V21332.Usable
+V21332.MOTORS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.MOTORS.BackgroundTransparency = 1.000
+V21332.MOTORS.Size = UDim2.new(1, 0, 1, 0)
+V21332.MOTORS.Visible = false
+
+V21332.Title_7.Name = "Title"
+V21332.Title_7.Parent = V21332.MOTORS
+V21332.Title_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title_7.BackgroundTransparency = 1.000
+V21332.Title_7.BorderColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title_7.Size = UDim2.new(0, 200, 0, 25)
+V21332.Title_7.Font = Enum.Font.Code
+V21332.Title_7.Text = "MOTORS / HINGES"
+V21332.Title_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title_7.TextSize = 20.000
+V21332.Title_7.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Title_7.TextStrokeTransparency = 0.800
+V21332.Title_7.TextWrapped = true
+V21332.Title_7.TextXAlignment = Enum.TextXAlignment.Left
+
+V21332.Outer_7.Name = "Outer"
+V21332.Outer_7.Parent = V21332.MOTORS
+V21332.Outer_7.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+V21332.Outer_7.Position = UDim2.new(0, 0, 0, 170)
+V21332.Outer_7.Size = UDim2.new(1, 0, 1, 0)
+V21332.Outer_7.ZIndex = 0
+
+V21332.UICorner_140.CornerRadius = UDim.new(0, 4)
+V21332.UICorner_140.Parent = V21332.Outer_7
+
+V21332.OuterTop_7.Name = "OuterTop"
+V21332.OuterTop_7.Parent = V21332.Outer_7
+V21332.OuterTop_7.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.OuterTop_7.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+V21332.OuterTop_7.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.OuterTop_7.Size = UDim2.new(1, 20, 1, 20)
+V21332.OuterTop_7.ZIndex = -1
+
+V21332.UICorner_141.CornerRadius = UDim.new(0, 4)
+V21332.UICorner_141.Parent = V21332.OuterTop_7
+
+V21332.Selects_7.Name = "Selects"
+V21332.Selects_7.Parent = V21332.Outer_7
+V21332.Selects_7.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.Selects_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Selects_7.BackgroundTransparency = 1.000
+V21332.Selects_7.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.Selects_7.Size = UDim2.new(1, -10, 1, -10)
+
+V21332.UIGridLayout_21.Parent = V21332.Selects_7
+V21332.UIGridLayout_21.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout_21.CellPadding = UDim2.new(0, 5, 0, 20)
+V21332.UIGridLayout_21.CellSize = UDim2.new(0, 100, 0, 25)
+
+V21332.Thingy_7.Name = "Thingy"
+V21332.Thingy_7.Parent = V21332.Outer_7
+V21332.Thingy_7.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Thingy_7.Size = UDim2.new(0, 200, 0, 50)
+V21332.Thingy_7.Visible = false
+V21332.Thingy_7.AutoButtonColor = false
+V21332.Thingy_7.Font = Enum.Font.Code
+V21332.Thingy_7.Text = "Steering"
+V21332.Thingy_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Thingy_7.TextSize = 14.000
+
+V21332.UICorner_142.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_142.Parent = V21332.Thingy_7
+
+V21332.TextLabel_71.Parent = V21332.Thingy_7
+V21332.TextLabel_71.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_71.BackgroundTransparency = 1.000
+V21332.TextLabel_71.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_71.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_71.Font = Enum.Font.SourceSans
+V21332.TextLabel_71.Text = "Suspension"
+V21332.TextLabel_71.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_71.TextSize = 14.000
+
+V21332.Frame_54.Parent = V21332.Thingy_7
+V21332.Frame_54.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_54.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_54.ZIndex = 0
+
+V21332.UICorner_143.Parent = V21332.Frame_54
+
+V21332.Stats_7.Name = "Stats"
+V21332.Stats_7.Parent = V21332.Outer_7
+V21332.Stats_7.AnchorPoint = Vector2.new(1, 1)
+V21332.Stats_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Stats_7.BackgroundTransparency = 1.000
+V21332.Stats_7.Position = UDim2.new(1, 220, 1, 0)
+V21332.Stats_7.Size = UDim2.new(0, 200, 1, 50)
+V21332.Stats_7.Font = Enum.Font.Code
+V21332.Stats_7.Text = ""
+V21332.Stats_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Stats_7.TextSize = 14.000
+V21332.Stats_7.TextStrokeTransparency = 0.000
+V21332.Stats_7.TextWrapped = true
+V21332.Stats_7.TextXAlignment = Enum.TextXAlignment.Left
+V21332.Stats_7.TextYAlignment = Enum.TextYAlignment.Top
+
+V21332.Default_7.Name = "Default"
+V21332.Default_7.Parent = V21332.MOTORS
+V21332.Default_7.AnchorPoint = Vector2.new(1, 0)
+V21332.Default_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Default_7.BackgroundTransparency = 1.000
+V21332.Default_7.Position = UDim2.new(1, 0, 0, 0)
+V21332.Default_7.Size = UDim2.new(0, 100, 0, 25)
+V21332.Default_7.ZIndex = 5
+V21332.Default_7.Font = Enum.Font.Code
+V21332.Default_7.Text = "SET DEFAULT (ROUNDED)"
+V21332.Default_7.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.Default_7.TextSize = 14.000
+V21332.Default_7.TextStrokeColor3 = Color3.fromRGB(85, 0, 0)
+V21332.Default_7.TextStrokeTransparency = 0.000
+V21332.Default_7.TextXAlignment = Enum.TextXAlignment.Right
+
+V21332.Buttons_7.Name = "Buttons"
+V21332.Buttons_7.Parent = V21332.MOTORS
+V21332.Buttons_7.AnchorPoint = Vector2.new(1, 1)
+V21332.Buttons_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Buttons_7.BackgroundTransparency = 1.000
+V21332.Buttons_7.Position = UDim2.new(1, 0, 1, 0)
+V21332.Buttons_7.Size = UDim2.new(1, 0, 0, 110)
+
+V21332.Unlocked_7.Name = "Unlocked"
+V21332.Unlocked_7.Parent = V21332.Buttons_7
+V21332.Unlocked_7.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.Unlocked_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Unlocked_7.BackgroundTransparency = 1.000
+V21332.Unlocked_7.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.Unlocked_7.Size = UDim2.new(1, -10, 1, -10)
+
+V21332.UIGridLayout_22.Parent = V21332.Unlocked_7
+V21332.UIGridLayout_22.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout_22.CellSize = UDim2.new(0, 100, 0, 25)
+
+V21332.Radius_4.Name = "Radius"
+V21332.Radius_4.Parent = V21332.Unlocked_7
+V21332.Radius_4.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Radius_4.Size = UDim2.new(0, 200, 0, 50)
+V21332.Radius_4.ClearTextOnFocus = false
+V21332.Radius_4.Font = Enum.Font.Code
+V21332.Radius_4.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+V21332.Radius_4.PlaceholderText = "0"
+V21332.Radius_4.Text = "0"
+V21332.Radius_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Radius_4.TextSize = 14.000
+
+V21332.UICorner_144.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_144.Parent = V21332.Radius_4
+
+V21332.TextLabel_72.Parent = V21332.Radius_4
+V21332.TextLabel_72.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_72.BackgroundTransparency = 1.000
+V21332.TextLabel_72.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_72.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_72.Font = Enum.Font.SourceSans
+V21332.TextLabel_72.Text = "Radius"
+V21332.TextLabel_72.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_72.TextSize = 14.000
+
+V21332.Frame_55.Parent = V21332.Radius_4
+V21332.Frame_55.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_55.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_55.ZIndex = 0
+
+V21332.UICorner_145.Parent = V21332.Frame_55
+
+V21332.Enabled_5.Name = "Enabled"
+V21332.Enabled_5.Parent = V21332.Unlocked_7
+V21332.Enabled_5.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Enabled_5.Size = UDim2.new(0, 200, 0, 50)
+V21332.Enabled_5.AutoButtonColor = false
+V21332.Enabled_5.Font = Enum.Font.Code
+V21332.Enabled_5.Text = "TRUE"
+V21332.Enabled_5.TextColor3 = Color3.fromRGB(85, 255, 0)
+V21332.Enabled_5.TextSize = 14.000
+
+V21332.Frame_56.Parent = V21332.Enabled_5
+V21332.Frame_56.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_56.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_56.ZIndex = 0
+
+V21332.UICorner_146.Parent = V21332.Frame_56
+
+V21332.TextLabel_73.Parent = V21332.Enabled_5
+V21332.TextLabel_73.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_73.BackgroundTransparency = 1.000
+V21332.TextLabel_73.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_73.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_73.Font = Enum.Font.SourceSans
+V21332.TextLabel_73.Text = "Enabled"
+V21332.TextLabel_73.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_73.TextSize = 14.000
+
+V21332.UICorner_147.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_147.Parent = V21332.Enabled_5
+
+V21332.Visible_4.Name = "Visible"
+V21332.Visible_4.Parent = V21332.Unlocked_7
+V21332.Visible_4.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Visible_4.Size = UDim2.new(0, 200, 0, 50)
+V21332.Visible_4.AutoButtonColor = false
+V21332.Visible_4.Font = Enum.Font.Code
+V21332.Visible_4.Text = "FALSE"
+V21332.Visible_4.TextColor3 = Color3.fromRGB(178, 178, 178)
+V21332.Visible_4.TextSize = 14.000
+
+V21332.Frame_57.Parent = V21332.Visible_4
+V21332.Frame_57.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_57.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_57.ZIndex = 0
+
+V21332.UICorner_148.Parent = V21332.Frame_57
+
+V21332.TextLabel_74.Parent = V21332.Visible_4
+V21332.TextLabel_74.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_74.BackgroundTransparency = 1.000
+V21332.TextLabel_74.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_74.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_74.Font = Enum.Font.SourceSans
+V21332.TextLabel_74.Text = "Visible"
+V21332.TextLabel_74.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_74.TextSize = 14.000
+
+V21332.UICorner_149.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_149.Parent = V21332.Visible_4
+
+V21332.Submit_7.Name = "Submit"
+V21332.Submit_7.Parent = V21332.Unlocked_7
+V21332.Submit_7.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Submit_7.Size = UDim2.new(0, 200, 0, 50)
+V21332.Submit_7.AutoButtonColor = false
+V21332.Submit_7.Font = Enum.Font.Code
+V21332.Submit_7.Text = "SUBMIT"
+V21332.Submit_7.TextColor3 = Color3.fromRGB(85, 255, 0)
+V21332.Submit_7.TextSize = 14.000
+
+V21332.Frame_58.Parent = V21332.Submit_7
+V21332.Frame_58.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_58.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_58.ZIndex = 0
+
+V21332.UICorner_150.Parent = V21332.Frame_58
+
+V21332.TextLabel_75.Parent = V21332.Submit_7
+V21332.TextLabel_75.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_75.BackgroundTransparency = 1.000
+V21332.TextLabel_75.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_75.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_75.Font = Enum.Font.SourceSans
+V21332.TextLabel_75.Text = "Selection"
+V21332.TextLabel_75.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_75.TextSize = 14.000
+
+V21332.UICorner_151.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_151.Parent = V21332.Submit_7
+
+V21332.Locked_7.Name = "Locked"
+V21332.Locked_7.Parent = V21332.Buttons_7
+V21332.Locked_7.AnchorPoint = Vector2.new(0.5, 0.800000012)
+V21332.Locked_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Locked_7.BackgroundTransparency = 1.000
+V21332.Locked_7.Position = UDim2.new(0.5, 0, 0.800000012, 0)
+V21332.Locked_7.Size = UDim2.new(1, -10, 1, -80)
+
+V21332.UIGridLayout_23.Parent = V21332.Locked_7
+V21332.UIGridLayout_23.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout_23.CellSize = UDim2.new(0, 100, 0, 25)
+
+V21332.UpperAngle_4.Name = "UpperAngle"
+V21332.UpperAngle_4.Parent = V21332.Locked_7
+V21332.UpperAngle_4.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.UpperAngle_4.Size = UDim2.new(0, 200, 0, 50)
+V21332.UpperAngle_4.ClearTextOnFocus = false
+V21332.UpperAngle_4.Font = Enum.Font.Code
+V21332.UpperAngle_4.PlaceholderText = "0"
+V21332.UpperAngle_4.Text = "0"
+V21332.UpperAngle_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.UpperAngle_4.TextSize = 14.000
+
+V21332.UICorner_152.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_152.Parent = V21332.UpperAngle_4
+
+V21332.TextLabel_76.Parent = V21332.UpperAngle_4
+V21332.TextLabel_76.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_76.BackgroundTransparency = 1.000
+V21332.TextLabel_76.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_76.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_76.Font = Enum.Font.SourceSans
+V21332.TextLabel_76.Text = "UpperAngle"
+V21332.TextLabel_76.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_76.TextSize = 14.000
+
+V21332.Frame_59.Parent = V21332.UpperAngle_4
+V21332.Frame_59.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_59.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_59.ZIndex = 0
+
+V21332.UICorner_153.Parent = V21332.Frame_59
+
+V21332.LOCK_19.Name = "LOCK"
+V21332.LOCK_19.Parent = V21332.UpperAngle_4
+V21332.LOCK_19.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.LOCK_19.BackgroundTransparency = 0.500
+V21332.LOCK_19.Size = UDim2.new(0, 100, 0, 37)
+V21332.LOCK_19.ZIndex = 4
+
+V21332.UICorner_154.Parent = V21332.LOCK_19
+
+V21332.TextLabel_77.Parent = V21332.LOCK_19
+V21332.TextLabel_77.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.TextLabel_77.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_77.BackgroundTransparency = 1.000
+V21332.TextLabel_77.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.TextLabel_77.Size = UDim2.new(1, 0, 0, 25)
+V21332.TextLabel_77.ZIndex = 6
+V21332.TextLabel_77.Font = Enum.Font.SourceSansBold
+V21332.TextLabel_77.Text = "SET LIMITS ENABLED TO FALSE"
+V21332.TextLabel_77.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.TextLabel_77.TextScaled = true
+V21332.TextLabel_77.TextSize = 14.000
+V21332.TextLabel_77.TextWrapped = true
+
+V21332.Restitution_4.Name = "Restitution"
+V21332.Restitution_4.Parent = V21332.Locked_7
+V21332.Restitution_4.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.Restitution_4.Size = UDim2.new(0, 200, 0, 50)
+V21332.Restitution_4.ClearTextOnFocus = false
+V21332.Restitution_4.Font = Enum.Font.Code
+V21332.Restitution_4.PlaceholderText = "0"
+V21332.Restitution_4.Text = "0"
+V21332.Restitution_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Restitution_4.TextSize = 14.000
+
+V21332.UICorner_155.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_155.Parent = V21332.Restitution_4
+
+V21332.TextLabel_78.Parent = V21332.Restitution_4
+V21332.TextLabel_78.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_78.BackgroundTransparency = 1.000
+V21332.TextLabel_78.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_78.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_78.Font = Enum.Font.SourceSans
+V21332.TextLabel_78.Text = "Restitution"
+V21332.TextLabel_78.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_78.TextSize = 14.000
+
+V21332.Frame_60.Parent = V21332.Restitution_4
+V21332.Frame_60.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_60.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_60.ZIndex = 0
+
+V21332.UICorner_156.Parent = V21332.Frame_60
+
+V21332.LOCK_20.Name = "LOCK"
+V21332.LOCK_20.Parent = V21332.Restitution_4
+V21332.LOCK_20.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.LOCK_20.BackgroundTransparency = 0.500
+V21332.LOCK_20.Size = UDim2.new(0, 100, 0, 37)
+V21332.LOCK_20.ZIndex = 4
+
+V21332.UICorner_157.Parent = V21332.LOCK_20
+
+V21332.TextLabel_79.Parent = V21332.LOCK_20
+V21332.TextLabel_79.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.TextLabel_79.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_79.BackgroundTransparency = 1.000
+V21332.TextLabel_79.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.TextLabel_79.Size = UDim2.new(1, 0, 0, 25)
+V21332.TextLabel_79.ZIndex = 6
+V21332.TextLabel_79.Font = Enum.Font.SourceSansBold
+V21332.TextLabel_79.Text = "SET LIMITS ENABLED TO FALSE"
+V21332.TextLabel_79.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.TextLabel_79.TextScaled = true
+V21332.TextLabel_79.TextSize = 14.000
+V21332.TextLabel_79.TextWrapped = true
+
+V21332.LowerAngle_4.Name = "LowerAngle"
+V21332.LowerAngle_4.Parent = V21332.Locked_7
+V21332.LowerAngle_4.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.LowerAngle_4.Size = UDim2.new(0, 200, 0, 50)
+V21332.LowerAngle_4.ClearTextOnFocus = false
+V21332.LowerAngle_4.Font = Enum.Font.Code
+V21332.LowerAngle_4.PlaceholderText = "0"
+V21332.LowerAngle_4.Text = "0"
+V21332.LowerAngle_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.LowerAngle_4.TextSize = 14.000
+
+V21332.UICorner_158.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_158.Parent = V21332.LowerAngle_4
+
+V21332.TextLabel_80.Parent = V21332.LowerAngle_4
+V21332.TextLabel_80.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_80.BackgroundTransparency = 1.000
+V21332.TextLabel_80.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_80.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_80.Font = Enum.Font.SourceSans
+V21332.TextLabel_80.Text = "LowerAngle"
+V21332.TextLabel_80.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_80.TextSize = 14.000
+
+V21332.Frame_61.Parent = V21332.LowerAngle_4
+V21332.Frame_61.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_61.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_61.ZIndex = 0
+
+V21332.UICorner_159.Parent = V21332.Frame_61
+
+V21332.LOCK_21.Name = "LOCK"
+V21332.LOCK_21.Parent = V21332.LowerAngle_4
+V21332.LOCK_21.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.LOCK_21.BackgroundTransparency = 0.500
+V21332.LOCK_21.Size = UDim2.new(0, 100, 0, 37)
+V21332.LOCK_21.ZIndex = 4
+
+V21332.UICorner_160.Parent = V21332.LOCK_21
+
+V21332.TextLabel_81.Parent = V21332.LOCK_21
+V21332.TextLabel_81.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.TextLabel_81.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_81.BackgroundTransparency = 1.000
+V21332.TextLabel_81.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.TextLabel_81.Size = UDim2.new(1, 0, 0, 25)
+V21332.TextLabel_81.ZIndex = 6
+V21332.TextLabel_81.Font = Enum.Font.SourceSansBold
+V21332.TextLabel_81.Text = "SET LIMITS ENABLED TO FALSE"
+V21332.TextLabel_81.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.TextLabel_81.TextScaled = true
+V21332.TextLabel_81.TextSize = 14.000
+V21332.TextLabel_81.TextWrapped = true
+
+V21332.LimitsEnabled_6.Name = "LimitsEnabled"
+V21332.LimitsEnabled_6.Parent = V21332.Locked_7
+V21332.LimitsEnabled_6.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+V21332.LimitsEnabled_6.Size = UDim2.new(0, 200, 0, 50)
+V21332.LimitsEnabled_6.AutoButtonColor = false
+V21332.LimitsEnabled_6.Font = Enum.Font.Code
+V21332.LimitsEnabled_6.Text = "TRUE"
+V21332.LimitsEnabled_6.TextColor3 = Color3.fromRGB(255, 0, 0)
+V21332.LimitsEnabled_6.TextSize = 14.000
+
+V21332.Frame_62.Parent = V21332.LimitsEnabled_6
+V21332.Frame_62.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+V21332.Frame_62.Size = UDim2.new(0, 100, 0, 37)
+V21332.Frame_62.ZIndex = 0
+
+V21332.UICorner_161.Parent = V21332.Frame_62
+
+V21332.TextLabel_82.Parent = V21332.LimitsEnabled_6
+V21332.TextLabel_82.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextLabel_82.BackgroundTransparency = 1.000
+V21332.TextLabel_82.Position = UDim2.new(0, 0, 0, 25)
+V21332.TextLabel_82.Size = UDim2.new(1, 0, 1, -15)
+V21332.TextLabel_82.Font = Enum.Font.SourceSans
+V21332.TextLabel_82.Text = "LimitsEnabled"
+V21332.TextLabel_82.TextColor3 = Color3.fromRGB(159, 159, 159)
+V21332.TextLabel_82.TextSize = 14.000
+
+V21332.UICorner_162.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_162.Parent = V21332.LimitsEnabled_6
+
+V21332.Min2.Name = "Min2"
+V21332.Min2.Parent = V21332.Frame
+V21332.Min2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+V21332.Min2.BorderSizePixel = 0
+V21332.Min2.Position = UDim2.new(0, 0, 0, -25)
+V21332.Min2.Size = UDim2.new(0, 100, 0, 25)
+
+V21332.Min_4.Name = "Min"
+V21332.Min_4.Parent = V21332.Min2
+V21332.Min_4.AnchorPoint = Vector2.new(1, 0)
+V21332.Min_4.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+V21332.Min_4.BorderSizePixel = 0
+V21332.Min_4.Position = UDim2.new(1, 0, 0, 25)
+V21332.Min_4.Size = UDim2.new(0, 100, 0, 25)
+V21332.Min_4.ZIndex = -100
+
+V21332.Min_5.Name = "Min"
+V21332.Min_5.Parent = V21332.Min2
+V21332.Min_5.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+V21332.Min_5.BorderSizePixel = 0
+V21332.Min_5.Position = UDim2.new(0, 75, 0, 0)
+V21332.Min_5.Size = UDim2.new(0, 50, 0, 50)
+V21332.Min_5.ZIndex = -100
+
+V21332.UICorner_163.Parent = V21332.Min_5
+
+V21332.Button1_2.Name = "Button1"
+V21332.Button1_2.Parent = V21332.Min2
+V21332.Button1_2.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.Button1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Button1_2.BackgroundTransparency = 1.000
+V21332.Button1_2.Position = UDim2.new(0.5, 15, 0.5, 0)
+V21332.Button1_2.Size = UDim2.new(0, 120, 0, 20)
+
+V21332.UIGridLayout_24.Parent = V21332.Button1_2
+V21332.UIGridLayout_24.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout_24.CellSize = UDim2.new(0, 115, 0, 25)
+
+V21332.TextButton_2.Parent = V21332.Button1_2
+V21332.TextButton_2.BackgroundColor3 = Color3.fromRGB(143, 0, 0)
+V21332.TextButton_2.Size = UDim2.new(0, 200, 0, 50)
+V21332.TextButton_2.AutoButtonColor = false
+V21332.TextButton_2.Font = Enum.Font.Code
+V21332.TextButton_2.Text = "Find Vehicle"
+V21332.TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.TextButton_2.TextSize = 14.000
+
+V21332.UICorner_164.CornerRadius = UDim.new(0, 4)
+V21332.UICorner_164.Parent = V21332.TextButton_2
+
+V21332.Buttons_8.Name = "Buttons"
+V21332.Buttons_8.Parent = V21332.Frame
+V21332.Buttons_8.Active = true
+V21332.Buttons_8.AnchorPoint = Vector2.new(0.5, 0)
+V21332.Buttons_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Buttons_8.BackgroundTransparency = 1.000
+V21332.Buttons_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+V21332.Buttons_8.Position = UDim2.new(0.5, 0, 0, 10)
+V21332.Buttons_8.Size = UDim2.new(0, 480, 0, 25)
+V21332.Buttons_8.CanvasSize = UDim2.new(1.70000005, 0, 2, 0)
+V21332.Buttons_8.HorizontalScrollBarInset = Enum.ScrollBarInset.Always
+V21332.Buttons_8.ScrollBarThickness = 1
+
+V21332.UIGridLayout_25.Parent = V21332.Buttons_8
+V21332.UIGridLayout_25.SortOrder = Enum.SortOrder.LayoutOrder
+V21332.UIGridLayout_25.CellSize = UDim2.new(0, 116, 0, 25)
+
+V21332.ROD_2.Name = "ROD"
+V21332.ROD_2.Parent = V21332.Buttons_8
+V21332.ROD_2.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+V21332.ROD_2.Size = UDim2.new(0, 200, 0, 50)
+V21332.ROD_2.AutoButtonColor = false
+V21332.ROD_2.Font = Enum.Font.Code
+V21332.ROD_2.Text = "Rod Const"
+V21332.ROD_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.ROD_2.TextSize = 14.000
+
+V21332.UICorner_165.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_165.Parent = V21332.ROD_2
+
+V21332.MOTORS_2.Name = "MOTORS"
+V21332.MOTORS_2.Parent = V21332.Buttons_8
+V21332.MOTORS_2.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+V21332.MOTORS_2.LayoutOrder = -8
+V21332.MOTORS_2.Size = UDim2.new(0, 200, 0, 50)
+V21332.MOTORS_2.AutoButtonColor = false
+V21332.MOTORS_2.Font = Enum.Font.Code
+V21332.MOTORS_2.Text = "Motors"
+V21332.MOTORS_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.MOTORS_2.TextSize = 14.000
+
+V21332.UICorner_166.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_166.Parent = V21332.MOTORS_2
+
+V21332.SUSPENSION_2.Name = "SUSPENSION"
+V21332.SUSPENSION_2.Parent = V21332.Buttons_8
+V21332.SUSPENSION_2.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+V21332.SUSPENSION_2.LayoutOrder = -9
+V21332.SUSPENSION_2.Size = UDim2.new(0, 200, 0, 50)
+V21332.SUSPENSION_2.AutoButtonColor = false
+V21332.SUSPENSION_2.Font = Enum.Font.Code
+V21332.SUSPENSION_2.Text = "Suspension"
+V21332.SUSPENSION_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.SUSPENSION_2.TextSize = 14.000
+
+V21332.UICorner_167.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_167.Parent = V21332.SUSPENSION_2
+
+V21332.PRISMATIC_2.Name = "PRISMATIC"
+V21332.PRISMATIC_2.Parent = V21332.Buttons_8
+V21332.PRISMATIC_2.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+V21332.PRISMATIC_2.Size = UDim2.new(0, 200, 0, 50)
+V21332.PRISMATIC_2.AutoButtonColor = false
+V21332.PRISMATIC_2.Font = Enum.Font.Code
+V21332.PRISMATIC_2.Text = "Prismatic"
+V21332.PRISMATIC_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.PRISMATIC_2.TextSize = 14.000
+
+V21332.UICorner_168.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_168.Parent = V21332.PRISMATIC_2
+
+V21332.CYLINDRICAL_2.Name = "CYLINDRICAL"
+V21332.CYLINDRICAL_2.Parent = V21332.Buttons_8
+V21332.CYLINDRICAL_2.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+V21332.CYLINDRICAL_2.Size = UDim2.new(0, 200, 0, 50)
+V21332.CYLINDRICAL_2.AutoButtonColor = false
+V21332.CYLINDRICAL_2.Font = Enum.Font.Code
+V21332.CYLINDRICAL_2.Text = "Cylindrical"
+V21332.CYLINDRICAL_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.CYLINDRICAL_2.TextSize = 14.000
+
+V21332.UICorner_169.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_169.Parent = V21332.CYLINDRICAL_2
+
+V21332.PHYSICAL_2.Name = "PHYSICAL"
+V21332.PHYSICAL_2.Parent = V21332.Buttons_8
+V21332.PHYSICAL_2.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+V21332.PHYSICAL_2.LayoutOrder = -10
+V21332.PHYSICAL_2.Size = UDim2.new(0, 200, 0, 50)
+V21332.PHYSICAL_2.AutoButtonColor = false
+V21332.PHYSICAL_2.Font = Enum.Font.Code
+V21332.PHYSICAL_2.Text = "Properties"
+V21332.PHYSICAL_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.PHYSICAL_2.TextSize = 14.000
+
+V21332.UICorner_170.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_170.Parent = V21332.PHYSICAL_2
+
+V21332.ANGULAR_2.Name = "ANGULAR"
+V21332.ANGULAR_2.Parent = V21332.Buttons_8
+V21332.ANGULAR_2.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+V21332.ANGULAR_2.Size = UDim2.new(0, 200, 0, 50)
+V21332.ANGULAR_2.AutoButtonColor = false
+V21332.ANGULAR_2.Font = Enum.Font.Code
+V21332.ANGULAR_2.Text = "AngularVelocity"
+V21332.ANGULAR_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.ANGULAR_2.TextSize = 14.000
+
+V21332.UICorner_171.CornerRadius = UDim.new(0, 3)
+V21332.UICorner_171.Parent = V21332.ANGULAR_2
+
+V21332.Status.Name = "Status"
+V21332.Status.Parent = V21332.Frame
+V21332.Status.AnchorPoint = Vector2.new(0.5, 0)
+V21332.Status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Status.BackgroundTransparency = 1.000
+V21332.Status.Position = UDim2.new(0.5, 0, 0, -50)
+V21332.Status.Size = UDim2.new(0, 200, 0, 25)
+V21332.Status.Font = Enum.Font.SourceSans
+V21332.Status.Text = ""
+V21332.Status.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Status.TextScaled = true
+V21332.Status.TextSize = 25.000
+V21332.Status.TextStrokeTransparency = 0.000
+V21332.Status.TextWrapped = true
+V21332.Status.TextYAlignment = Enum.TextYAlignment.Bottom
+
+V21332.Debug.Name = "Debug"
+V21332.Debug.Parent = V21332.V21332
+V21332.Debug.AnchorPoint = Vector2.new(0, 0.5)
+V21332.Debug.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+V21332.Debug.BorderColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Debug.Position = UDim2.new(0, 0, 0.5, 0)
+V21332.Debug.Size = UDim2.new(0, 300, 0, 500)
+V21332.Debug.Visible = false
+
+V21332.ScrollingFrame.Parent = V21332.Debug
+V21332.ScrollingFrame.Active = true
+V21332.ScrollingFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.ScrollingFrame.BackgroundTransparency = 1.000
+V21332.ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+V21332.ScrollingFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.ScrollingFrame.Size = UDim2.new(0, 290, 0, 490)
+V21332.ScrollingFrame.ScrollBarThickness = 2
+
+V21332.UIListLayout.Parent = V21332.ScrollingFrame
+V21332.UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+V21332.Blot.Name = "Blot"
+V21332.Blot.Parent = V21332.ScrollingFrame
+V21332.Blot.AnchorPoint = Vector2.new(0.5, 0.5)
+V21332.Blot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Blot.BackgroundTransparency = 1.000
+V21332.Blot.BorderColor3 = Color3.fromRGB(27, 42, 53)
+V21332.Blot.Position = UDim2.new(0.5, 0, 0.5, 0)
+V21332.Blot.Size = UDim2.new(1, 0, 0, 15)
+V21332.Blot.Font = Enum.Font.Code
+V21332.Blot.Text = "Loaded UI"
+V21332.Blot.TextColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Blot.TextSize = 14.000
+V21332.Blot.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+V21332.Blot.TextWrapped = true
+V21332.Blot.TextXAlignment = Enum.TextXAlignment.Left
+V21332.Blot.TextYAlignment = Enum.TextYAlignment.Top
+
+-- Scripts:
+
+local function EWFF_fake_script() -- V21332.Frame.Dragify 
+	local script = Instance.new('LocalScript', V21332.Frame)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		dragSpeed = 0.15
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.15), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	dragify(script.Parent)
+	
+end
+coroutine.wrap(EWFF_fake_script)()
+
+Core = game.CoreGui:FindFirstChild("V2#1332")
+TS = game:GetService("TweenService")
+
+local CurrentVehicle
+_G.SelectedStuffs = {}
+
+
+local SpringConst = {
+	MaxForce = 0;
+	Stiffness = 0;
+	Damping = 0;
+	FreeLength = 0;
+
+	MaxLength = 0;
+	MinLength = 0;
+	LimitsEnabled = true;
+}
+
+local PhysicalProp = {
+	Density = 0;
+	Elasticity = 0;
+	ElasticityWeight = 0;
+	Friction = 0;
+	FrictionWeight = 0;
+
+	CanCollide = true;
+	PropertiesEnabled = false;
+}
+
+local RodConst = {
+	Enabled = true;
+	Length = 0;
+
+	LimitAngle1 = 0;
+	LimitAngle0 = 0;
+	LimitsEnabled = true;
+}
+
+local Motors = {
+	
+}
+
+
+function printmsg(msg,er)
+	if er == "error" then
+		local t = Core.Debug.ScrollingFrame.Blot:Clone()
+		t.Parent = Core.Debug.ScrollingFrame
+		t.Text = "{ERROR}: "..msg
+		t.TextColor3 = Color3.fromRGB(255,0,0)
+		t.Size = UDim2.new(1,0,0,50)
+	elseif er == "warn" then
+		local t = Core.Debug.ScrollingFrame.Blot:Clone()
+		t.Parent = Core.Debug.ScrollingFrame
+		t.Text = "{WARNING}: "..msg
+		t.TextColor3 = Color3.fromRGB(255,200,0)
+		t.Size = UDim2.new(1,0,0,50)
+	elseif er == "printf" then
+		local t = Core.Debug.ScrollingFrame.Blot:Clone()
+		t.Parent = Core.Debug.ScrollingFrame
+		t.Text = msg
+		t.TextColor3 = Color3.fromRGB(255,255,255)
+		t.Size = UDim2.new(10,0,0,15)
+	else
+		printmsg("Incorrect printmsg ARGS","error")
+	end
+end
+
+Core.Frame.Min.Button2.ImageButton.MouseButton1Click:Connect(function()
+	if Core.Debug.Visible == true then
+		Core.Debug.Visible = false
+	else
+		Core.Debug.Visible = true
+	end
+end)
+
+function track(a)
+	local m12 = coroutine.create(function()
+		local script = a
+		local selected = false
+		TS = game:GetService("TweenService")
+
+		for _,m13 in pairs(Core.Frame.Buttons:GetChildren()) do
+			if m13:IsA("TextButton") then
+				m13.MouseButton1Click:Connect(function()
+					local a = script.Parent
+					TS:Create(a,TweenInfo.new(.5,Enum.EasingStyle.Sine),{BackgroundColor3 = Color3.fromRGB(68, 68, 68)}):Play()
+					selected = false
+					for key,value in pairs(_G.SelectedStuffs) do
+						if value == script.Parent:FindFirstChild("Object").Value then
+							table.remove(_G.SelectedStuffs,key)
+							break
+						end
+					end
+				end)
+			end
+		end
+
+		script.Parent.MouseButton1Click:Connect(function()
+			if selected == false then
+				selected = true
+				table.insert(_G.SelectedStuffs,script.Parent:FindFirstChild("Object").Value)
+				local a = script.Parent
+				TS:Create(a,TweenInfo.new(.5,Enum.EasingStyle.Sine),{BackgroundColor3 = Color3.fromRGB(68, 140, 68)}):Play()
+			else
+				local a = script.Parent
+				TS:Create(a,TweenInfo.new(.5,Enum.EasingStyle.Sine),{BackgroundColor3 = Color3.fromRGB(68, 68, 68)}):Play()
+				selected = false
+				for key,value in pairs(_G.SelectedStuffs) do
+					if value == script.Parent:FindFirstChild("Object").Value then
+						table.remove(_G.SelectedStuffs,key)
+						break
+					end
+				end
+			end
+			warn(_G.SelectedStuffs)
+		end)
+
+
+		script.Parent.MouseEnter:Connect(function()
+			local OBJ = script.Parent:FindFirstChild("Object").Value
+			script.Parent.Parent.Parent.Stats.Visible = true
+			if OBJ:IsA("Part") or OBJ:IsA("UnionOperation") or OBJ:IsA("MeshPart") then
+				script.Parent.Parent.Parent.Stats.Text = [[CanCollide = ]]..tostring(OBJ.CanCollide)..[[
+	
+	CustomPhysicalProperties = ]]..tostring(OBJ.CustomPhysicalProperties)..[[
+	
+	Density = ]]..tostring(OBJ.CustomPhysicalProperties.Density)..[[
+	
+	Elasticity = ]]..tostring(OBJ.CustomPhysicalProperties.Elasticity)..[[
+	
+	ElasticityWeight = ]]..tostring(OBJ.CustomPhysicalProperties.ElasticityWeight)..[[
+	
+	Friction = ]]..tostring(OBJ.CustomPhysicalProperties.Friction)..[[
+	
+	FrictionWeight = ]]..tostring(OBJ.CustomPhysicalProperties.FrictionWeight)..[[
+	
+	]]
+
+			elseif OBJ:IsA("SpringConstraint") then
+				script.Parent.Parent.Parent.Stats.Text = [[Damping = ]]..tostring(OBJ.Damping)..[[
+	
+	FreeLength = ]]..tostring(OBJ.FreeLength)..[[
+	
+	MaxForce = ]]..tostring(OBJ.MaxForce)..[[
+	
+	Stiffness = ]]..tostring(OBJ.Stiffness)..[[
+	
+	
+	LimitsEnabled = ]]..tostring(OBJ.LimitsEnabled)..[[
+	
+	MaxLength = ]]..tostring(OBJ.MaxLength)..[[
+	
+	MinLength = ]]..tostring(OBJ.MinLength)..[[]]
+
+			elseif OBJ:IsA("RodConstraint") then
+				script.Parent.Parent.Parent.Stats.Text = [[LimitAngle0 = ]]..tostring(OBJ.LimitAngle0)..[[
+				
+	LimitAngle1 = ]]..tostring(OBJ.LimitAngle1)..[[
+	
+	Length = ]]..tostring(OBJ.Length)..[[
+	
+	Enabled = ]]..tostring(OBJ.Enabled)..[[
+	
+	LimitsEnabled = ]]..tostring(OBJ.LimitsEnabled)..[[]]
+			else
+				printmsg("Unknown OBJ-T","error")
+			end
+		end)
+
+		script.Parent.MouseLeave:Connect(function()
+			script.Parent.Parent.Parent.Stats.Visible = false
+			script.Parent.Parent.Parent.Stats.Text = [[]]
+		end)
+	end)
+	coroutine.resume(m12)
+end
+
+function trackhover(a)
+	local m18 = coroutine.create(function()
+
+		local sCOLOR3 = a.BackgroundColor3
+		a.MouseEnter:Connect(function()
+			TS:Create(a,TweenInfo.new(.5,Enum.EasingStyle.Sine),{BackgroundColor3 = Color3.fromRGB(a.BackgroundColor3.R + 40,0,0)}):Play()
+		end)
+
+		a.MouseLeave:Connect(function()
+			TS:Create(a,TweenInfo.new(.5,Enum.EasingStyle.Sine),{BackgroundColor3 = sCOLOR3}):Play()
+		end)
+
+		a.MouseButton1Click:Connect(function()
+			TS:Create(a,TweenInfo.new(.2,Enum.EasingStyle.Sine,Enum.EasingDirection.InOut,0,true),{BackgroundColor3 = Color3.fromRGB(200,0,0),TextColor3 = Color3.fromRGB(30,30,30)}):Play()
+		end)
+	end)
+	coroutine.resume(m18)
+end
+
+for _,a in pairs(Core:GetDescendants()) do
+	if a:IsA("TextButton") and a.AutoButtonColor == false then
+		trackhover(a)
+	end
+end
+
+for _,m13 in pairs(Core.Frame.Buttons:GetChildren()) do
+	if m13:IsA("TextButton") then
+		m13.MouseButton1Click:Connect(function()
+			if Core.Frame.SelectionFrame.Usable:FindFirstChild(m13.Name) then
+				local c19 = Core.Frame.SelectionFrame.Usable:FindFirstChild(m13.Name)
+				for _,m1881 in pairs(Core.Frame.SelectionFrame.Usable:GetChildren()) do
+					if m1881:IsA("Frame") then
+						m1881.Visible = false
+					end
+				end
+				c19.Visible = true
+			end
+		end)
+	end
+end
+
+Core.Frame.Min2.Button1.TextButton.MouseButton1Click:Connect(function()
+	for key,value in pairs(_G.SelectedStuffs) do
+		table.remove(_G.SelectedStuffs,key)
+	end
+	for _,m29 in pairs(Core.Frame.SelectionFrame.Usable.SUSPENSION.Outer.Selects:GetChildren()) do
+		if m29:IsA("TextButton") then
+			m29:Destroy()
+		end
+	end
+	for _,m29 in pairs(Core.Frame.SelectionFrame.Usable.PHYSICAL.Outer.Selects:GetChildren()) do
+		if m29:IsA("TextButton") then
+			m29:Destroy()
+		end
+	end
+	for _,m29 in pairs(Core.Frame.SelectionFrame.Usable.ROD.Outer.Selects:GetChildren()) do
+		if m29:IsA("TextButton") then
+			m29:Destroy()
+		end
+	end
+	local h = Core.Frame.Status
+	h.Text = "Finding Host's Vehicle: Expect Lag"
+	printmsg("Finding Host's Vehicle","printf")
+	CurrentVehicle = nil
+	for _,a in pairs(workspace:GetDescendants()) do
+		if a:IsA("VehicleSeat") or a:IsA("Seat") then
+			if a.Occupant == game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid") then
+				CurrentVehicle = a
+				break
+			end
+			task.wait()
+		end
+	end
+	if CurrentVehicle == nil then
+		local m129028 = coroutine.create(function()
+			printmsg("Error finding Host's Vehicle. Are you currently sitting in a Seat?","error")
+			h.Text = "Error. Press the Settings icon for more information."
+			wait(5)
+			h.Text = ""
+		end)
+		coroutine.resume(m129028)
+	else
+		printmsg("Success","printf")
+		h.Text = "Success"
+		wait(2)
+		local h = Core.Frame.Status
+		h.Text = "Finding Vehicle Assets"
+		printmsg("Finding Vehicle Assets","printf")
+		local F = false
+		if CurrentVehicle.Parent.Parent.Parent.Parent == workspace or CurrentVehicle.Parent.Parent.Parent.Parent == game or CurrentVehicle.Parent.Parent.Parent.Parent == nil then
+			if CurrentVehicle.Parent.Parent.Parent == workspace or CurrentVehicle.Parent.Parent.Parent == game or CurrentVehicle.Parent.Parent.Parent == nil then
+				if CurrentVehicle.Parent.Parent == workspace or CurrentVehicle.Parent.Parent == game or CurrentVehicle.Parent.Parent == nil then
+					if CurrentVehicle.Parent == workspace or CurrentVehicle.Parent == game or CurrentVehicle.Parent == nil then
+						local m129028 = coroutine.create(function()
+							h.Text = "Unable to find assets."
+							printmsg("Unable to find assets","warn")
+							wait(5)
+							h.Text = ""
+						end)
+						coroutine.resume(m129028)
+					else
+						for _,v in pairs(CurrentVehicle.Parent:GetDescendants()) do
+							if v:IsA("SpringConstraint") then
+								task.wait()
+								local out = Core.Frame.SelectionFrame.Usable.SUSPENSION.Outer
+								local c = out.Thingy:Clone()
+								c.Parent = out.Selects
+								c.TextLabel.Text = v.Parent.Name.." ".."Suspension"
+								c.Text = v.Name
+								c.Visible = true
+								local b = Instance.new("ObjectValue",c)
+								b.Name = "Object"
+								b.Value = v
+								track(c.UICorner)
+								F = true
+								if v.Parent:IsA("Part") or v.Parent:IsA("MeshPart") or v.Parent:IsA("UnionOperation") then
+									local out = Core.Frame.SelectionFrame.Usable.PHYSICAL.Outer
+									local c = out.Thingy:Clone()
+									c.Parent = out.Selects
+									c.TextLabel.Text = v.Parent.Name.." ".."Parenting"
+									c.Text = v.Parent.Name
+									c.Visible = true
+									local b = Instance.new("ObjectValue",c)
+									b.Name = "Object"
+									b.Value = v.Parent
+									track(c.UICorner)
+								end
+							elseif v:IsA("RodConstraint") then
+								task.wait()
+								local out = Core.Frame.SelectionFrame.Usable.ROD.Outer
+								local c = out.Thingy:Clone()
+								c.Parent = out.Selects
+								c.TextLabel.Text = v.Parent.Name.." ".."RodConst"
+								c.Text = v.Name
+								c.Visible = true
+								local b = Instance.new("ObjectValue",c)
+								b.Name = "Object"
+								b.Value = v
+								track(c.UICorner)
+								F = true
+							end
+						end
+					end
+				else
+					for _,v in pairs(CurrentVehicle.Parent.Parent:GetDescendants()) do
+						if v:IsA("SpringConstraint") then
+							task.wait()
+							local out = Core.Frame.SelectionFrame.Usable.SUSPENSION.Outer
+							local c = out.Thingy:Clone()
+							c.Parent = out.Selects
+							c.TextLabel.Text = "Suspension"
+							c.Text = v.Name
+							c.Visible = true
+							track(c.UICorner)
+							F = true
+							if v.Parent:IsA("Part") or v.Parent:IsA("MeshPart") or v.Parent:IsA("UnionOperation") then
+								local out = Core.Frame.SelectionFrame.Usable.PHYSICAL.Outer
+								local c = out.Thingy:Clone()
+								c.Parent = out.Selects
+								c.TextLabel.Text = v.Parent.Name.." ".."Parenting"
+								c.Text = v.Parent.Name
+								c.Visible = true
+								local b = Instance.new("ObjectValue",c.Parent)
+								b.Name = "Object"
+								b.Value = v.Parent
+								track(c.UICorner)
+							end
+						elseif v:IsA("RodConstraint") then
+							task.wait()
+							local out = Core.Frame.SelectionFrame.Usable.ROD.Outer
+							local c = out.Thingy:Clone()
+							c.Parent = out.Selects
+							c.TextLabel.Text = v.Parent.Name.." ".."RodConst"
+							c.Text = v.Name
+							c.Visible = true
+							local b = Instance.new("ObjectValue",c)
+							b.Name = "Object"
+							b.Value = v
+							track(c.UICorner)
+							F = true
+						end
+					end
+				end
+			else
+				for _,v in pairs(CurrentVehicle.Parent.Parent.Parent:GetDescendants()) do
+					if v:IsA("SpringConstraint") then
+						task.wait()
+						local out = Core.Frame.SelectionFrame.Usable.SUSPENSION.Outer
+						local c = out.Thingy:Clone()
+						c.Parent = out.Selects
+						c.TextLabel.Text = "Suspension"
+						c.Text = v.Name
+						c.Visible = true
+						track(c.UICorner)
+						F = true
+						if v.Parent:IsA("Part") or v.Parent:IsA("MeshPart") or v.Parent:IsA("UnionOperation") then
+							local out = Core.Frame.SelectionFrame.Usable.PHYSICAL.Outer
+							local c = out.Thingy:Clone()
+							c.Parent = out.Selects
+							c.TextLabel.Text = v.Parent.Name.." ".."Parenting"
+							c.Text = v.Parent.Name
+							c.Visible = true
+							local b = Instance.new("ObjectValue",c.Parent)
+							b.Name = "Object"
+							b.Value = v.Parent
+							track(c.UICorner)
+						end
+					elseif v:IsA("RodConstraint") then
+						task.wait()
+						local out = Core.Frame.SelectionFrame.Usable.ROD.Outer
+						local c = out.Thingy:Clone()
+						c.Parent = out.Selects
+						c.TextLabel.Text = v.Parent.Name.." ".."RodConst"
+						c.Text = v.Name
+						c.Visible = true
+						local b = Instance.new("ObjectValue",c)
+						b.Name = "Object"
+						b.Value = v
+						track(c.UICorner)
+						F = true
+					end
+				end
+			end
+		else
+			for _,v in pairs(CurrentVehicle.Parent.Parent.Parent.Parent:GetDescendants()) do
+				if v:IsA("SpringConstraint") then
+					task.wait()
+					local out = Core.Frame.SelectionFrame.Usable.SUSPENSION.Outer
+					local c = out.Thingy:Clone()
+					c.Parent = out.Selects
+					c.TextLabel.Text = "Suspension"
+					c.Text = v.Name
+					c.Visible = true
+					track(c.UICorner)
+					F = true
+					if v.Parent:IsA("Part") or v.Parent:IsA("MeshPart") or v.Parent:IsA("UnionOperation") then
+						local out = Core.Frame.SelectionFrame.Usable.PHYSICAL.Outer
+						local c = out.Thingy:Clone()
+						c.Parent = out.Selects
+						c.TextLabel.Text = v.Parent.Name.." ".."Parenting"
+						c.Text = v.Parent.Name
+						c.Visible = true
+						local b = Instance.new("ObjectValue",c.Parent)
+						b.Name = "Object"
+						b.Value = v.Parent
+						track(c.UICorner)
+					end
+				elseif v:IsA("RodConstraint") then
+					task.wait()
+					local out = Core.Frame.SelectionFrame.Usable.ROD.Outer
+					local c = out.Thingy:Clone()
+					c.Parent = out.Selects
+					c.TextLabel.Text = v.Parent.Name.." ".."RodConst"
+					c.Text = v.Name
+					c.Visible = true
+					local b = Instance.new("ObjectValue",c)
+					b.Name = "Object"
+					b.Value = v
+					track(c.UICorner)
+					F = true
+				end
+			end
+		end
+		if F == true then
+			local m129028 = coroutine.create(function()
+				h.Text = "Done"
+				printmsg("Scan Completed without Error","printf")
+				wait(1)
+				h.Text = ""
+			end)
+			coroutine.resume(m129028)
+		elseif F == false then
+			local m129028 = coroutine.create(function()
+				h.Text = "Unable to find assets."
+				printmsg("Unable to find assets","warn")
+				wait(5)
+				h.Text = ""
+			end)
+			coroutine.resume(m129028)
+		end
+	end
+end)
+
+Core.Frame.SelectionFrame.Usable.SUSPENSION.Buttons.Locked.Submit.MouseButton1Click:Connect(function()
+	local CAD = Core.Frame.SelectionFrame.Usable.SUSPENSION.Buttons
+	SpringConst.MaxForce = tonumber(CAD.Unlocked.MaxForce.Text)
+	SpringConst.Stiffness = tonumber(CAD.Unlocked.Stiffness.Text)
+	SpringConst.Damping = tonumber(CAD.Unlocked.Damping.Text)
+	SpringConst.FreeLength = tonumber(CAD.Unlocked.FreeLength.Text)
+
+	SpringConst.MaxLength = tonumber(CAD.Locked.MaxLength.Text)
+	SpringConst.MinLength = tonumber(CAD.Locked.MinLength.Text)
+
+	for key,value in pairs(_G.SelectedStuffs) do
+		if value:IsA("SpringConstraint") then
+			value.MaxForce = SpringConst.MaxForce
+			value.Stiffness = SpringConst.Stiffness
+			value.Damping = SpringConst.Damping
+			value.FreeLength = SpringConst.FreeLength
+
+			value.LimitsEnabled = SpringConst.LimitsEnabled
+
+			if SpringConst.LimitsEnabled == false then
+				value.MaxLength = SpringConst.MaxLength
+				value.MinLength = SpringConst.MinLength
+			end
+		end
+	end
+end)
+
+local CAD = Core.Frame.SelectionFrame.Usable.SUSPENSION.Buttons
+CAD.Locked.LimitsEnabled.MouseButton1Click:Connect(function()
+	if SpringConst.LimitsEnabled == false then
+		SpringConst.LimitsEnabled = true
+		CAD.Locked.MinLength.LOCK.Visible = true
+		CAD.Locked.MaxLength.LOCK.Visible = true
+		CAD.Locked.LimitsEnabled.Text = "TRUE"
+		CAD.Locked.LimitsEnabled.TextColor3 = Color3.fromRGB(255,0,0)
+	else	
+		SpringConst.LimitsEnabled = false
+		CAD.Locked.MinLength.LOCK.Visible = false
+		CAD.Locked.MaxLength.LOCK.Visible = false
+		CAD.Locked.LimitsEnabled.Text = "FALSE"
+		CAD.Locked.LimitsEnabled.TextColor3 = Color3.fromRGB(0,255,0)
+	end
+end)
+
+Core.Frame.SelectionFrame.Usable.SUSPENSION.Default.MouseButton1Click:Connect(function()
+	if _G.SelectedStuffs[1] then
+		local CAD = Core.Frame.SelectionFrame.Usable.SUSPENSION.Buttons
+		CAD.Unlocked.MaxForce.Text = tostring(math.round(_G.SelectedStuffs[1].MaxForce))
+		CAD.Unlocked.Stiffness.Text = tostring(math.round(_G.SelectedStuffs[1].Stiffness))
+		CAD.Unlocked.Damping.Text = tostring(math.round(_G.SelectedStuffs[1].Damping))
+		CAD.Unlocked.FreeLength.Text = tostring(math.round(_G.SelectedStuffs[1].FreeLength))
+
+		CAD.Locked.MaxLength.Text = tostring(math.round(_G.SelectedStuffs[1].MaxLength))
+		CAD.Locked.MinLength.Text = tostring(math.round(_G.SelectedStuffs[1].MinLength))
+	end
+end)
+
+
+
+
+Core.Frame.SelectionFrame.Usable.PHYSICAL.Buttons.Locked.Submit.MouseButton1Click:Connect(function()
+	local CAD = Core.Frame.SelectionFrame.Usable.PHYSICAL.Buttons
+	PhysicalProp.Friction = tonumber(CAD.Unlocked.Friction.Text)
+	PhysicalProp.FrictionWeight = tonumber(CAD.Unlocked.FrictionWeight.Text)
+	PhysicalProp.Density = tonumber(CAD.Unlocked.Density.Text)
+	PhysicalProp.Elasticity = tonumber(CAD.Locked.Elasticity.Text)
+	PhysicalProp.ElasticityWeight = tonumber(CAD.Locked.ElasticityWeight.Text)
+
+	--PhysicalProp.CanCollide = CAD.Unlocked.CanCollide.Text
+	--	PhysicalProp.PropertiesEnabled = tonumber(CAD.Locked.PropertiesEnabled.Text)
+
+	for key,value in pairs(_G.SelectedStuffs) do
+		if value:IsA("Part") or value:IsA("MeshPart") or value:IsA("UnionOperation") then
+
+			warn("changed")
+
+			value.CanCollide = PhysicalProp.CanCollide
+
+			if PhysicalProp.PropertiesEnabled == true then
+				value.CustomPhysicalProperties = PhysicalProperties.new(PhysicalProp.Density,PhysicalProp.Friction,PhysicalProp.Elasticity,PhysicalProp.FrictionWeight,PhysicalProp.ElasticityWeight)
+			end
+		end
+	end
+end)
+
+local CAD = Core.Frame.SelectionFrame.Usable.PHYSICAL.Buttons
+CAD.Locked.PropertiesEnabled.MouseButton1Click:Connect(function()
+	if PhysicalProp.PropertiesEnabled == false then
+		PhysicalProp.PropertiesEnabled = true
+		CAD.Locked.ElasticityWeight.LOCK.Visible = false
+		CAD.Locked.Elasticity.LOCK.Visible = false
+		CAD.Unlocked.Density.LOCK.Visible = false
+		CAD.Unlocked.Friction.LOCK.Visible = false
+		CAD.Unlocked.FrictionWeight.LOCK.Visible = false
+		CAD.Locked.PropertiesEnabled.Text = "TRUE"
+		CAD.Locked.PropertiesEnabled.TextColor3 = Color3.fromRGB(85, 255, 0)
+	else	
+		PhysicalProp.PropertiesEnabled = false
+		CAD.Locked.ElasticityWeight.LOCK.Visible = true
+		CAD.Locked.Elasticity.LOCK.Visible = true
+		CAD.Unlocked.Density.LOCK.Visible = true
+		CAD.Unlocked.Friction.LOCK.Visible = true
+		CAD.Unlocked.FrictionWeight.LOCK.Visible = true
+		CAD.Locked.PropertiesEnabled.Text = "FALSE"
+		CAD.Locked.PropertiesEnabled.TextColor3 = Color3.fromRGB(255, 0, 0)
+	end
+end)
+
+
+local CAD = Core.Frame.SelectionFrame.Usable.PHYSICAL.Buttons
+CAD.Unlocked.CanCollide.MouseButton1Click:Connect(function()
+	if PhysicalProp.CanCollide == false then
+		PhysicalProp.CanCollide = true
+		CAD.Unlocked.CanCollide.Text = "TRUE"
+	else	
+		PhysicalProp.CanCollide = false
+		CAD.Unlocked.CanCollide.Text = "FALSE"
+	end
+end)
+
+Core.Frame.SelectionFrame.Usable.PHYSICAL.Default.MouseButton1Click:Connect(function()
+	if _G.SelectedStuffs[1] then
+		local CAD = Core.Frame.SelectionFrame.Usable.PHYSICAL.Buttons
+		CAD.Locked.ElasticityWeight.Text = tostring(math.round(_G.SelectedStuffs[1].CustomPhysicalProperties.ElasticityWeight))
+		CAD.Locked.Elasticity.Text = tostring(math.round(_G.SelectedStuffs[1].CustomPhysicalProperties.Elasticity))
+		CAD.Unlocked.Density.Text = tostring(math.round(_G.SelectedStuffs[1].CustomPhysicalProperties.Density))
+		CAD.Unlocked.Friction.Text = tostring(math.round(_G.SelectedStuffs[1].CustomPhysicalProperties.Friction))
+		CAD.Unlocked.FrictionWeight.Text = tostring(math.round(_G.SelectedStuffs[1].CustomPhysicalProperties.FrictionWeight))
+	end
+end)
+
+
+
+
+Core.Frame.SelectionFrame.Usable.ROD.Buttons.Locked.Submit.MouseButton1Click:Connect(function()
+	local CAD = Core.Frame.SelectionFrame.Usable.ROD.Buttons
+	RodConst.Length = tonumber(CAD.Unlocked.Length.Text)
+
+	RodConst.LimitAngle0 = tonumber(CAD.Locked.LimitAngle0.Text)
+	RodConst.LimitAngle1 = tonumber(CAD.Locked.LimitAngle1.Text)
+
+	for key,value in pairs(_G.SelectedStuffs) do
+		if value:IsA("RodConstraint") then
+
+			warn("changed")
+
+			value.Length = RodConst.Length
+
+			if RodConst.LimitsEnabled == false then
+				value.LimitAngle0 = RodConst.LimitAngle0
+				value.LimitAngle1 = RodConst.LimitAngle1
+			end
+		end
+	end
+end)
+
+local CAD = Core.Frame.SelectionFrame.Usable.ROD.Buttons
+CAD.Locked.LimitsEnabled.MouseButton1Click:Connect(function()
+	if RodConst.LimitsEnabled == false then
+		RodConst.LimitsEnabled = true
+		CAD.Locked.LimitAngle0.LOCK.Visible = true
+		CAD.Locked.LimitAngle1.LOCK.Visible = true
+		CAD.Locked.LimitsEnabled.Text = "TRUE"
+		CAD.Locked.LimitsEnabled.TextColor3 = Color3.fromRGB(255, 0, 0)
+	else	
+		RodConst.LimitsEnabled = false
+		CAD.Locked.LimitAngle0.LOCK.Visible = false
+		CAD.Locked.LimitAngle1.LOCK.Visible = false
+		CAD.Locked.LimitsEnabled.Text = "False"
+		CAD.Locked.LimitsEnabled.TextColor3 = Color3.fromRGB(85, 255, 0)
+	end
+end)
+
+
+local CAD = Core.Frame.SelectionFrame.Usable.ROD.Buttons
+CAD.Unlocked.Enabled.MouseButton1Click:Connect(function()
+	if RodConst.Enabled == false then
+		RodConst.Enabled = true
+		CAD.Unlocked.Enabled.Text = "TRUE"
+	else	
+		RodConst.Enabled = false
+		CAD.Unlocked.Enabled.Text = "FALSE"
+	end
+end)
+
+Core.Frame.SelectionFrame.Usable.ROD.Default.MouseButton1Click:Connect(function()
+	if _G.SelectedStuffs[1] then
+		local CAD = Core.Frame.SelectionFrame.Usable.ROD.Buttons
+		CAD.Locked.LimitAngle0.Text = tostring(math.round(_G.SelectedStuffs[1].LimitAngle0))
+		CAD.Locked.LimitAngle1.Text = tostring(math.round(_G.SelectedStuffs[1].LimitAngle1))
+		CAD.Unlocked.Length.Text = tostring(math.round(_G.SelectedStuffs[1].Length))
+	end
+end)
